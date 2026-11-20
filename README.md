@@ -1,93 +1,93 @@
-# data-encrypt-study
+# Data Encrypt Study
 
+A learning project about **hashing**, **symmetric encryption** and **asymmetric encryption**.
+Every method is explained in plain words, shown step by step with real values, runnable in the browser,
+and implemented in Java with self-checks against official test vectors.
 
+## What's inside
 
-## Getting started
+The site has three parts, switched with the tabs at the top:
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+| Part | URL | What it does |
+|---|---|---|
+| **Study** | `/`, `/md5`, `/seed`, … | Each method in 5 short steps: what it is, how it works (a step-by-step player with real data), where it's used, how it's verified, and a summary |
+| **ASCII** | `/ascii` | Type text and see each character as decimal, hex and binary, plus the full ASCII table (0–127) |
+| **Playground** | `/playground/md5`, … | Try each method live: hash, encrypt, decrypt, sign, verify. Every page runs its official test vectors in your browser |
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Methods
 
-## Add your files
+| Category | Method | Stands for | Status |
+|---|---|---|---|
+| Hashing | MD5 | Message-Digest Algorithm 5 | Broken: checksums only |
+| Hashing | SHA-256 | Secure Hash Algorithm, 256-bit | Recommended |
+| Hashing | bcrypt | Blowfish-based crypt | Recommended for passwords |
+| Symmetric | DES | Data Encryption Standard | Broken |
+| Symmetric | 3DES | Triple Data Encryption Standard | Retired |
+| Symmetric | AES | Advanced Encryption Standard | Recommended (AES-GCM) |
+| Symmetric | SEED | A name (KISA, Korea) | Korean standard |
+| Asymmetric | RSA | Rivest–Shamir–Adleman | Recommended (2048+ bits) |
+| Asymmetric | 공동인증서 | Korean joint certificate (NPKI) | In use in Korea |
 
-* [Create](https://docs.gitlab.com/user/project/repository/web_editor/#create-a-file) or [upload](https://docs.gitlab.com/user/project/repository/web_editor/#upload-a-file) files
-* [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+Test vectors come from the official sources: RFC 1321 (MD5), NIST FIPS 180 (SHA-256), the OpenBSD bcrypt suite,
+FIPS 46 / SP 800-67 (DES, 3DES), NIST SP 800-38A and the GCM spec (AES), RFC 4269 (SEED).
+
+## Run the website
+
+Requires **Node.js 20.9 or newer**.
+
+```bash
+npm install
+npm run dev        # http://localhost:3000
+```
+
+Other commands:
+
+```bash
+npm run build      # production build
+npm start          # serve the production build
+npm run lint       # check the code
+```
+
+## Run the Java code
+
+Requires **Java 17 or newer**. Each file runs on its own, with no build step, and prints its self-checks:
+
+```bash
+cd java/aes && java Aes.java
+cd java/seed && java Seed.java
+cd java/bcrypt && java -cp lib/jbcrypt-0.4.jar Bcrypt.java   # bcrypt needs its library
+```
+
+Most files also accept arguments, for example:
+
+```bash
+cd java/md5 && java Md5.java "Hello"
+cd java/aes && java Aes.java encrypt GCM <hex-key> "Hello"
+cd java/rsa && java Rsa.java genkey 2048
+cd java/gongdong && java Gongdong.java issue 홍길동 test1234! out
+```
+
+## Project structure
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/techkuangchang/data-encrypt-study.git
-git branch -M main
-git push -uf origin main
+src/
+  app/                  pages: Study (/[id]), ASCII (/ascii), Playground (/playground/[id])
+  content/              the study text for each method (one file per method)
+  components/           page layouts, the step player, the ASCII view
+  components/impl/      Playground panels (one per method family) + shared UI kit
+  lib/impl/             Playground logic and test vectors, no React
+  lib/seed.ts           SEED cipher, written by hand (browsers and Java don't include it)
+java/                   one runnable Java file per method, with self-checks
 ```
 
-## Integrate with your tools
+## Adding a new method
 
-* [Set up project integrations](https://gitlab.com/techkuangchang/data-encrypt-study/-/settings/integrations)
+1. Add a Java file in `java/<method>/` with self-checks against official test vectors.
+2. Add the study text in `src/content/<method>.ts` (follow `md5.ts`) and register it in `src/content/index.ts`.
+3. Add a Playground panel in `src/components/impl/` and connect it in `ImplementView.tsx`.
 
-## Collaborate with your team
+## ⚠️ Learning only
 
-* [Invite team members and collaborators](https://docs.gitlab.com/user/project/members/)
-* [Create a new merge request](https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/)
-* [Automatically close issues from merge requests](https://docs.gitlab.com/user/project/issues/managing_issues/#closing-issues-automatically)
-* [Enable merge request approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/)
-* [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-* [Get started with GitLab CI/CD](https://docs.gitlab.com/ci/quick_start/)
-* [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/user/application_security/sast/)
-* [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/topics/autodevops/requirements/)
-* [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/user/clusters/agent/)
-* [Set up protected environments](https://docs.gitlab.com/ci/environments/protected_environments/)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+- The code includes **test keys on purpose**: an RSA key pair and 공동인증서 test sets (password `test1234!`),
+  so the self-checks can prove the browser and Java produce the same formats. They are public: never use them for anything real.
+- MD5, DES and 3DES are included to show why they are broken or retired. Use SHA-256, bcrypt and AES-GCM for real work.
