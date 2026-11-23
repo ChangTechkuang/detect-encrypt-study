@@ -1,7 +1,7 @@
 import { spawn } from "node:child_process";
 import os from "node:os";
 import Anthropic from "@anthropic-ai/sdk";
-import { LOCAL_ONLY, MAX_INPUT, PER_VISITOR, RESULT_SCHEMA, SYSTEM_PROMPT, isDetectResult } from "@/lib/detect";
+import { MAX_INPUT, PER_VISITOR, RESULT_SCHEMA, SYSTEM_PROMPT, isDetectResult } from "@/lib/detect";
 import { classify } from "@/lib/classify";
 import { findClaude, isClaudePath } from "@/lib/claude";
 import { askClaudeApi } from "@/lib/claude-api";
@@ -11,8 +11,8 @@ import { askClaudeApi } from "@/lib/claude-api";
 const TIMEOUT_MS = 90_000;
 
 export async function POST(req: Request) {
-  let text: unknown, claudePath: unknown;
-  try { ({ text, claudePath } = await req.json()); } catch { return Response.json({ error: "Send JSON: { \"text\": \"...\" }" }, { status: 400 }); }
+  let text: unknown, claudePath: unknown, apiKey: unknown;
+  try { ({ text, claudePath, apiKey } = await req.json()); } catch { return Response.json({ error: "Send JSON: { \"text\": \"...\" }" }, { status: 400 }); }
   if (typeof text !== "string" || !text.trim()) return Response.json({ error: "Paste something to detect." }, { status: 400 });
   if (text.length > MAX_INPUT) return Response.json({ error: `Too long: max ${MAX_INPUT} characters.` }, { status: 400 });
 
@@ -22,17 +22,25 @@ export async function POST(req: Request) {
     `representation=${r.representation}, bytes=${r.bytes}. Evidence: ${r.evidence.join(" ")} Could also be: ${r.candidates.join("; ") || "-"}`;
   const input = `${facts}\n\nDATA:\n${text.trim()}`;
 
-  // Vercel has no claude.exe: use the Claude API, billed to ANTHROPIC_API_KEY, with a per-visitor limit
+  // Vercel has no claude.exe: use the Claude API with the visitor's own key, else the site's key with a per-visitor limit
   if (process.env.VERCEL) {
-    if (!process.env.ANTHROPIC_API_KEY) return Response.json({ error: LOCAL_ONLY }, { status: 501 });
-    const limited = overLimit(req.headers.get("x-forwarded-for")?.split(",")[0].trim() || "unknown");
-    if (limited) return Response.json({ error: limited }, { status: 429 });
+    const userKey = typeof apiKey === "string" && /^sk-ant-[\w-]{10,250}$/.test(apiKey.trim()) ? apiKey.trim() : undefined;
+    if (apiKey !== undefined && !userKey)
+      return Response.json({ error: "That doesn't look like a Claude API key. It starts with sk-ant-.", needKey: true }, { status: 400 });
+    if (!userKey && !process.env.ANTHROPIC_API_KEY)
+      return Response.json({ error: "Enter your Claude API key to use Ask Claude here.", needKey: true }, { status: 401 });
+    if (!userKey) {
+      const limited = overLimit(req.headers.get("x-forwarded-for")?.split(",")[0].trim() || "unknown");
+      if (limited) return Response.json({ error: limited, needKey: true }, { status: 429 });
+    }
     try {
-      const out = await askClaudeApi(input);
+      const out = await askClaudeApi(input, userKey);
       if (!isDetectResult(out)) return Response.json({ error: "Claude returned an unexpected answer. Try again." }, { status: 502 });
       return Response.json(out);
     } catch (e) {
-      console.error("Claude API", e); // details stay in the Vercel logs, not in the visitor's browser
+      if (userKey && (e instanceof Anthropic.AuthenticationError || e instanceof Anthropic.PermissionDeniedError))
+        return Response.json({ error: "Claude rejected that API key. Check it and try again.", needKey: true }, { status: 401 });
+      console.error("Claude API", e instanceof Anthropic.APIError ? `${e.status} ${e.name}` : e); // never logs the key
       return Response.json({ error: e instanceof Anthropic.RateLimitError ? "Claude is busy. Try again in a minute." :
         e instanceof Anthropic.APIError ? "Claude is not available right now. Try again later." : (e as Error).message }, { status: 502 });
     }

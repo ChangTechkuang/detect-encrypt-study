@@ -2,12 +2,13 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { RESULT_SCHEMA, SYSTEM_PROMPT } from "@/lib/detect";
 
-// Created on first use: the local claude.exe path imports this file without an API key set
-let client: Anthropic | undefined;
+// The site's own key (ANTHROPIC_API_KEY), created on first use: the local claude.exe path imports this file without one
+let siteClient: Anthropic | undefined;
 
-/** Same prompt and JSON schema as the claude.exe path; returns the parsed JSON answer. */
-export async function askClaudeApi(input: string): Promise<unknown> {
-  client ??= new Anthropic(); // reads ANTHROPIC_API_KEY
+/** Same prompt and JSON schema as the claude.exe path; returns the parsed JSON answer.
+ *  apiKey: the visitor's own key (used for this request only, never stored); else the site's key. */
+export async function askClaudeApi(input: string, apiKey?: string): Promise<unknown> {
+  const client = apiKey ? new Anthropic({ apiKey }) : (siteClient ??= new Anthropic());
   const msg = await client.beta.messages.create({
     model: "claude-opus-5-5",
     max_tokens: 8000,

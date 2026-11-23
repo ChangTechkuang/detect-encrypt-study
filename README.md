@@ -6,8 +6,9 @@ and implemented in Java with self-checks against official test vectors.
 The Detect engine also comes as a Claude Code skill, [encrypt-detector](#claude-skill-encrypt-detector).
 
 **Live site:** https://study-beta-two.vercel.app (every push to `main` redeploys it). There, Ask Claude on the Detect
-page uses the Claude API, billed to the `ANTHROPIC_API_KEY` set in the Vercel project, and is limited to 10 uses per
-visitor and 200 for the whole site per day. Locally it uses your own Claude Code instead (see below).
+page asks each visitor for their own Claude API key (kept in their browser, billed to them). If the Vercel project has
+an `ANTHROPIC_API_KEY`, visitors without a key use it instead, limited to 10 uses per visitor and 200 for the site per
+day. Locally it uses your own Claude Code instead (see below).
 
 ## What's inside
 

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import type { Candidate, DetectResult } from "@/lib/detect";
-import { HOSTED, MAX_INPUT, PER_VISITOR } from "@/lib/detect";
+import { HOSTED, MAX_INPUT } from "@/lib/detect";
 import { byId, guessEncoding } from "@/lib/encoding";
 import { classify, type Classification } from "@/lib/classify";
 import { RSA_TEST_PUB } from "@/lib/impl/rsa";
@@ -43,6 +43,7 @@ const CARD = {
 type Phase = "input" | "scanning" | "key" | "done";
 const SCAN_MS = 2400;
 const PATH_KEY = "claudePath";
+const API_KEY = "claudeApiKey";
 
 /** The 5 scan stages, each with the real finding from classify(). */
 function stagesOf(r: Classification): [name: string, finding: string][] {
@@ -80,6 +81,9 @@ export default function DetectView() {
   const [installing, setInstalling] = useState(false);
   const [installed, setInstalled] = useState("");
   const [showPath, setShowPath] = useState(false);
+  // Hosted only: the visitor's own Claude API key, kept in this browser (the key box shows only after a scan, so no hydration mismatch)
+  const [apiKey, setApiKey] = useState(() => { try { return HOSTED && typeof window !== "undefined" ? localStorage.getItem(API_KEY) ?? "" : ""; } catch { return ""; } });
+  const [needKey, setNeedKey] = useState(false);
 
   // Local dev only: find claude.exe when the page opens, so the path is filled in or Install is offered up front
   useEffect(() => {
@@ -137,8 +141,17 @@ export default function DetectView() {
     setBusy(true); setError(""); setRes(null);
     try {
       const p = claudePath.trim().replace(/^"|"$/g, ""); // "Copy as path" in Explorer adds quotes
-      const r = await fetch("/api/detect", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text, claudePath: p || undefined }) });
+      const k = HOSTED ? apiKey.trim() : "";
+      const r = await fetch("/api/detect", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text, claudePath: p || undefined, apiKey: k || undefined }) });
       const j = await r.json();
+      if (HOSTED) {
+        setNeedKey(!!j.needKey);
+        if (!r.ok) { setError(j.error ?? "Something went wrong."); return; }
+        setRes(j);
+        try { if (k) localStorage.setItem(API_KEY, k); } catch {}
+        return;
+      }
       if (!r.ok) {
         // "not found" (502) is explained by the setup card; a rejected path (400) is shown inside it
         if (j.needPath) { setFound(null); setShowPath(r.status === 400); }
@@ -276,7 +289,7 @@ export default function DetectView() {
         {rule && phase === "done" && (
           <div className="flex flex-wrap items-center gap-3">
             <Button onClick={askClaude} disabled={busy || found === null}>{busy ? "Asking Claude…" : res ? "Ask Claude again" : "Ask Claude to explain"}</Button>
-            <Note>{HOSTED ? `Optional: Claude explains the result in plain words. The text is sent to Claude. Up to ${PER_VISITOR} times a day.` : found === null ? "Install Claude Code first (below)." : "Optional: Claude explains the result in plain words. Takes a few seconds, and the text is sent to Claude."}</Note>
+            <Note>{HOSTED ? "Optional: Claude explains the result in plain words, using your own Claude API key. The text is sent to Claude." : found === null ? "Install Claude Code first (below)." : "Optional: Claude explains the result in plain words. Takes a few seconds, and the text is sent to Claude."}</Note>
           </div>
         )}
         {rule && phase === "done" && found && !installed && (showPath ? (
@@ -295,7 +308,35 @@ export default function DetectView() {
             <button type="button" onClick={() => setShowPath(true)} className="shrink-0 font-medium text-[var(--accent)] hover:underline">Change</button>
           </p>
         ))}
-        {error && found !== null && !installed && <p className="font-medium text-bad">✗ {error}</p>}
+        {error && !needKey && found !== null && !installed && <p className="font-medium text-bad">✗ {error}</p>}
+        {HOSTED && rule && phase === "done" && (needKey ? (
+          <div className="grid gap-3 rounded-xl border border-line bg-code px-4 py-4" role="status">
+            <div>
+              <p className="font-semibold">Use your own Claude API key</p>
+              <p className="mt-1 text-sm text-muted">
+                Ask Claude on this site runs on your key, so each answer is billed to you (a fraction of a cent). Get one at{" "}
+                <a href="https://platform.claude.com/settings/keys" target="_blank" rel="noreferrer" className="font-medium text-[var(--accent)] hover:underline">platform.claude.com</a>.
+              </p>
+            </div>
+            <form className="flex gap-2" onSubmit={(e) => { e.preventDefault(); askClaude(); }}>
+              <Input type="password" aria-label="Claude API key" value={apiKey} onChange={(e) => setApiKey(e.target.value)}
+                spellCheck={false} className="min-w-0 flex-1 font-mono text-[13px]" placeholder="sk-ant-…" autoFocus />
+              <Button type="submit" disabled={busy || !apiKey.trim()}>{busy ? "Asking…" : "Save and ask"}</Button>
+            </form>
+            <Note>Kept in this browser only. It passes through this site to Claude for each request and is never stored on the server.</Note>
+            {error && <p className="text-sm font-medium text-bad">✗ {error}</p>}
+          </div>
+        ) : apiKey.trim() && (
+          <p className="-mt-2 flex min-w-0 items-center gap-1.5 text-[13px] text-muted">
+            <span className="shrink-0 text-ok">✓</span>
+            <span className="min-w-0 truncate">Using your API key <span className="font-mono">sk-ant-…{apiKey.trim().slice(-4)}</span></span>
+            <span aria-hidden>·</span>
+            <button type="button" onClick={() => { setNeedKey(true); setError(""); }} className="shrink-0 font-medium text-[var(--accent)] hover:underline">Change</button>
+            <span aria-hidden>·</span>
+            <button type="button" onClick={() => { setApiKey(""); try { localStorage.removeItem(API_KEY); } catch {} }}
+              className="shrink-0 font-medium text-[var(--accent)] hover:underline">Remove</button>
+          </p>
+        ))}
         {rule && phase === "done" && (found === null || installed) && (
           <div className="grid gap-3 rounded-xl border border-line bg-code px-4 py-4" role="status">
             {installed ? (
