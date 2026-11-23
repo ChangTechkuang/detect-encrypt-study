@@ -42,6 +42,7 @@ const CARD = {
 
 type Phase = "input" | "scanning" | "key" | "done";
 const SCAN_MS = 2400;
+const PATH_KEY = "claudePath";
 
 /** The 5 scan stages, each with the real finding from classify(). */
 function stagesOf(r: Classification): [name: string, finding: string][] {
@@ -73,6 +74,8 @@ export default function DetectView() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [res, setRes] = useState<DetectResult | null>(null);
+  const [needPath, setNeedPath] = useState(false);
+  const [claudePath, setClaudePath] = useState("");
 
   // Instant decode with the Encoding tab's code: Base64, Base64URL, hex, URL encoding, HTML entities
   const quick = useMemo(() => {
@@ -119,9 +122,16 @@ export default function DetectView() {
   async function askClaude() {
     setBusy(true); setError(""); setRes(null);
     try {
-      const r = await fetch("/api/detect", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text }) });
+      let saved = "";
+      try { saved = localStorage.getItem(PATH_KEY) ?? ""; } catch {}
+      const p = (claudePath.trim() || saved).replace(/^"|"$/g, ""); // "Copy as path" in Explorer adds quotes
+      if (!claudePath && saved) setClaudePath(saved);
+      const r = await fetch("/api/detect", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text, claudePath: p || undefined }) });
       const j = await r.json();
-      if (!r.ok) setError(j.error ?? "Something went wrong."); else setRes(j);
+      setNeedPath(!!j.needPath);
+      if (!r.ok) { setError(j.error ?? "Something went wrong."); return; }
+      setRes(j);
+      try { if (p) localStorage.setItem(PATH_KEY, p); } catch {}
     } catch {
       setError("Could not reach the server.");
     } finally {
@@ -240,6 +250,17 @@ export default function DetectView() {
           </div>
         )}
         {error && <p className="font-medium text-bad">✗ {error}</p>}
+        {needPath && (
+          <div className="grid gap-2">
+            <Label htmlFor="claude-path">Path to claude.exe</Label>
+            <Input id="claude-path" value={claudePath} onChange={(e) => setClaudePath(e.target.value)} spellCheck={false} className="font-mono"
+              placeholder="C:\Users\you\.vscode\extensions\anthropic.claude-code-…\resources\native-binary\claude.exe" />
+            <div className="flex flex-wrap items-center gap-3">
+              <Button onClick={askClaude} disabled={busy || !claudePath.trim()}>{busy ? "Asking Claude…" : "Save and ask"}</Button>
+              <Note>Saved in this browser only. Run <code>where claude</code> in a terminal to find it.</Note>
+            </div>
+          </div>
+        )}
 
         {res && (
           <Section n={n.result + 1} title="Claude explains">
