@@ -74,11 +74,22 @@ export default function DetectView() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [res, setRes] = useState<DetectResult | null>(null);
-  const [needPath, setNeedPath] = useState(false);
+  // claude.exe on this PC: undefined = still checking (or hosted), null = not installed
+  const [found, setFound] = useState<string | null | undefined>(undefined);
   const [claudePath, setClaudePath] = useState("");
   const [installing, setInstalling] = useState(false);
   const [installed, setInstalled] = useState("");
   const [showPath, setShowPath] = useState(false);
+
+  // Local dev only: find claude.exe when the page opens, so the path is filled in or Install is offered up front
+  useEffect(() => {
+    if (HOSTED) return;
+    let saved = "";
+    try { saved = localStorage.getItem(PATH_KEY) ?? ""; } catch {}
+    fetch(`/api/detect/install?path=${encodeURIComponent(saved)}`).then((r) => r.json())
+      .then((j: { path?: string | null }) => { setFound(j.path ?? null); setClaudePath(j.path ?? ""); })
+      .catch(() => {}); // leave undefined: Ask Claude reports the problem if there is one
+  }, []);
 
   // Instant decode with the Encoding tab's code: Base64, Base64URL, hex, URL encoding, HTML entities
   const quick = useMemo(() => {
@@ -125,20 +136,17 @@ export default function DetectView() {
   async function askClaude() {
     setBusy(true); setError(""); setRes(null);
     try {
-      let saved = "";
-      try { saved = localStorage.getItem(PATH_KEY) ?? ""; } catch {}
-      const p = (claudePath.trim() || saved).replace(/^"|"$/g, ""); // "Copy as path" in Explorer adds quotes
-      if (!claudePath && saved) setClaudePath(saved);
+      const p = claudePath.trim().replace(/^"|"$/g, ""); // "Copy as path" in Explorer adds quotes
       const r = await fetch("/api/detect", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text, claudePath: p || undefined }) });
       const j = await r.json();
-      setNeedPath(!!j.needPath);
       if (!r.ok) {
         // "not found" (502) is explained by the setup card; a rejected path (400) is shown inside it
+        if (j.needPath) { setFound(null); setShowPath(r.status === 400); }
         if (!(j.needPath && r.status === 502)) setError(j.error ?? "Something went wrong.");
         return;
       }
       setRes(j); setInstalled(""); setShowPath(false);
-      try { if (p) localStorage.setItem(PATH_KEY, p); } catch {}
+      if (p) { setFound(p); try { localStorage.setItem(PATH_KEY, p); } catch {} }
     } catch {
       setError("Could not reach the server.");
     } finally {
@@ -152,7 +160,7 @@ export default function DetectView() {
       const r = await fetch("/api/detect/install", { method: "POST" });
       const j = await r.json();
       if (!r.ok) { setError(j.error ?? "Install failed."); return; }
-      setClaudePath(j.path); setInstalled(j.path); setError("");
+      setClaudePath(j.path); setInstalled(j.path); setFound(j.path); setError("");
       try { localStorage.setItem(PATH_KEY, j.path); } catch {}
     } catch {
       setError("Could not reach the server.");
@@ -267,12 +275,28 @@ export default function DetectView() {
 
         {rule && phase === "done" && (
           <div className="flex flex-wrap items-center gap-3">
-            <Button onClick={askClaude} disabled={busy || HOSTED}>{busy ? "Asking Claude…" : res ? "Ask Claude again" : "Ask Claude to explain"}</Button>
-            <Note>{HOSTED ? LOCAL_ONLY : "Optional: Claude explains the result in plain words. Takes a few seconds, and the text is sent to Claude."}</Note>
+            <Button onClick={askClaude} disabled={busy || HOSTED || found === null}>{busy ? "Asking Claude…" : res ? "Ask Claude again" : "Ask Claude to explain"}</Button>
+            <Note>{HOSTED ? LOCAL_ONLY : found === null ? "Install Claude Code first (below)." : "Optional: Claude explains the result in plain words. Takes a few seconds, and the text is sent to Claude."}</Note>
           </div>
         )}
-        {error && !needPath && <p className="font-medium text-bad">✗ {error}</p>}
-        {needPath && (
+        {rule && phase === "done" && found && !installed && (showPath ? (
+          <div className="flex items-center gap-2">
+            <Input aria-label="Path to claude.exe" value={claudePath} onChange={(e) => setClaudePath(e.target.value)} spellCheck={false}
+              className="min-w-0 flex-1 font-mono text-[13px]" autoFocus onKeyDown={(e) => e.key === "Enter" && setShowPath(false)} />
+            <button type="button" onClick={() => setShowPath(false)} className="text-sm font-medium text-[var(--accent)] hover:underline">Done</button>
+          </div>
+        ) : (
+          <p className="-mt-2 flex min-w-0 items-center gap-1.5 text-[13px] text-muted">
+            <span className="shrink-0 text-ok">✓</span>
+            <span className="shrink-0">Claude Code ready</span>
+            <span aria-hidden>·</span>
+            <span className="min-w-0 truncate font-mono" title={claudePath}>{claudePath}</span>
+            <span aria-hidden>·</span>
+            <button type="button" onClick={() => setShowPath(true)} className="shrink-0 font-medium text-[var(--accent)] hover:underline">Change</button>
+          </p>
+        ))}
+        {error && found !== null && !installed && <p className="font-medium text-bad">✗ {error}</p>}
+        {rule && phase === "done" && (found === null || installed) && (
           <div className="grid gap-3 rounded-xl border border-line bg-code px-4 py-4" role="status">
             {installed ? (
               <>
