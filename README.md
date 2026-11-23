@@ -19,17 +19,21 @@ The site has three parts, switched with the tabs at the top:
 | Category | Method | Stands for | Status |
 |---|---|---|---|
 | Hashing | MD5 | Message-Digest Algorithm 5 | Broken: checksums only |
+| Hashing | SHA-1 | Secure Hash Algorithm 1 | Broken: collisions since 2017 |
 | Hashing | SHA-256 | Secure Hash Algorithm, 256-bit | Recommended |
+| Hashing | SHA-512 | Secure Hash Algorithm, 512-bit | Recommended |
 | Hashing | bcrypt | Blowfish-based crypt | Recommended for passwords |
 | Symmetric | DES | Data Encryption Standard | Broken |
 | Symmetric | 3DES | Triple Data Encryption Standard | Retired |
 | Symmetric | AES | Advanced Encryption Standard | Recommended (AES-GCM) |
 | Symmetric | SEED | A name (KISA, Korea) | Korean standard |
+| Symmetric | ARIA | Academy, Research Institute, Agency (NSRI, Korea) | Korean standard |
+| Symmetric | ChaCha20 | ChaCha, 20 rounds (with Poly1305) | Recommended |
 | Asymmetric | RSA | Rivest–Shamir–Adleman | Recommended (2048+ bits) |
 | Asymmetric | 공동인증서 | Korean joint certificate (NPKI) | In use in Korea |
 
-Test vectors come from the official sources: RFC 1321 (MD5), NIST FIPS 180 (SHA-256), the OpenBSD bcrypt suite,
-FIPS 46 / SP 800-67 (DES, 3DES), NIST SP 800-38A and the GCM spec (AES), RFC 4269 (SEED).
+Test vectors come from the official sources: RFC 1321 (MD5), NIST FIPS 180 (SHA-1, SHA-256, SHA-512), the OpenBSD bcrypt suite,
+FIPS 46 / SP 800-67 (DES, 3DES), NIST SP 800-38A and the GCM spec (AES), RFC 4269 (SEED), RFC 5794 (ARIA), RFC 8439 (ChaCha20-Poly1305).
 
 ## Run the website
 
@@ -48,6 +52,15 @@ npm start          # serve the production build
 npm run lint       # check the code
 ```
 
+## Test the detection engine
+
+```bash
+node eval/gen.mjs              # real test data: eval/data/dev.json (to build rules) + test.json (to score them)
+node eval/gen-kr.mjs           # Korean finance set: ARIA, SHA-384, HMAC, PBKDF2, ECDSA, RSA-OAEP -> data/kr-dev.json + kr-test.json
+node eval/evaluate.mts test    # scores src/lib/classify.ts -> eval/report-test.md (confusion matrix, precision, recall, F1)
+node eval/run-ai.mjs data/ai-before.json   # optional: same scores for the Claude engine (needs npm start, uses claude.exe)
+```
+
 ## Run the Java code
 
 Requires **Java 17 or newer**. Each file runs on its own, with no build step, and prints its self-checks:
@@ -55,6 +68,7 @@ Requires **Java 17 or newer**. Each file runs on its own, with no build step, an
 ```bash
 cd java/aes && java Aes.java
 cd java/seed && java Seed.java
+cd java/aria && java Aria.java
 cd java/bcrypt && java -cp lib/jbcrypt-0.4.jar Bcrypt.java   # bcrypt needs its library
 ```
 
@@ -77,6 +91,10 @@ src/
   components/impl/      Playground panels (one per method family) + shared UI kit
   lib/impl/             Playground logic and test vectors, no React
   lib/seed.ts           SEED cipher, written by hand (browsers and Java don't include it)
+  lib/classify.ts       Detect's rule engine: hash / symmetric / asymmetric from structure, UNKNOWN when unsure
+  lib/aria.ts           ARIA cipher (Korean standard, RFC 5794), written by hand (browsers and Java don't include it)
+  lib/chacha.ts         ChaCha20-Poly1305, written by hand (browsers don't include it)
+eval/                   detection test data, scoring scripts and reports
 java/                   one runnable Java file per method, with self-checks
 ```
 
@@ -90,4 +108,4 @@ java/                   one runnable Java file per method, with self-checks
 
 - The code includes **test keys on purpose**: an RSA key pair and 공동인증서 test sets (password `test1234!`),
   so the self-checks can prove the browser and Java produce the same formats. They are public: never use them for anything real.
-- MD5, DES and 3DES are included to show why they are broken or retired. Use SHA-256, bcrypt and AES-GCM for real work.
+- MD5, SHA-1, DES and 3DES are included to show why they are broken or retired. Use SHA-256, bcrypt and AES-GCM for real work.

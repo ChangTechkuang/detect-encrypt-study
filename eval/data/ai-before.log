@@ -1,0 +1,45 @@
+1/45 MD5 (hex) -> hashing / likely / MD5 hash
+2/45 SHA-1 (hex) -> hashing / likely / SHA-1
+3/45 SHA-256 (hex) -> hashing / likely / SHA-256
+4/45 SHA-512 (hex) -> hashing / likely / SHA-512 hash
+5/45 AES-128-CBC (hex) -> hashing / likely / SHA-256 hash
+6/45 AES-128-GCM (hex) -> symmetric / possible / AES-GCM or ChaCha20-Poly1305 (12-byte nonce + 8-byte ciphertext + 16-byte tag)
+7/45 AES-192-CBC (hex) -> hashing / likely / SHA-256 hash
+8/45 AES-192-GCM (hex) -> symmetric / possible / ChaCha20-Poly1305 (12-byte nonce + 8-byte ciphertext + 16-byte tag)
+9/45 AES-256-CBC (hex) -> hashing / likely / SHA-256
+10/45 SEED-CBC (hex) -> hashing / likely / SHA-256
+11/45 AES-256-GCM (hex) -> symmetric / possible / AES-GCM or ChaCha20-Poly1305 (12-byte nonce + 8-byte ciphertext + 16-byte tag)
+12/45 ChaCha20-Poly1305 (hex) -> symmetric / possible / ChaCha20-Poly1305 or AES-GCM (12-byte nonce + 8-byte ciphertext + 16-byte tag)
+13/45 RSA-2048 (hex) -> asymmetric / likely / RSA-2048 ciphertext or signature (raw, hex)
+14/45 RSA-4096 (hex) -> asymmetric / likely / RSA-4096 ciphertext or signature
+15/45 ECIES-P256 (hex) -> symmetric / possible / ChaCha20-Poly1305 or AES-GCM ciphertext (12-byte nonce + 73-byte message + 16-byte tag)
+16/45 MD5 (base64) -> symmetric / possible / AES-128/192/256 ciphertext, ECB mode, one block
+17/45 SHA-1 (base64) -> hashing / likely / SHA-1 (Base64-encoded)
+18/45 SHA-256 (base64) -> hashing / possible / SHA-256 digest, Base64 encoded
+19/45 SHA-512 (base64) -> hashing / likely / SHA-512 digest (Base64)
+20/45 AES-128-GCM (base64) -> symmetric / possible / AES-GCM or ChaCha20-Poly1305 (12-byte nonce + 8 bytes of ciphertext + 16-byte tag)
+21/45 AES-128-CBC (base64) -> hashing / likely / SHA-256 hash (Base64-encoded)
+22/45 AES-192-GCM (base64) -> symmetric / likely / ChaCha20-Poly1305 or AES-GCM (12-byte nonce + 8-byte ciphertext + 16-byte tag)
+23/45 AES-192-CBC (base64) -> hashing / possible / SHA-256 hash (Base64-encoded)
+24/45 AES-256-GCM (base64) -> symmetric / likely / ChaCha20-Poly1305 (12-byte nonce + 8-byte ciphertext + 16-byte tag)
+25/45 AES-256-CBC (base64) -> hashing / likely / SHA-256 hash, Base64-encoded (or another 256-bit hash such as SHA3-256)
+26/45 SEED-CBC (base64) -> hashing / possible / SHA-256 digest (Base64-encoded)
+27/45 ChaCha20-Poly1305 (base64) -> symmetric / possible / ChaCha20 or ChaCha20-Poly1305 (12-byte nonce + ciphertext)
+28/45 RSA-2048 (base64) -> asymmetric / likely / RSA-2048 ciphertext or signature (Base64)
+29/45 MD5 (hex) -> hashing / likely / MD5 hash
+30/45 RSA-4096 (base64) -> asymmetric / likely / RSA-4096 ciphertext or signature (Base64)
+31/45 ECIES-P256 (base64) -> symmetric / possible / ChaCha20-Poly1305 (12-byte nonce + ciphertext + 16-byte tag)
+32/45 SHA-1 (hex) -> hashing / likely / SHA-1 hash
+33/45 SHA-256 (hex) -> hashing / likely / SHA-256 hash
+34/45 SHA-512 (hex) -> hashing / likely / SHA-512 hash
+35/45 AES-128-GCM (hex) -> hashing / likely / SHA-512
+36/45 AES-128-CBC (hex) -> hashing / likely / SHA-512
+37/45 AES-192-GCM (hex) -> hashing / likely / SHA-512
+38/45 AES-192-CBC (hex) -> hashing / likely / SHA-512
+39/45 AES-256-GCM (hex) -> hashing / likely / SHA-512
+40/45 AES-256-CBC (hex) -> hashing / likely / SHA-512
+41/45 SEED-CBC (hex) -> hashing / likely / SHA-512
+42/45 ChaCha20-Poly1305 (hex) -> hashing / likely / SHA-512
+43/45 RSA-2048 (hex) -> asymmetric / likely / RSA-2048 ciphertext or signature
+44/45 RSA-4096 (hex) -> asymmetric / likely / RSA-4096 ciphertext or signature (raw, hex encoded)
+45/45 ECIES-P256 (hex) -> asymmetric / likely / Uncompressed elliptic-curve public key point (likely brainpoolP512r1)

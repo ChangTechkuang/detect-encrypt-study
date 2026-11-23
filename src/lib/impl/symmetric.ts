@@ -1,8 +1,10 @@
-// Symmetric encryption (DES, 3DES, AES, SEED): logic, method configs and test vectors for SymPanel.
+// Symmetric encryption (DES, 3DES, AES, SEED, ARIA, ChaCha20): logic, method configs and test vectors for SymPanel.
 import type CryptoJSNs from "crypto-js";
 import type forgeNs from "node-forge";
 import { bin, cat, dec, enc, fromB64, fromHex, pad, random, toB64, toHex, unbin, unpad } from "@/lib/bytes";
 import { seed } from "@/lib/seed";
+import { aria } from "@/lib/aria";
+import { aeadDecrypt, aeadEncrypt, chacha20 } from "@/lib/chacha";
 
 type Fn = (key: Uint8Array, iv: Uint8Array, data: Uint8Array) => Promise<Uint8Array>;
 /** name, key, iv, plaintext, ciphertext (hex) */
@@ -18,7 +20,7 @@ export type SymConfig = {
 };
 export type AesMode = "GCM" | "CBC" | "CTR" | "ECB";
 export type SymMethod = SymConfig & {
-  id: "des" | "tripledes" | "aes" | "seed"; name: string; keyBytes: number; about: string;
+  id: "des" | "tripledes" | "aes" | "seed" | "aria" | "chacha20"; name: string; keyBytes: number; about: string;
   keySizes?: number[]; modes?: Record<AesMode, SymConfig>; mode?: AesMode;
 };
 
@@ -254,6 +256,49 @@ export const SYM_METHODS: Record<SymMethod["id"], SymMethod> = {
       ["RFC 4269 B.2", "000102030405060708090a0b0c0d0e0f", "", "0".repeat(32), "c11f22f20140505084483597e4370f43"],
       ["RFC 4269 B.3", "4706480851e61be85d74bfb3fd956185", "", "83a2f8a288641fb9a4e9a5cc2f131c7d", "ee54d13ebcae706d226bc3142cd40d4a"],
       ["RFC 4269 B.4", "28dbc3bc49ffd87dcfa509b11d422be7", "", "b41e6be2eba84a148e2eed84593c5ec7", "9b9b7bfcd1813cb95d0b3618f40f5122"],
+    ],
+  },
+  // ARIA (RFC 5794, Korean standard KS X 1213): SPN cipher on 16-byte blocks, 12/14/16 rounds. Hand-written in src/lib/aria.ts.
+  aria: {
+    id: "aria", name: "ARIA", keyBytes: 16, keySizes: [16, 24, 32], ivBytes: 16, minData: 16, block: 16,
+    about: "ARIA (NSRI, 2004; RFC 5794; Korean standard KS X 1213) is South Korea's second national block cipher: 16-byte blocks like AES, with a 128, 192 or 256-bit key (12, 14 or 16 rounds). Korean public-sector and financial systems use it next to SEED and AES. Here: CBC mode with PKCS#7 padding and a random IV. Neither the browser nor plain Java ships ARIA, so both sides implement it by hand. Java: java/aria/Aria.java",
+    format: "IV (16 bytes) + ciphertext",
+    warning: "ARIA has no known practical attack, but this CBC mode has no authentication tag: changed data can decrypt to garbage without an error. Outside Korea, AES-GCM is the usual choice. " + KEY_WARNING,
+    ivNote: RANDOM_IV(16),
+    encrypt: async (k, iv, d) => aria(true, k, iv, pad(d, 16)),
+    decrypt: async (k, iv, d) => unpad(aria(false, k, iv, d), 16),
+    okMsg: "✓ Decrypted. CBC has no tag, so this does NOT prove the data is unchanged.",
+    failMsg: PAD_FAIL,
+    source: "RFC 5794 appendix A, ECB",
+    vecEnc: async (k, iv, d) => aria(true, k, null, d),
+    vecDec: async (k, iv, d) => aria(false, k, null, d),
+    vectors: [ // name, key, iv (unused), plaintext, ciphertext (hex)
+      ["RFC 5794 A.1 (128-bit key)", "000102030405060708090a0b0c0d0e0f", "", "00112233445566778899aabbccddeeff", "d718fbd6ab644c739da95f3be6451778"],
+      ["RFC 5794 A.2 (192-bit key)", "000102030405060708090a0b0c0d0e0f1011121314151617", "", "00112233445566778899aabbccddeeff", "26449c1805dbe7aa25a468ce263a9e79"],
+      ["RFC 5794 A.3 (256-bit key)", "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f", "", "00112233445566778899aabbccddeeff", "f92bd7c79fb72e2f2b8f80c1972d24fc"],
+    ],
+  },
+  // ChaCha20-Poly1305 (RFC 8439): a stream cipher + a tag, hand-written in src/lib/chacha.ts.
+  // Test vectors use plain ChaCha20; their "iv" = 4-byte block counter (little-endian) + 12-byte nonce, like OpenSSL.
+  chacha20: {
+    id: "chacha20", name: "ChaCha20", keyBytes: 32, ivBytes: 12, minData: 16, block: 1,
+    about: "ChaCha20 (Daniel J. Bernstein, 2008; RFC 8439) is a stream cipher: it turns a 256-bit key, a 12-byte nonce and a block counter into a stream of random-looking bytes, and XORs it with the text. 20 rounds of add, rotate and XOR. Poly1305 adds a 16-byte tag, so a wrong key or changed data is detected. It is fast without special hardware, so phones and TLS 1.3 use it. Java: java/chacha20/ChaCha20.java",
+    format: "nonce (12 bytes) + ciphertext + tag (16 bytes)",
+    warning: "Never reuse a nonce with the same key: two messages would share a keystream, and XORing them cancels it out. This page makes a new one every time. " + KEY_WARNING,
+    ivNote: "A new random 12-byte nonce is used each time, so encrypting the same text twice gives different output. Both still decrypt.",
+    encrypt: async (k, iv, d) => aeadEncrypt(k, iv, d),
+    decrypt: async (k, iv, d) => aeadDecrypt(k, iv, d),
+    okMsg: "✓ Decrypted. The Poly1305 tag checks out, so the data is unchanged.",
+    failMsg: "✗ Decryption failed: wrong key, or the data was changed",
+    source: "RFC 8439, plain ChaCha20",
+    vecEnc: async (k, iv, d) => chacha20(k, iv.slice(4), new DataView(iv.buffer, iv.byteOffset).getUint32(0, true), d),
+    vecDec: async (k, iv, d) => chacha20(k, iv.slice(4), new DataView(iv.buffer, iv.byteOffset).getUint32(0, true), d),
+    vectors: [ // name, key, counter + nonce, plaintext, ciphertext (hex)
+      ["RFC 8439 2.4.2 \"sunscreen\"", "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f", "01000000000000000000004a00000000",
+        "4c616469657320616e642047656e746c656d656e206f662074686520636c617373206f66202739393a204966204920636f756c64206f6666657220796f75206f6e6c79206f6e652074697020666f7220746865206675747572652c2073756e73637265656e20776f756c642062652069742e",
+        "6e2e359a2568f98041ba0728dd0d6981e97e7aec1d4360c20a27afccfd9fae0bf91b65c5524733ab8f593dabcd62b3571639d624e65152ab8f530c359f0861d807ca0dbf500d6a6156a38e088a22b65e52bc514d16ccf806818ce91ab77937365af90bbf74a35be6b40b8eedf2785e42874d"],
+      ["RFC 8439 A.2 #1 (all zeros)", "0".repeat(64), "0".repeat(32), "0".repeat(128),
+        "76b8e0ada0f13d90405d6ae55386bd28bdd219b8a08ded1aa836efcc8b770dc7da41597c5157488d7724e03fb8d84a376a43b8f41518a11cc387b669b2ee6586"],
     ],
   },
 };

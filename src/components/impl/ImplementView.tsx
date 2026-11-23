@@ -19,12 +19,16 @@ const GongdongPanel = dynamic(() => import("./GongdongPanel"), { loading });
 function Panel({ id }: { id: string }) {
   switch (id) {
     case "md5":
-    case "sha256": return <HashPanel method={id} />;
+    case "sha1":
+    case "sha256":
+    case "sha512": return <HashPanel method={id} />;
     case "bcrypt": return <BcryptPanel />;
     case "des":
     case "tripledes":
     case "aes":
-    case "seed": return <SymPanel method={id} />;
+    case "seed":
+    case "aria":
+    case "chacha20": return <SymPanel method={id} />;
     case "rsa": return <RsaPanel />;
     case "gongdong": return <GongdongPanel />;
     default: return null;

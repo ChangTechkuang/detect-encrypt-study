@@ -1,0 +1,272 @@
+[
+ {
+  "id": "test-1",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "MD5 hash"
+ },
+ {
+  "id": "test-3",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-1"
+ },
+ {
+  "id": "test-5",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-256"
+ },
+ {
+  "id": "test-7",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512 hash"
+ },
+ {
+  "id": "test-11",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-256 hash"
+ },
+ {
+  "id": "test-9",
+  "category": "symmetric",
+  "confidence": "possible",
+  "algorithm": "AES-GCM or ChaCha20-Poly1305 (12-byte nonce + 8-byte ciphertext + 16-byte tag)"
+ },
+ {
+  "id": "test-15",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-256 hash"
+ },
+ {
+  "id": "test-13",
+  "category": "symmetric",
+  "confidence": "possible",
+  "algorithm": "ChaCha20-Poly1305 (12-byte nonce + 8-byte ciphertext + 16-byte tag)"
+ },
+ {
+  "id": "test-19",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-256"
+ },
+ {
+  "id": "test-21",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-256"
+ },
+ {
+  "id": "test-17",
+  "category": "symmetric",
+  "confidence": "possible",
+  "algorithm": "AES-GCM or ChaCha20-Poly1305 (12-byte nonce + 8-byte ciphertext + 16-byte tag)"
+ },
+ {
+  "id": "test-23",
+  "category": "symmetric",
+  "confidence": "possible",
+  "algorithm": "ChaCha20-Poly1305 or AES-GCM (12-byte nonce + 8-byte ciphertext + 16-byte tag)"
+ },
+ {
+  "id": "test-25",
+  "category": "asymmetric",
+  "confidence": "likely",
+  "algorithm": "RSA-2048 ciphertext or signature (raw, hex)"
+ },
+ {
+  "id": "test-27",
+  "category": "asymmetric",
+  "confidence": "likely",
+  "algorithm": "RSA-4096 ciphertext or signature"
+ },
+ {
+  "id": "test-29",
+  "category": "symmetric",
+  "confidence": "possible",
+  "algorithm": "ChaCha20-Poly1305 or AES-GCM ciphertext (12-byte nonce + 73-byte message + 16-byte tag)"
+ },
+ {
+  "id": "test-62",
+  "category": "symmetric",
+  "confidence": "possible",
+  "algorithm": "AES-128/192/256 ciphertext, ECB mode, one block"
+ },
+ {
+  "id": "test-64",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-1 (Base64-encoded)"
+ },
+ {
+  "id": "test-66",
+  "category": "hashing",
+  "confidence": "possible",
+  "algorithm": "SHA-256 digest, Base64 encoded"
+ },
+ {
+  "id": "test-68",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512 digest (Base64)"
+ },
+ {
+  "id": "test-70",
+  "category": "symmetric",
+  "confidence": "possible",
+  "algorithm": "AES-GCM or ChaCha20-Poly1305 (12-byte nonce + 8 bytes of ciphertext + 16-byte tag)"
+ },
+ {
+  "id": "test-72",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-256 hash (Base64-encoded)"
+ },
+ {
+  "id": "test-74",
+  "category": "symmetric",
+  "confidence": "likely",
+  "algorithm": "ChaCha20-Poly1305 or AES-GCM (12-byte nonce + 8-byte ciphertext + 16-byte tag)"
+ },
+ {
+  "id": "test-76",
+  "category": "hashing",
+  "confidence": "possible",
+  "algorithm": "SHA-256 hash (Base64-encoded)"
+ },
+ {
+  "id": "test-78",
+  "category": "symmetric",
+  "confidence": "likely",
+  "algorithm": "ChaCha20-Poly1305 (12-byte nonce + 8-byte ciphertext + 16-byte tag)"
+ },
+ {
+  "id": "test-80",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-256 hash, Base64-encoded (or another 256-bit hash such as SHA3-256)"
+ },
+ {
+  "id": "test-82",
+  "category": "hashing",
+  "confidence": "possible",
+  "algorithm": "SHA-256 digest (Base64-encoded)"
+ },
+ {
+  "id": "test-84",
+  "category": "symmetric",
+  "confidence": "possible",
+  "algorithm": "ChaCha20 or ChaCha20-Poly1305 (12-byte nonce + ciphertext)"
+ },
+ {
+  "id": "test-86",
+  "category": "asymmetric",
+  "confidence": "likely",
+  "algorithm": "RSA-2048 ciphertext or signature (Base64)"
+ },
+ {
+  "id": "test-121",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "MD5 hash"
+ },
+ {
+  "id": "test-88",
+  "category": "asymmetric",
+  "confidence": "likely",
+  "algorithm": "RSA-4096 ciphertext or signature (Base64)"
+ },
+ {
+  "id": "test-90",
+  "category": "symmetric",
+  "confidence": "possible",
+  "algorithm": "ChaCha20-Poly1305 (12-byte nonce + ciphertext + 16-byte tag)"
+ },
+ {
+  "id": "test-123",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-1 hash"
+ },
+ {
+  "id": "test-125",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-256 hash"
+ },
+ {
+  "id": "test-127",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512 hash"
+ },
+ {
+  "id": "test-129",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512"
+ },
+ {
+  "id": "test-131",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512"
+ },
+ {
+  "id": "test-133",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512"
+ },
+ {
+  "id": "test-135",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512"
+ },
+ {
+  "id": "test-137",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512"
+ },
+ {
+  "id": "test-139",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512"
+ },
+ {
+  "id": "test-141",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512"
+ },
+ {
+  "id": "test-143",
+  "category": "hashing",
+  "confidence": "likely",
+  "algorithm": "SHA-512"
+ },
+ {
+  "id": "test-145",
+  "category": "asymmetric",
+  "confidence": "likely",
+  "algorithm": "RSA-2048 ciphertext or signature"
+ },
+ {
+  "id": "test-147",
+  "category": "asymmetric",
+  "confidence": "likely",
+  "algorithm": "RSA-4096 ciphertext or signature (raw, hex encoded)"
+ },
+ {
+  "id": "test-149",
+  "category": "asymmetric",
+  "confidence": "likely",
+  "algorithm": "Uncompressed elliptic-curve public key point (likely brainpoolP512r1)"
+ }
+]

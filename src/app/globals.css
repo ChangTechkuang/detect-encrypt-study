@@ -11,6 +11,7 @@
   --ok: #1f7a4d;
   --bad: #b3261e;
   --warn: #9a6200;
+  --info: #1d5fbf;
   --hashing: #b45309;
   --symmetric: #0f766e;
   --asymmetric: #4f46e5;
@@ -27,6 +28,7 @@
     --ok: #5fd39a;
     --bad: #ff8a80;
     --warn: #f2b84b;
+    --info: #7cb3ff;
     --hashing: #f59e0b;
     --symmetric: #2dd4bf;
     --asymmetric: #a5b4fc;
@@ -43,6 +45,7 @@
   --color-ok: var(--ok);
   --color-bad: var(--bad);
   --color-warn: var(--warn);
+  --color-info: var(--info);
   --color-hashing: var(--hashing);
   --color-symmetric: var(--symmetric);
   --color-asymmetric: var(--asymmetric);

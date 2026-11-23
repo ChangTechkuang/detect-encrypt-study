@@ -6,7 +6,9 @@ import { usePathname } from "next/navigation";
 const LAYOUTS = [
   { href: "/", name: "Study" },
   { href: "/ascii", name: "ASCII" },
+  { href: "/encoding", name: "Encoding" },
   { href: "/playground", name: "Playground" },
+  { href: "/detect", name: "Detect" },
 ];
 
 /** Study | ASCII | Playground switch at the top of every page. */

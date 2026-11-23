@@ -1,0 +1,1034 @@
+{
+ "set": "kr-dev",
+ "note": "Throwaway keys for testing only.",
+ "samples": [
+  {
+   "id": "kr-dev-1",
+   "algorithm": "SHA-384",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "b77867ce54eaff0de0b3efd0e5da5009c39dbc51f42f7dd4fa243d85a576b2df203ab5d51bf3a0088594582e5116f786",
+   "bytes": 48,
+   "params": {}
+  },
+  {
+   "id": "kr-dev-2",
+   "algorithm": "SHA-384",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "t3hnzlTq/w3gs+/Q5dpQCcOdvFH0L33U+iQ9haV2st8gOrXVG/OgCIWUWC5RFveG",
+   "bytes": 48,
+   "params": {}
+  },
+  {
+   "id": "kr-dev-3",
+   "algorithm": "HMAC-SHA-256",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "f54f7327eba321216f9e5d9c15424c91e850d213cd3965d6de9d4d1df778b4e0",
+   "bytes": 32,
+   "params": {
+    "key": "cf1ba3781b931b0d6a4de8acb1e4efce64018470f01dbb4dd0065df06854bf9a"
+   }
+  },
+  {
+   "id": "kr-dev-4",
+   "algorithm": "HMAC-SHA-256",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "9U9zJ+ujISFvnl2cFUJMkehQ0hPNOWXW3p1NHfd4tOA=",
+   "bytes": 32,
+   "params": {
+    "key": "cf1ba3781b931b0d6a4de8acb1e4efce64018470f01dbb4dd0065df06854bf9a"
+   }
+  },
+  {
+   "id": "kr-dev-5",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "text",
+   "value": "pbkdf2_sha256$6000$P1tc9OO4fWGjo4Cg$8MvOMQcFta1T9m03E6UVHP2VHXi6i8C/njL4iYlGDPg=",
+   "bytes": 0,
+   "params": {
+    "salt": "P1tc9OO4fWGjo4Cg",
+    "rounds": 6000,
+    "format": "Django"
+   }
+  },
+  {
+   "id": "kr-dev-6",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "f0cbce310705b5ad53f66d3713a5151cfd951d78ba8bc0bf9e32f88989460cf8",
+   "bytes": 32,
+   "params": {
+    "salt": "P1tc9OO4fWGjo4Cg",
+    "rounds": 6000,
+    "format": "raw output"
+   }
+  },
+  {
+   "id": "kr-dev-7",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "8MvOMQcFta1T9m03E6UVHP2VHXi6i8C/njL4iYlGDPg=",
+   "bytes": 32,
+   "params": {
+    "salt": "P1tc9OO4fWGjo4Cg",
+    "rounds": 6000,
+    "format": "raw output"
+   }
+  },
+  {
+   "id": "kr-dev-8",
+   "algorithm": "ARIA-128-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "b6b5878bf20b3203b765819040c4028c0d4e5092c03f504fc5efbf69774bcdc1",
+   "bytes": 32,
+   "params": {
+    "key": "5a03ca3915abaed0a1d8dcbacc9dde12",
+    "iv": "b6b5878bf20b3203b765819040c4028c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-9",
+   "algorithm": "ARIA-128-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "trWHi/ILMgO3ZYGQQMQCjA1OUJLAP1BPxe+/aXdLzcE=",
+   "bytes": 32,
+   "params": {
+    "key": "5a03ca3915abaed0a1d8dcbacc9dde12",
+    "iv": "b6b5878bf20b3203b765819040c4028c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-10",
+   "algorithm": "ARIA-192-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "344d7c9fde12f1b2698866f3c74ded7371d29a8a8e3d35b79e608a0ea68bd2dd",
+   "bytes": 32,
+   "params": {
+    "key": "340568334d135e27062c02b4698f79a160a9a1563c5903a2",
+    "iv": "344d7c9fde12f1b2698866f3c74ded73",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-11",
+   "algorithm": "ARIA-192-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "NE18n94S8bJpiGbzx03tc3HSmoqOPTW3nmCKDqaL0t0=",
+   "bytes": 32,
+   "params": {
+    "key": "340568334d135e27062c02b4698f79a160a9a1563c5903a2",
+    "iv": "344d7c9fde12f1b2698866f3c74ded73",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-12",
+   "algorithm": "ARIA-256-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "cdbeccbb9675534cef8dd65b85531292b00e3769e2619220f9986d6cb63fff1b",
+   "bytes": 32,
+   "params": {
+    "key": "c9ba2ce5c92c38692cee2883d042113a21f9d01cdbcb74ac6d8ef9a4491f0125",
+    "iv": "cdbeccbb9675534cef8dd65b85531292",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-13",
+   "algorithm": "ARIA-256-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "zb7Mu5Z1U0zvjdZbhVMSkrAON2niYZIg+ZhtbLY//xs=",
+   "bytes": 32,
+   "params": {
+    "key": "c9ba2ce5c92c38692cee2883d042113a21f9d01cdbcb74ac6d8ef9a4491f0125",
+    "iv": "cdbeccbb9675534cef8dd65b85531292",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-14",
+   "algorithm": "ECDSA-P-256",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "304602210094982d91d4d79e8144e751d1c79f1d302723707682fa5085927061baa56ccfb80221009dc8d07ea9c5acc83041c8c4c7cb2fd0b0c9f6b7b1c2061057b25aad86af158a",
+   "bytes": 72,
+   "params": {
+    "hash": "sha256",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-15",
+   "algorithm": "ECDSA-P-256",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "MEYCIQCUmC2R1NeegUTnUdHHnx0wJyNwdoL6UIWScGG6pWzPuAIhAJ3I0H6pxazIMEHIxMfLL9Cwyfa3scIGEFeyWq2GrxWK",
+   "bytes": 72,
+   "params": {
+    "hash": "sha256",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-16",
+   "algorithm": "ECDSA-P-384",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "3066023100f02907c405c2e709e57a69df313f751bfe729df2ea2a3a4ad4c9b2df99bd77124785637061a920eba63c8f1492ce3837023100d4e7b571ff4e5e8e03c4ba60ad6f2f476f96cebf553bd5a5f4543589f5a0090a170b684b3cf28d2f041f4005392ac97f",
+   "bytes": 104,
+   "params": {
+    "hash": "sha384",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-17",
+   "algorithm": "ECDSA-P-384",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "MGYCMQDwKQfEBcLnCeV6ad8xP3Ub/nKd8uoqOkrUybLfmb13EkeFY3BhqSDrpjyPFJLOODcCMQDU57Vx/05ejgPEumCtby9Hb5bOv1U71aX0VDWJ9aAJChcLaEs88o0vBB9ABTkqyX8=",
+   "bytes": 104,
+   "params": {
+    "hash": "sha384",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-18",
+   "algorithm": "RSA-2048-OAEP",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "1c09a1025886825f359deb61e9c5974763ee50d5be66e038ea950f3ae4e3ad188b0687501e30f2f30edf53e095a80a03f3c0f63082ee01127b10a96f48e95c0ef2828aba972b021400fbb4d0811cd6bade442860a3a1a3300f807b09b5e71c93a3296e1a1a19a97b3a7ea1d1228210c69755115c1470b4002313e0bb5cbfeb0169475ae8a59a58ce5ca8fce29753473a36e86b7e1b6b42e66e850a86be4332d0bae301e13af5c4858c1f1a1c665f24ea9967b0062f220194941aa921c91a2a8071a56b303d4de270b6c7640c221c4c077607cad502ddc23ba102b241d679b83a67fbe482f7e0685f7f03d13281b975f6c27121ed1254076fa35141a1be9401e1",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256"
+   }
+  },
+  {
+   "id": "kr-dev-19",
+   "algorithm": "RSA-2048-OAEP",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "HAmhAliGgl81neth6cWXR2PuUNW+ZuA46pUPOuTjrRiLBodQHjDy8w7fU+CVqAoD88D2MILuARJ7EKlvSOlcDvKCirqXKwIUAPu00IEc1rreRChgo6GjMA+Aewm15xyToyluGhoZqXs6fqHRIoIQxpdVEVwUcLQAIxPgu1y/6wFpR1ropZpYzlyo/OKXU0c6NuhrfhtrQuZuhQqGvkMy0LrjAeE69cSFjB8aHGZfJOqZZ7AGLyIBlJQaqSHJGiqAcaVrMD1N4nC2x2QMIhxMB3YHytUC3cI7oQKyQdZ5uDpn++SC9+BoX38D0TKBuXX2wnEh7RJUB2+jUUGhvpQB4Q==",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256"
+   }
+  },
+  {
+   "id": "kr-dev-20",
+   "algorithm": "SHA-384",
+   "category": "hashing",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "hex",
+   "value": "3be67a24ba03200e76d2f383ba15f4547ac83cb7de70a0c50b6978499c04b599e9adde22eac69bbc8198acc2090a3604",
+   "bytes": 48,
+   "params": {}
+  },
+  {
+   "id": "kr-dev-21",
+   "algorithm": "SHA-384",
+   "category": "hashing",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "base64",
+   "value": "O+Z6JLoDIA520vODuhX0VHrIPLfecKDFC2l4SZwEtZnprd4i6sabvIGYrMIJCjYE",
+   "bytes": 48,
+   "params": {}
+  },
+  {
+   "id": "kr-dev-22",
+   "algorithm": "HMAC-SHA-256",
+   "category": "hashing",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "hex",
+   "value": "ce2ef15e2fc389057c2a4862b0c42c0bb0d7b7aef1c178ffcf0fcd278e20ee8f",
+   "bytes": 32,
+   "params": {
+    "key": "b6963e4b38c9fae0804565c1d9c2f63506d9d947a73b984fdb3a5b1982cd5fc2"
+   }
+  },
+  {
+   "id": "kr-dev-23",
+   "algorithm": "HMAC-SHA-256",
+   "category": "hashing",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "base64",
+   "value": "zi7xXi/DiQV8KkhisMQsC7DXt67xwXj/zw/NJ44g7o8=",
+   "bytes": 32,
+   "params": {
+    "key": "b6963e4b38c9fae0804565c1d9c2f63506d9d947a73b984fdb3a5b1982cd5fc2"
+   }
+  },
+  {
+   "id": "kr-dev-24",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "text",
+   "value": "pbkdf2_sha256$6000$ZrYEmqcuXfxZ7Xkg$378LzBoSyHMTych4Sdww8hrfcf7xSpvdgHZqUmnqnZA=",
+   "bytes": 0,
+   "params": {
+    "salt": "ZrYEmqcuXfxZ7Xkg",
+    "rounds": 6000,
+    "format": "Django"
+   }
+  },
+  {
+   "id": "kr-dev-25",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "hex",
+   "value": "dfbf0bcc1a12c87313c9c87849dc30f21adf71fef14a9bdd80766a5269ea9d90",
+   "bytes": 32,
+   "params": {
+    "salt": "ZrYEmqcuXfxZ7Xkg",
+    "rounds": 6000,
+    "format": "raw output"
+   }
+  },
+  {
+   "id": "kr-dev-26",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "base64",
+   "value": "378LzBoSyHMTych4Sdww8hrfcf7xSpvdgHZqUmnqnZA=",
+   "bytes": 32,
+   "params": {
+    "salt": "ZrYEmqcuXfxZ7Xkg",
+    "rounds": 6000,
+    "format": "raw output"
+   }
+  },
+  {
+   "id": "kr-dev-27",
+   "algorithm": "ARIA-128-CBC",
+   "category": "symmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "hex",
+   "value": "e3c841e03013a9dd4ab5d0832c2d92cca58edf8cc2c6caf05b5b40e8234a37c56749e178b56467b784e3ffeda3463d2c",
+   "bytes": 48,
+   "params": {
+    "key": "777a6c9f5a79d65b9303c8f5b03c4d24",
+    "iv": "e3c841e03013a9dd4ab5d0832c2d92cc",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-28",
+   "algorithm": "ARIA-128-CBC",
+   "category": "symmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "base64",
+   "value": "48hB4DATqd1KtdCDLC2SzKWO34zCxsrwW1tA6CNKN8VnSeF4tWRnt4Tj/+2jRj0s",
+   "bytes": 48,
+   "params": {
+    "key": "777a6c9f5a79d65b9303c8f5b03c4d24",
+    "iv": "e3c841e03013a9dd4ab5d0832c2d92cc",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-29",
+   "algorithm": "ARIA-192-CBC",
+   "category": "symmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "hex",
+   "value": "d5fde592992dbdfeb96caff947ee1d1ff338e25bc7715885f17538e1dc09f6ecd2aee1021f0e532f80dc98bff51c81e8",
+   "bytes": 48,
+   "params": {
+    "key": "f6165035439898d5c612a7a37e7cb2700d5cfc5405005307",
+    "iv": "d5fde592992dbdfeb96caff947ee1d1f",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-30",
+   "algorithm": "ARIA-192-CBC",
+   "category": "symmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "base64",
+   "value": "1f3lkpktvf65bK/5R+4dH/M44lvHcViF8XU44dwJ9uzSruECHw5TL4DcmL/1HIHo",
+   "bytes": 48,
+   "params": {
+    "key": "f6165035439898d5c612a7a37e7cb2700d5cfc5405005307",
+    "iv": "d5fde592992dbdfeb96caff947ee1d1f",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-31",
+   "algorithm": "ARIA-256-CBC",
+   "category": "symmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "hex",
+   "value": "ff16b8352cc9d22dc0b7a4b82765cb1342b71b82e7529824020832973806cbc53a0dc65eb73d86809edfbfe669a4bf92",
+   "bytes": 48,
+   "params": {
+    "key": "3c15d6e79879e5da9b07120cd02c6bf935440fa39dbb97811cab6b6bb55cd016",
+    "iv": "ff16b8352cc9d22dc0b7a4b82765cb13",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-32",
+   "algorithm": "ARIA-256-CBC",
+   "category": "symmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "base64",
+   "value": "/xa4NSzJ0i3At6S4J2XLE0K3G4LnUpgkAggylzgGy8U6DcZetz2GgJ7fv+ZppL+S",
+   "bytes": 48,
+   "params": {
+    "key": "3c15d6e79879e5da9b07120cd02c6bf935440fa39dbb97811cab6b6bb55cd016",
+    "iv": "ff16b8352cc9d22dc0b7a4b82765cb13",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-33",
+   "algorithm": "ECDSA-P-256",
+   "category": "asymmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "hex",
+   "value": "3044022078b2c78518aa0b0f4802ea7b71b2823963a390c9eacc7d1fbaedb59fd44721f602200a4ee779e317bc14a3655d011d276cc0e2483a8494e27aae53a4253c9687ae2f",
+   "bytes": 70,
+   "params": {
+    "hash": "sha256",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-34",
+   "algorithm": "ECDSA-P-256",
+   "category": "asymmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "base64",
+   "value": "MEQCIHiyx4UYqgsPSALqe3Gygjljo5DJ6sx9H7rttZ/URyH2AiAKTud54xe8FKNlXQEdJ2zA4kg6hJTieq5TpCU8loeuLw==",
+   "bytes": 70,
+   "params": {
+    "hash": "sha256",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-35",
+   "algorithm": "ECDSA-P-384",
+   "category": "asymmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "hex",
+   "value": "306502306777726021daca3f347386ec7ea1479388e201562ed165f67bb779d98ee5e56c0450741e584f0e13210e605dff568017023100a9dbb95336e3351e2a6914dc32e849e299b56fee6d7a60270fe85e6c89ac9a0213e7a4bb5a23b93d1c30b0dbf486d9ae",
+   "bytes": 103,
+   "params": {
+    "hash": "sha384",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-36",
+   "algorithm": "ECDSA-P-384",
+   "category": "asymmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "base64",
+   "value": "MGUCMGd3cmAh2so/NHOG7H6hR5OI4gFWLtFl9nu3edmO5eVsBFB0HlhPDhMhDmBd/1aAFwIxAKnbuVM24zUeKmkU3DLoSeKZtW/ubXpgJw/oXmyJrJoCE+eku1ojuT0cMLDb9IbZrg==",
+   "bytes": 103,
+   "params": {
+    "hash": "sha384",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-37",
+   "algorithm": "RSA-2048-OAEP",
+   "category": "asymmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "hex",
+   "value": "105a761df0018ea376c8054a541665a430397524e87a25c392762ba163dc1ff9de63a88fd64eef670a3748f5496c4cc343c2930a5466ead538fc454c7308029df8bf0ab2b6f27d042948226412476bf530c57c6cea54e7a76a7c1efd9b960da80715860f0319cd5df7613c7491e89f27c6fde0dee696fb4103ad7e67d72e13ff206cac6f34c338265eb54a964ee6337fd7dca42b912d1ad3d22f3f68a327789f40c4c866451b1391e13597cc33f8eb8b14517d917abce109aeb77b3c4aeb93134a37667c4a4b8e387df7970c60856657a8d366d40f031b96fc28411b7af774564e2c6d9289711677b4ea390f10a38fce70a5807200214de95bea451f81e5b248",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256"
+   }
+  },
+  {
+   "id": "kr-dev-38",
+   "algorithm": "RSA-2048-OAEP",
+   "category": "asymmetric",
+   "plaintext": "카드번호 1234-5678",
+   "encoding": "base64",
+   "value": "EFp2HfABjqN2yAVKVBZlpDA5dSToeiXDknYroWPcH/neY6iP1k7vZwo3SPVJbEzDQ8KTClRm6tU4/EVMcwgCnfi/CrK28n0EKUgiZBJHa/UwxXxs6lTnp2p8Hv2blg2oBxWGDwMZzV33YTx0keifJ8b94N7mlvtBA61+Z9cuE/8gbKxvNMM4Jl61SpZO5jN/19ykK5EtGtPSLz9ooyd4n0DEyGZFGxOR4TWXzDP464sUUX2RerzhCa63ezxK65MTSjdmfEpLjjh995cMYIVmV6jTZtQPAxuW/ChBG3r3dFZOLG2SiXEWd7TqOQ8Qo4/OcKWAcgAhTelb6kUfgeWySA==",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256"
+   }
+  },
+  {
+   "id": "kr-dev-39",
+   "algorithm": "SHA-384",
+   "category": "hashing",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "hex",
+   "value": "1bf9c62fce040b63f10570af628130c4b7aa7053965f93b56cdd0851e370d97c0e6a18c5b57581ee0710835ee6667299",
+   "bytes": 48,
+   "params": {}
+  },
+  {
+   "id": "kr-dev-40",
+   "algorithm": "SHA-384",
+   "category": "hashing",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "base64",
+   "value": "G/nGL84EC2PxBXCvYoEwxLeqcFOWX5O1bN0IUeNw2XwOahjFtXWB7gcQg17mZnKZ",
+   "bytes": 48,
+   "params": {}
+  },
+  {
+   "id": "kr-dev-41",
+   "algorithm": "HMAC-SHA-256",
+   "category": "hashing",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "hex",
+   "value": "c249ac7cc27aa84a9404059c633725690222b8eba597643e2e3f87a411dc2fc8",
+   "bytes": 32,
+   "params": {
+    "key": "4aaa1c9b4f33df09f958434bbf45525ee50e5cab82cc6ef50c97c38ffded47ca"
+   }
+  },
+  {
+   "id": "kr-dev-42",
+   "algorithm": "HMAC-SHA-256",
+   "category": "hashing",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "base64",
+   "value": "wkmsfMJ6qEqUBAWcYzclaQIiuOull2Q+Lj+HpBHcL8g=",
+   "bytes": 32,
+   "params": {
+    "key": "4aaa1c9b4f33df09f958434bbf45525ee50e5cab82cc6ef50c97c38ffded47ca"
+   }
+  },
+  {
+   "id": "kr-dev-43",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "text",
+   "value": "pbkdf2_sha256$6000$mjySKzmzvYZacDk7$PRiNRgmwizL/kDb19rTEyUXvNSy768apUAHe2RrIF3g=",
+   "bytes": 0,
+   "params": {
+    "salt": "mjySKzmzvYZacDk7",
+    "rounds": 6000,
+    "format": "Django"
+   }
+  },
+  {
+   "id": "kr-dev-44",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "hex",
+   "value": "3d188d4609b08b32ff9036f5f6b4c4c945ef352cbbebc6a95001ded91ac81778",
+   "bytes": 32,
+   "params": {
+    "salt": "mjySKzmzvYZacDk7",
+    "rounds": 6000,
+    "format": "raw output"
+   }
+  },
+  {
+   "id": "kr-dev-45",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "base64",
+   "value": "PRiNRgmwizL/kDb19rTEyUXvNSy768apUAHe2RrIF3g=",
+   "bytes": 32,
+   "params": {
+    "salt": "mjySKzmzvYZacDk7",
+    "rounds": 6000,
+    "format": "raw output"
+   }
+  },
+  {
+   "id": "kr-dev-46",
+   "algorithm": "ARIA-128-CBC",
+   "category": "symmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "hex",
+   "value": "38407d17e9bc9afc57f0dfa4060ccecf235b06647e2455ce38ca0615bfdbf961820f32eb48f140743fffaef4b2ae8c27",
+   "bytes": 48,
+   "params": {
+    "key": "9463e49f4efe5eaa3f565823ae78b797",
+    "iv": "38407d17e9bc9afc57f0dfa4060ccecf",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-47",
+   "algorithm": "ARIA-128-CBC",
+   "category": "symmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "base64",
+   "value": "OEB9F+m8mvxX8N+kBgzOzyNbBmR+JFXOOMoGFb/b+WGCDzLrSPFAdD//rvSyrown",
+   "bytes": 48,
+   "params": {
+    "key": "9463e49f4efe5eaa3f565823ae78b797",
+    "iv": "38407d17e9bc9afc57f0dfa4060ccecf",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-48",
+   "algorithm": "ARIA-192-CBC",
+   "category": "symmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "hex",
+   "value": "86abb3e45d5ddf11e01734ed73775602078bb2c56f623dc9904c769cfc8de7c0c29c0c17e52e2eab8f2889da2b4e55cc",
+   "bytes": 48,
+   "params": {
+    "key": "eaec21f0dc1691634ca150e2032b296308f7f59fdb626a86",
+    "iv": "86abb3e45d5ddf11e01734ed73775602",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-49",
+   "algorithm": "ARIA-192-CBC",
+   "category": "symmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "base64",
+   "value": "hquz5F1d3xHgFzTtc3dWAgeLssVvYj3JkEx2nPyN58DCnAwX5S4uq48oidorTlXM",
+   "bytes": 48,
+   "params": {
+    "key": "eaec21f0dc1691634ca150e2032b296308f7f59fdb626a86",
+    "iv": "86abb3e45d5ddf11e01734ed73775602",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-50",
+   "algorithm": "ARIA-256-CBC",
+   "category": "symmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "hex",
+   "value": "8309becb302cb7e499420154470f053104d28221887504874b2d757d5f1a66d095830622dd6f52ed6d131fdf8092824c",
+   "bytes": 48,
+   "params": {
+    "key": "b01c2a6ef4c4561dd3357ab349be34774213196bcac906857ef915422177b577",
+    "iv": "8309becb302cb7e499420154470f0531",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-51",
+   "algorithm": "ARIA-256-CBC",
+   "category": "symmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "base64",
+   "value": "gwm+yzAst+SZQgFURw8FMQTSgiGIdQSHSy11fV8aZtCVgwYi3W9S7W0TH9+AkoJM",
+   "bytes": 48,
+   "params": {
+    "key": "b01c2a6ef4c4561dd3357ab349be34774213196bcac906857ef915422177b577",
+    "iv": "8309becb302cb7e499420154470f0531",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-52",
+   "algorithm": "ECDSA-P-256",
+   "category": "asymmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "hex",
+   "value": "304502200ba5fc9e8fd81c89e3b183ce707e9a36e9a168d30a6e2033986d1177ca5fbcaf0221009c5c727c57f70ea58f9734a03504e15d354073238c09e1e09624957c4b4ef1c8",
+   "bytes": 71,
+   "params": {
+    "hash": "sha256",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-53",
+   "algorithm": "ECDSA-P-256",
+   "category": "asymmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "base64",
+   "value": "MEUCIAul/J6P2ByJ47GDznB+mjbpoWjTCm4gM5htEXfKX7yvAiEAnFxyfFf3DqWPlzSgNQThXTVAcyOMCeHgliSVfEtO8cg=",
+   "bytes": 71,
+   "params": {
+    "hash": "sha256",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-54",
+   "algorithm": "ECDSA-P-384",
+   "category": "asymmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "hex",
+   "value": "306402305ea4411b4d5dd38459a0a259e2e79a1be02a390e4a0e061b212bb7d5e1e2e3f4697bbf96ac0591f7f5ff7d0ffd3959730230729ad99ad70f9cda27ac1534022176234ec455cf02a197f350ab4dd69721fc55a39352e2eb7683751e5e2caccdd723a3",
+   "bytes": 102,
+   "params": {
+    "hash": "sha384",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-55",
+   "algorithm": "ECDSA-P-384",
+   "category": "asymmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "base64",
+   "value": "MGQCMF6kQRtNXdOEWaCiWeLnmhvgKjkOSg4GGyErt9Xh4uP0aXu/lqwFkff1/30P/TlZcwIwcprZmtcPnNonrBU0AiF2I07EVc8CoZfzUKtN1pch/FWjk1Li63aDdR5eLKzN1yOj",
+   "bytes": 102,
+   "params": {
+    "hash": "sha384",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-56",
+   "algorithm": "RSA-2048-OAEP",
+   "category": "asymmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "hex",
+   "value": "4e5a083eff958b1a417a0fbfee7b4f71ed13282056e157e63ad8fdb10746b21823ee83e1bc265852362b03f6b0a349fc32f5c5f75926f48dccafff41de7a1669662f619028ca9e9bfef9f6cba0f86d306c8f9c8e239176e4585fccdb3ed607dec243d3bc61c6ed0745b56c67d52f157cd0ebb2b9d7fe1080b7fd92711bf05a918642166eb4cba51a56f3ad04d7f51e11e9414e32a9923d7557c00a2f71fe15d88ae69c906558259776a8a6b1344fcafed9e749a27cd811c6f8e538f3b3abe0d9e51e30231202e9da8566f3c5169a5b459fba8d2f2d3f1096b1d5cf96c985d5fea0afe3daf75e5a9c40ae071929f3cd24d26fcc1f106568870117c037c0cc63b2",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256"
+   }
+  },
+  {
+   "id": "kr-dev-57",
+   "algorithm": "RSA-2048-OAEP",
+   "category": "asymmetric",
+   "plaintext": "order=20261123&amount=59000",
+   "encoding": "base64",
+   "value": "TloIPv+VixpBeg+/7ntPce0TKCBW4VfmOtj9sQdGshgj7oPhvCZYUjYrA/awo0n8MvXF91km9I3Mr/9B3noWaWYvYZAoyp6b/vn2y6D4bTBsj5yOI5F25FhfzNs+1gfewkPTvGHG7QdFtWxn1S8VfNDrsrnX/hCAt/2ScRvwWpGGQhZutMulGlbzrQTX9R4R6UFOMqmSPXVXwAovcf4V2IrmnJBlWCWXdqimsTRPyv7Z50mifNgRxvjlOPOzq+DZ5R4wIxIC6dqFZvPFFppbRZ+6jS8tPxCWsdXPlsmF1f6gr+Pa915anECuBxkp880k0m/MHxBlaIcBF8A3wMxjsg==",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256"
+   }
+  },
+  {
+   "id": "kr-dev-58",
+   "algorithm": "SHA-384",
+   "category": "hashing",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "hex",
+   "value": "d76c2d57ef4852e9a6b09680cffa2e4b46afa87378d1a54b7da44408966e5a9dcb6d1eff0d5859e73eda0d4edc671218",
+   "bytes": 48,
+   "params": {}
+  },
+  {
+   "id": "kr-dev-59",
+   "algorithm": "SHA-384",
+   "category": "hashing",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "base64",
+   "value": "12wtV+9IUummsJaAz/ouS0avqHN40aVLfaRECJZuWp3LbR7/DVhZ5z7aDU7cZxIY",
+   "bytes": 48,
+   "params": {}
+  },
+  {
+   "id": "kr-dev-60",
+   "algorithm": "HMAC-SHA-256",
+   "category": "hashing",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "hex",
+   "value": "40e47543fa6d109028cace02a392073ecde0354899aeccd5030e4ed90be596a0",
+   "bytes": 32,
+   "params": {
+    "key": "66476c756ba660a26c809b001aae812d0203f3ebaf698c0a1e1fcac5a9033f12"
+   }
+  },
+  {
+   "id": "kr-dev-61",
+   "algorithm": "HMAC-SHA-256",
+   "category": "hashing",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "base64",
+   "value": "QOR1Q/ptEJAoys4Co5IHPs3gNUiZrszVAw5O2QvllqA=",
+   "bytes": 32,
+   "params": {
+    "key": "66476c756ba660a26c809b001aae812d0203f3ebaf698c0a1e1fcac5a9033f12"
+   }
+  },
+  {
+   "id": "kr-dev-62",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "text",
+   "value": "pbkdf2_sha256$6000$eg5JmsYyJu3vZhc1$U7/kglJpMRx8JZUKGGXMWKgMXbrJd6cfluBl7CxtoG8=",
+   "bytes": 0,
+   "params": {
+    "salt": "eg5JmsYyJu3vZhc1",
+    "rounds": 6000,
+    "format": "Django"
+   }
+  },
+  {
+   "id": "kr-dev-63",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "hex",
+   "value": "53bfe4825269311c7c25950a1865cc58a80c5dbac977a71f96e065ec2c6da06f",
+   "bytes": 32,
+   "params": {
+    "salt": "eg5JmsYyJu3vZhc1",
+    "rounds": 6000,
+    "format": "raw output"
+   }
+  },
+  {
+   "id": "kr-dev-64",
+   "algorithm": "PBKDF2-SHA256",
+   "category": "hashing",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "base64",
+   "value": "U7/kglJpMRx8JZUKGGXMWKgMXbrJd6cfluBl7CxtoG8=",
+   "bytes": 32,
+   "params": {
+    "salt": "eg5JmsYyJu3vZhc1",
+    "rounds": 6000,
+    "format": "raw output"
+   }
+  },
+  {
+   "id": "kr-dev-65",
+   "algorithm": "ARIA-128-CBC",
+   "category": "symmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "hex",
+   "value": "fc8234098017648a032b36b6b844c3aa2444bd2f7692f72d0ef1b71ce588eda46a967eac7be477ea0bedda89323080f309c92618ee1a620849a8c11a3e2ea5f3a25fa5daae2406319b2fbba15954c9eb716ce8be999d5b80f8ebe97d605ca91d615ac903e912a974886d1d91c16b4fcb09c353f1b59b61309fb573f9b07be352",
+   "bytes": 128,
+   "params": {
+    "key": "aee135f987cbf3599c7b3794878a45b9",
+    "iv": "fc8234098017648a032b36b6b844c3aa",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-66",
+   "algorithm": "ARIA-128-CBC",
+   "category": "symmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "base64",
+   "value": "/II0CYAXZIoDKza2uETDqiREvS92kvctDvG3HOWI7aRqln6se+R36gvt2okyMIDzCckmGO4aYghJqMEaPi6l86JfpdquJAYxmy+7oVlUyetxbOi+mZ1bgPjr6X1gXKkdYVrJA+kSqXSIbR2RwWtPywnDU/G1m2Ewn7Vz+bB741I=",
+   "bytes": 128,
+   "params": {
+    "key": "aee135f987cbf3599c7b3794878a45b9",
+    "iv": "fc8234098017648a032b36b6b844c3aa",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-67",
+   "algorithm": "ARIA-192-CBC",
+   "category": "symmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "hex",
+   "value": "d0242e4e38f42e7184daa30eaf252874090998e3ad0a4ccf2dbaa54319ec30ad00fd07c824b5e9a4bc3e989095242b724c2d9873363de1005cb695ce144eb1b974d39fd565ad7859ee13b091315822402e2a0bf9f04d189af9d021ccc7e5a6392d9bac33e87178989851365a61fb49b696a48001cfcd488d39664a2cc9ff748a",
+   "bytes": 128,
+   "params": {
+    "key": "c08f20af1fb92733858fbe0bafb31fcdb762ecd7cafb9696",
+    "iv": "d0242e4e38f42e7184daa30eaf252874",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-68",
+   "algorithm": "ARIA-192-CBC",
+   "category": "symmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "base64",
+   "value": "0CQuTjj0LnGE2qMOryUodAkJmOOtCkzPLbqlQxnsMK0A/QfIJLXppLw+mJCVJCtyTC2YczY94QBctpXOFE6xuXTTn9VlrXhZ7hOwkTFYIkAuKgv58E0YmvnQIczH5aY5LZusM+hxeJiYUTZaYftJtpakgAHPzUiNOWZKLMn/dIo=",
+   "bytes": 128,
+   "params": {
+    "key": "c08f20af1fb92733858fbe0bafb31fcdb762ecd7cafb9696",
+    "iv": "d0242e4e38f42e7184daa30eaf252874",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-69",
+   "algorithm": "ARIA-256-CBC",
+   "category": "symmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "hex",
+   "value": "01119c2516ba8a574f82e092b624c8e52f2e850f8fce7d5b3723a355e549bce962d124df185302a782215841ad7b80966a6a7395d0b7f21eb3859da73f2cc921bdcd31687d5a59ceab2c131c13da2c36486d3931227efac129cb7a8395d3f6ae0eaa1bd0154f456c5404fbde8d295bc7693c582fac86dac8b7c3ba645933f9f6",
+   "bytes": 128,
+   "params": {
+    "key": "d3c53205a01a2de25420e4ed104331324bf578f7d4eeca8b10163aadadc2fe2f",
+    "iv": "01119c2516ba8a574f82e092b624c8e5",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-70",
+   "algorithm": "ARIA-256-CBC",
+   "category": "symmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "base64",
+   "value": "ARGcJRa6ildPguCStiTI5S8uhQ+Pzn1bNyOjVeVJvOli0STfGFMCp4IhWEGte4CWampzldC38h6zhZ2nPyzJIb3NMWh9WlnOqywTHBPaLDZIbTkxIn76wSnLeoOV0/auDqob0BVPRWxUBPvejSlbx2k8WC+shtrIt8O6ZFkz+fY=",
+   "bytes": 128,
+   "params": {
+    "key": "d3c53205a01a2de25420e4ed104331324bf578f7d4eeca8b10163aadadc2fe2f",
+    "iv": "01119c2516ba8a574f82e092b624c8e5",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "kr-dev-71",
+   "algorithm": "ECDSA-P-256",
+   "category": "asymmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "hex",
+   "value": "30450221008384f1b78168011595dbb286670f093b7a5358450a029748bb20cc713319c0a302202f962d69f511d2dd4a1d17eee0f54bafa6a0f992b196e2cc6b945805c38a283a",
+   "bytes": 71,
+   "params": {
+    "hash": "sha256",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-72",
+   "algorithm": "ECDSA-P-256",
+   "category": "asymmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "base64",
+   "value": "MEUCIQCDhPG3gWgBFZXbsoZnDwk7elNYRQoCl0i7IMxxMxnAowIgL5YtafUR0t1KHRfu4PVLr6ag+ZKxluLMa5RYBcOKKDo=",
+   "bytes": 71,
+   "params": {
+    "hash": "sha256",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-73",
+   "algorithm": "ECDSA-P-384",
+   "category": "asymmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "hex",
+   "value": "3065023044b78faad42a2fd018d877b9f7b9194d2e5bed30df42f5476c48e9ee081b0a64ed8eb39fddce8d80873013be930e1a2d023100b21934a7e1a83c4bfb0ac1924cf6ac98085394c9ba01a04bb596a3711cad2e68d1cba7c91ae45a8eec1a3f113bef4184",
+   "bytes": 103,
+   "params": {
+    "hash": "sha384",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-74",
+   "algorithm": "ECDSA-P-384",
+   "category": "asymmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "base64",
+   "value": "MGUCMES3j6rUKi/QGNh3ufe5GU0uW+0w30L1R2xI6e4IGwpk7Y6zn93OjYCHMBO+kw4aLQIxALIZNKfhqDxL+wrBkkz2rJgIU5TJugGgS7WWo3EcrS5o0cunyRrkWo7sGj8RO+9BhA==",
+   "bytes": 103,
+   "params": {
+    "hash": "sha384",
+    "format": "DER (r, s)"
+   }
+  },
+  {
+   "id": "kr-dev-75",
+   "algorithm": "RSA-2048-OAEP",
+   "category": "asymmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "hex",
+   "value": "864da9900b700a6155b044d80c820c77e62b9631aea79caac5687117c0bfbe0a1639874e7a15298b66ec78e5436ad721db0d8e4eee6b5ed6bae26ef733b5ddc0d7c1ae459283d2ee2580d9d7a1139d6fdaa7202aeb9c017b9d0c703c688735339b8d1df14c7cb2bff2b6cfd55bf853e351523723fdf9cd03b8d3c869e51c7898fc5930fbf04a3ba31e79233c023bb6297174bc809abfa4f91e89fc5332ee8277d1f26be7d92fb98769decf0cde3e59a2fa729418d2266ed8c5bc85d2a6e5b9562800614b52749a926581f517cb73eb7d13096352db15b9f792b65e4ea9a073e23fd96feae4dcd0ccf984d031b5eb891d9e326c7cac2a96e51f326d0eb6cb2995",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256"
+   }
+  },
+  {
+   "id": "kr-dev-76",
+   "algorithm": "RSA-2048-OAEP",
+   "category": "asymmetric",
+   "plaintext": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "encoding": "base64",
+   "value": "hk2pkAtwCmFVsETYDIIMd+YrljGup5yqxWhxF8C/vgoWOYdOehUpi2bseOVDatch2w2OTu5rXta64m73M7XdwNfBrkWSg9LuJYDZ16ETnW/apyAq65wBe50McDxohzUzm40d8Ux8sr/yts/VW/hT41FSNyP9+c0DuNPIaeUceJj8WTD78Eo7ox55IzwCO7YpcXS8gJq/pPkeifxTMu6Cd9Hya+fZL7mHad7PDN4+WaL6cpQY0iZu2MW8hdKm5blWKABhS1J0mpJlgfUXy3PrfRMJY1LbFbn3krZeTqmgc+I/2W/q5NzQzPmE0DG164kdnjJsfKwqluUfMm0OtssplQ==",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256"
+   }
+  },
+  {
+   "id": "kr-dev-77",
+   "algorithm": "ECC-P256-public-key",
+   "category": "asymmetric",
+   "plaintext": "",
+   "encoding": "hex",
+   "value": "04d6f572396e7ab2d90cb961849c56a4371038da9944b5bf9fa1a45145555f74ec7b8463e8c87a26e0f4a6e305fec150cf4387bb4dc2faf577cdc2171bdb19ea15",
+   "bytes": 65,
+   "params": {}
+  },
+  {
+   "id": "kr-dev-78",
+   "algorithm": "ECC-P256-public-key",
+   "category": "asymmetric",
+   "plaintext": "",
+   "encoding": "base64",
+   "value": "BNb1cjluerLZDLlhhJxWpDcQONqZRLW/n6GkUUVVX3Tse4Rj6Mh6JuD0puMF/sFQz0OHu03C+vV3zcIXG9sZ6hU=",
+   "bytes": 65,
+   "params": {}
+  }
+ ]
+}

@@ -7,10 +7,10 @@ import {
   Section, Select, Table, Pass, TextArea, Warning, useSelfChecks,
 } from "./ui";
 import {
-  SYM_METHODS, symConfig, parseKey, keyMessage, newKey, encryptText, decryptText, runVector, vectorName, type AesMode,
+  SYM_METHODS, symConfig, parseKey, keyMessage, newKey, encryptText, decryptText, runVector, vectorName, type AesMode, type SymMethod,
 } from "@/lib/impl/symmetric";
 
-type Id = "des" | "tripledes" | "aes" | "seed";
+type Id = SymMethod["id"];
 
 export default function SymPanel({ method }: { method: Id }) {
   return <Panel key={method} method={method} />; // fresh state (key, mode, outputs) per method
@@ -81,7 +81,7 @@ function Panel({ method }: { method: Id }) {
           <div>
             <Label htmlFor="sym-keysize">Key size</Label>
             <Select id="sym-keysize" value={keyBytes} onChange={(e) => changeKeySize(+e.target.value)}>
-              {base.keySizes.map((b) => <option key={b} value={b}>{`AES-${b * 8} (${b * 2} hex chars)`}</option>)}
+              {base.keySizes.map((b) => <option key={b} value={b}>{`${base.name}-${b * 8} (${b * 2} hex chars)`}</option>)}
             </Select>
           </div>
         )}

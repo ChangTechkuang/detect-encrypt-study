@@ -1,0 +1,2468 @@
+{
+ "set": "dev",
+ "note": "Throwaway keys for testing only.",
+ "keys": {
+  "RSA-2048": {
+   "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyzTGI9JSXDDbPiC+EFW+\nD+ZIUSm4wvgDFxy8lQn+PcfRjJm81M++ajmZlE6EHtC+7qttV/l71s7TXW0wCv8/\nshrozZxMKnRJ1omLEDDFFDRSilZTt2QkBCozabCl2d/mNYaYf3sEKMTN8dVTYbWa\nu2fMWp0HocLrHa3dtwMwdnvkcxTvSDUGuYLQJMs/35alwG435TZe3/fRov43q/oN\nmSsGkWGywJkDHnVxUjg3p2UUzQvnjCfSKHVqbZEq31/J5D7oC7VWlXbxuGHGqhaI\nY90FXqfGpU9PCIUz0b4hcLz6ZPuihHsGAalSRwVtxj4udVFNX6S1SQ7L7YYDysme\n1wIDAQAB\n-----END PUBLIC KEY-----\n",
+   "privateKey": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDLNMYj0lJcMNs+\nIL4QVb4P5khRKbjC+AMXHLyVCf49x9GMmbzUz75qOZmUToQe0L7uq21X+XvWztNd\nbTAK/z+yGujNnEwqdEnWiYsQMMUUNFKKVlO3ZCQEKjNpsKXZ3+Y1hph/ewQoxM3x\n1VNhtZq7Z8xanQehwusdrd23AzB2e+RzFO9INQa5gtAkyz/flqXAbjflNl7f99Gi\n/jer+g2ZKwaRYbLAmQMedXFSODenZRTNC+eMJ9IodWptkSrfX8nkPugLtVaVdvG4\nYcaqFohj3QVep8alT08IhTPRviFwvPpk+6KEewYBqVJHBW3GPi51UU1fpLVJDsvt\nhgPKyZ7XAgMBAAECggEADqzgBmRBGHFa1BDPSSS4FjPeUyY9Nq9sobWslOLk3pdY\ntdvAfGoIaWmBgulst0ECGQB+ZBUbcXb8Ysno51JpyjYRTBAWnBZL4teKGIA9K2lf\n8KetYhg0Vayqi957C9IUsRboWoSK11rnOKjcXbkc1J35by3aCD+odTtCQN5VGKlW\n7lQOTRctRVA44J2QhSJFD1BAJOkljzrfQIv3NGZ4G3Arnow1MR3eu6g0Lv9Xz8tr\nl4Va8HvAY0fM8WJjtYGlwkCkD/bvo4b+8FjhNLGDLFMA8BwKDIyNIlkI06E3SdiV\nThzHdqKDFULE5xIr5FgCrZ713flmrrhYNFNtAt2HIQKBgQDsVnxXsXaIS5+Onq2/\nexLh7x6HPMgx7iNgMUmuFmtB9T3FDoNs+UjM8oPcL+sVjjFiyZMkgjHKY3xIqeMe\nGPGKq3Nt1Ky3uhVwpuZPC2jLDOsf/pCRZ6G7E/0qEKtvp/enG7mo71O2rIw708hW\nrYhpPgW/NjdqDd6b+2AjfhDi8QKBgQDcHKae/bPRpQf4utPTbzxNw+9Hqe3aRv7g\nW00GndnXtQDw4XpissGkl2urIxWKbWenQM+MePeNQfYJaiVPQVqnE6srbfzL8Qk0\n8o24Hb9TVdqEAqCVbqZLDLMjFe9u7YDzFFrTDKLPDBo2URratMKWjsaGl86CVzRb\nLibit8mORwKBgQDovDpyuSX7Dk2wSv7bI73ylGHB189lrBdWMPNX5mf1aiZMGgC+\nnbZdbS0A9odQkNh9affm6fdSUSog/HvWNcYXQsPHErqLq0pVx2XhzWCDJNOejDed\nmSohaovSktvgds5g1+K7RANyTvVCLUqKYRWGXjeWlzN20vW3MZL5ILpMYQKBgGrg\nho9AxSWQqpQ9s0lBA9kGwJLdkh6gxnWOH5KM5w/0Vaag9VojTh9rXt5URMtYYDI4\nKA8fVaSDWMIthjw7kZb61+xYlZ05Rq0s8V9rIlGGqHndBLhKZ/idDAaHSiFktW5S\nfd9ojU1XpQqmyxFTIAEXBpKn96AWU9fKSxte/kFVAoGBAOPtMkJCh8xkL67K1ZSU\nHYyRb7most5xgk/N1pF1xVzBEwlip5F9gIBDU72svAnPW+oDrnFERBoZv43x7vdM\n0B0AT09s0OFk9PPGt7pkEqWXbX+phemiX1+6Edv1bX/UCmcqF8O956tcU/9cV0lx\notFjblx2rNTzL0AEi2Mmuok+\n-----END PRIVATE KEY-----\n"
+  },
+  "RSA-4096": {
+   "publicKey": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAjnRPsTb6HLjaTOxJEILZ\nNd79lhJ1Tcy7A+1mzScTQg7MULTo6/I7iYdbOUOcsOEQIGlyYZnkKVg/1bX+J2om\nP9G1inPDqKCqDF8Hn+JSULaFemB6p9NewtkQNdStUqCBbcwm46r6k7UKr4EIKL83\nCnNj9mcgZY850cNW9jCImozCyImGbSdsSE0uXvG3MrBrCC1+y85i39bbJOuEZxUu\nHHfaYPQEXEhg3EfQRxFeWEsgMw59n3qKe6aHI8VnZ5kWoDlcZKBFLdzwWYgeguFJ\n3E1pERH4ZKzkEnYv1wtdukjWd1DMrQzfEmEqS6NwFZzPl/MB8h7pTPLPa8OPTb/R\n3Kjo8gujvr52gc/3z9Cvefmk/axS/o1eRIOyMezNyTgiYRoK/wQfdxQ/a6K1L1PU\nmKUBE1YP+voi/oJ0s3S1FPVIHxrqT9xF/bmjYBO2lcMuRD5fCFd8PFgGCf49ayvK\nDQmJwD1EHKxb92uXF43iLvfahoclGtA0mXy9tRR49D/5Fom3hniBdafHSoTnllSC\nRTX0SDHF1iokhNOroXK8J1uUWqGG6kJcKMe0sRij8roU7o9zLacLGReTdyyzOFQg\no+8vEiH1goP8JZRb4E1KDezNdjQz60g3ASKy5aFVKR6cI00+sBxXzM+Yd6E89lOS\nJlKtq2o1fo3RmYGRbetl8jcCAwEAAQ==\n-----END PUBLIC KEY-----\n",
+   "privateKey": "-----BEGIN PRIVATE KEY-----\nMIIJQwIBADANBgkqhkiG9w0BAQEFAASCCS0wggkpAgEAAoICAQCOdE+xNvocuNpM\n7EkQgtk13v2WEnVNzLsD7WbNJxNCDsxQtOjr8juJh1s5Q5yw4RAgaXJhmeQpWD/V\ntf4naiY/0bWKc8OooKoMXwef4lJQtoV6YHqn017C2RA11K1SoIFtzCbjqvqTtQqv\ngQgovzcKc2P2ZyBljznRw1b2MIiajMLIiYZtJ2xITS5e8bcysGsILX7LzmLf1tsk\n64RnFS4cd9pg9ARcSGDcR9BHEV5YSyAzDn2feop7pocjxWdnmRagOVxkoEUt3PBZ\niB6C4UncTWkREfhkrOQSdi/XC126SNZ3UMytDN8SYSpLo3AVnM+X8wHyHulM8s9r\nw49Nv9HcqOjyC6O+vnaBz/fP0K95+aT9rFL+jV5Eg7Ix7M3JOCJhGgr/BB93FD9r\norUvU9SYpQETVg/6+iL+gnSzdLUU9UgfGupP3EX9uaNgE7aVwy5EPl8IV3w8WAYJ\n/j1rK8oNCYnAPUQcrFv3a5cXjeIu99qGhyUa0DSZfL21FHj0P/kWibeGeIF1p8dK\nhOeWVIJFNfRIMcXWKiSE06uhcrwnW5RaoYbqQlwox7SxGKPyuhTuj3MtpwsZF5N3\nLLM4VCCj7y8SIfWCg/wllFvgTUoN7M12NDPrSDcBIrLloVUpHpwjTT6wHFfMz5h3\noTz2U5ImUq2rajV+jdGZgZFt62XyNwIDAQABAoICADoLiq1bCW7Ko6jUXrErn/Yj\ndpC/1Kxuz4U6JrlRQreX8AiyrnX1rezMCo+6zQ4FptyOGt1KJ33xR5F9JqJIzm0S\ntjZEFWWQkbmYvzKWtZPNy3Wh+liH+ATNDZ3hmv4gCJ0EopQCBzhIfKImoXx47aSE\ngCbWvoyjX5vpTHXkMMVItdWgs/WmKqkLSenF9C/jUrlyUEgbQI6UrZbNoJWgO7m9\n3G3FAEHZ/B3F5UgP+7FeazBipy1kcSkRId+hgBDmgCGpPcyCwa1+aTESFdyej8oE\ngNtDx0K+b/BV2Ah3ySkupLTZZ4zbwclrbiCD6BfmXXA8xH4zujxwc7Qlay7zCj+T\nsq8uBQ6LWTIWuKha4ICPqIeeDo78NV0PHpznbiRQIh/dwvw2/Fh1Wa+L13ifW6t+\nkiQj6lSI2OlmA0jftpJPxXwie8To3L+ufpQ/U4V/mWKR9aEvGxWB3XupsgWjeRS9\nB4Wja6We+gCtnShy6zSTMSI/qARbcDqR+xYO0cSuDq2OSyhzZPdPvtPq/RTB8sKh\nPAEtzt6SwUUAlGEINHXVwrDNkOHuQEIew4FJOFM8a41FgzKj1Vt3xRhDUmcH/E92\ntA+M9/HwSkqeNollFgvyTo7/HXY4rijhEPpM/rKOSPKNHEOaMZTs9vm6MzezY3Ys\n+dqflK7E9tK4zBFgILKBAoIBAQDAHMW3XEBZ6BBN1PIPm3L82Frr+j4bFBTcLM3g\nIEoz3QnwJeMRWpo/gWjHvOFQLB7ilxnxrQt9VusmJAACGYzhcOEMT+mKFsm+nvFi\nY9jUt9jXYmszoKa6aulNZAcKjYpoDUeRFKju4hcsaDmTIa/N2Q9459pr+zeEw9N8\njA0gP8221Tu6+B/MAb1JEsd0oC2BvTEIY9wbgh5XzHkDtf9lpMOhqAfKVRhVGdYE\nBJ8UORbV9ASeLOwL1pW0HRkFNEDotUHzRCKiGTeadSRXCn1bwhgt91yKCQheJGul\nF77+6Wrw27Y4HY9UVMYqnfoBA59IBsP7aPPe6EhclF8aeSeVAoIBAQC90/fdXXXz\n5b6CL8Jq8bZ1bSkNvz3P92wy1hwNzIVSb4V8shbxxEEg9EM5Y1Mp9pka8J7WNoax\n5JiCYvbokO22DDMXHe7xYeREC51+yPOo/WC1v4lO12YYcFteWaCqEXvSwjxw0Bz5\nwpV5pMMi52J/FG7D5wKyj1/M0hPPEa6GxDeFL/5eTxmIbLTdy+oIdUxuIZfpRGh6\nnn3H3GGt2/5y3PehNz1H/zzwU68+Z4dLEPl1iuSOslCBYQCuUoiVmhnU5gsSjS+j\n9HbeIKQTZZgn3/JexhfPeFlBKg22+hUtZHxURMCd7WcQFmFijo4g6ANHi66W/hna\nRAwf8Dq4hE+bAoIBADyyWn1+Ng6x1UTh/MCVmpTsPn3ECI9Bnv2ZYkpnqUoNkjA/\nqCg5efaKinJg6McNyYxJtTa4N6MYLR9VzHLdY7dulIvxS5YHcSI60YUGiuFaXLZg\nMAKVxVeso52B9v+MjKgnWe8qmd0vraaoH1ivEf51j//hMQ9gxb+6pzz4esUvo20a\nnc6KynEIM6e8uSvN19Lf1XgTJN3EFJYk0i8r909D6VNP5XY1wIRSr12BoEkhaGec\nu0DGbKWo3I+ViewtAD0F15pmcpLIaNryG9MsS0MMZdtQBfrOs8gata/perzLPrBu\nmnnMTRaV2i5ozy422MJG8PCjzjklJoepkQqqMKkCggEBAKZa0TgMhKbmKqr6Yb3I\n7+Y+cKDcfLX5FbgDTPiGyDuzAd+CTns3SwAvL45mTeZTdl9WiUwe4rGZLFHvmoO7\nJqbIUCmtEM42xI0hRLdsMaRh0FPWc+VE/PLj3B52G0ePJN1RXRhcOVhjvwyoaF35\nOqc1Z9CEbSfAX+smGzf3PeRapnEw2xEY7r5QzbwlzIX3DbDh/bfuPEVhCceRiYSM\na5OLs/Nzbl/e/S97lvLwVW9ig8sPmja3a7fGI4uhRpMcRhD+PKvYUOy0+0q0fjWF\nbe9b4ZJOtWUbCdUCnpxA0zhBfHd4/PgpqY0+n794QHPz/5O+hJVMP6m4wotmwn8b\nbIsCggEBAK74kki2Xxf+IUebRRTSyekv2m/GfFX4USKu2CtcLq/2zVnY104lZfyU\nB3IHMPjqawPVk5/KMDq39I8n9fzWD4eNAyJXhX3SLUZmgvGQzwp/F1zUBXn5gJgl\njZ/1OKUnLNYk6ph+PTdlcDFZIeyGsMPZ0l2iaSLhfe6AvLqEVbNQuVU9l0qXznf0\nvTQu4cvVVMQ1RIogWdgwBbh4wCyRvb8WOkpmxd3a2jnkghfGeqU+OS9dfaJx4kk5\nrsXwNUiY3NY1Ins+VfZnIUBVkUKSTEkZ8KR8lFuLzA+UERpcNVDRfv/YMmho35aP\ncQ4hsyqveAyGZEYZPibUVSXm4gwVFPQ=\n-----END PRIVATE KEY-----\n"
+  },
+  "ECIES-P256": {
+   "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE9TvjtO3ZxkePNUWxOCkLZR72Ct2i\nG0kHpce4r6w777A+kXlDQ2rv8xn7eEwZyZisaOdwNA7Zx7In7p88Ku/2Qg==\n-----END PUBLIC KEY-----\n",
+   "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgU6D0RWzMVgiG3D7B\nrq04R0w+CpqYtlh5ahPs53LEeN+hRANCAAT1O+O07dnGR481RbE4KQtlHvYK3aIb\nSQelx7ivrDvvsD6ReUNDau/zGft4TBnJmKxo53A0DtnHsifunzwq7/ZC\n-----END PRIVATE KEY-----\n"
+  }
+ },
+ "samples": [
+  {
+   "id": "dev-1",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "d0aabe9a362cb2712ee90e04810902f3",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-2",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "0Kq+mjYssnEu6Q4EgQkC8w==",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-3",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "836babddc66080e01d52b8272aa9461c69ee0496",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-4",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "g2ur3cZggOAdUrgnKqlGHGnuBJY=",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-5",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "134563d4e440f0e418b0f382f23a2cf301af6d7f648ccfae9895018345d779a3",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-6",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "E0Vj1ORA8OQYsPOC8jos8wGvbX9kjM+umJUBg0XXeaM=",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-7",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "1212e2633e2f05c68c991c478a5cac50e239703cd258ecbc1c313a6537e051b74e3ee12866f87c2444e455e7689fbacf527e2ce30519aecac88216fc306f7333",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-8",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "EhLiYz4vBcaMmRxHilysUOI5cDzSWOy8HDE6ZTfgUbdOPuEoZvh8JETkVedon7rPUn4s4wUZrsrIghb8MG9zMw==",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-9",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "55bd91a33fda462b040b0552f750117a9170c43178d8a3e2738c7b3fe6753903cbaebf88",
+   "bytes": 36,
+   "params": {
+    "key": "cc8f0957964d30da7f06531dd6d449f0",
+    "iv": "55bd91a33fda462b040b0552",
+    "tag": "78d8a3e2738c7b3fe6753903cbaebf88",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-10",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "Vb2Roz/aRisECwVS91ARepFwxDF42KPic4x7P+Z1OQPLrr+I",
+   "bytes": 36,
+   "params": {
+    "key": "cc8f0957964d30da7f06531dd6d449f0",
+    "iv": "55bd91a33fda462b040b0552",
+    "tag": "78d8a3e2738c7b3fe6753903cbaebf88",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-11",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "66a74a1908fbebb02ce7ec881eb805640a91e222616479cd85b9fe57d9fb64bb",
+   "bytes": 32,
+   "params": {
+    "key": "cc8f0957964d30da7f06531dd6d449f0",
+    "iv": "66a74a1908fbebb02ce7ec881eb80564",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-12",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "ZqdKGQj767As5+yIHrgFZAqR4iJhZHnNhbn+V9n7ZLs=",
+   "bytes": 32,
+   "params": {
+    "key": "cc8f0957964d30da7f06531dd6d449f0",
+    "iv": "66a74a1908fbebb02ce7ec881eb80564",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-13",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "7ad1835c6c4c1c61034eac36831c1b99f6d2f93263b202d601ad7879253f44609c366a27",
+   "bytes": 36,
+   "params": {
+    "key": "3afad12ec767adf36059daf8f637cac78d237ed78f2034a8",
+    "iv": "7ad1835c6c4c1c61034eac36",
+    "tag": "63b202d601ad7879253f44609c366a27",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-14",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "etGDXGxMHGEDTqw2gxwbmfbS+TJjsgLWAa14eSU/RGCcNmon",
+   "bytes": 36,
+   "params": {
+    "key": "3afad12ec767adf36059daf8f637cac78d237ed78f2034a8",
+    "iv": "7ad1835c6c4c1c61034eac36",
+    "tag": "63b202d601ad7879253f44609c366a27",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-15",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "258252b87f218aad36ee87aa748cda54885acbecf5597f979ff77048146d91ec",
+   "bytes": 32,
+   "params": {
+    "key": "3afad12ec767adf36059daf8f637cac78d237ed78f2034a8",
+    "iv": "258252b87f218aad36ee87aa748cda54",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-16",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "JYJSuH8hiq027oeqdIzaVIhay+z1WX+Xn/dwSBRtkew=",
+   "bytes": 32,
+   "params": {
+    "key": "3afad12ec767adf36059daf8f637cac78d237ed78f2034a8",
+    "iv": "258252b87f218aad36ee87aa748cda54",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-17",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "ffb3ead1121f6eecae27480822cbd9cccadab8621e03664d3109777c18b2919bf6666fd8",
+   "bytes": 36,
+   "params": {
+    "key": "071451a460df32855145753c1c4875e88881f9b8ba322881a7274463788a7090",
+    "iv": "ffb3ead1121f6eecae274808",
+    "tag": "1e03664d3109777c18b2919bf6666fd8",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-18",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "/7Pq0RIfbuyuJ0gIIsvZzMrauGIeA2ZNMQl3fBiykZv2Zm/Y",
+   "bytes": 36,
+   "params": {
+    "key": "071451a460df32855145753c1c4875e88881f9b8ba322881a7274463788a7090",
+    "iv": "ffb3ead1121f6eecae274808",
+    "tag": "1e03664d3109777c18b2919bf6666fd8",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-19",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "ccdc8bac6d2225b54d08e5fa3ab03241793aab347af65dca7158ecc8c17be4da",
+   "bytes": 32,
+   "params": {
+    "key": "071451a460df32855145753c1c4875e88881f9b8ba322881a7274463788a7090",
+    "iv": "ccdc8bac6d2225b54d08e5fa3ab03241",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-20",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "zNyLrG0iJbVNCOX6OrAyQXk6qzR69l3KcVjsyMF75No=",
+   "bytes": 32,
+   "params": {
+    "key": "071451a460df32855145753c1c4875e88881f9b8ba322881a7274463788a7090",
+    "iv": "ccdc8bac6d2225b54d08e5fa3ab03241",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-21",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "3a71f7a70e4be7cde87f6b566f995382b40dbf0cb60b2232804912e314c7eeb5",
+   "bytes": 32,
+   "params": {
+    "key": "3e62d55a6d12deff21b39a83d2c8cc6b",
+    "iv": "3a71f7a70e4be7cde87f6b566f995382",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-22",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "OnH3pw5L583of2tWb5lTgrQNvwy2CyIygEkS4xTH7rU=",
+   "bytes": 32,
+   "params": {
+    "key": "3e62d55a6d12deff21b39a83d2c8cc6b",
+    "iv": "3a71f7a70e4be7cde87f6b566f995382",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-23",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "9f5daa90e5e7a18192a6052696edcd1b8e814cc42b9678251c517bd413354612f6d44ad5",
+   "bytes": 36,
+   "params": {
+    "key": "8d01fd7da1dc1c16f3bd34d0ec8a6f1fc62a126c92abdd6d3d8486ea5f249ed4",
+    "nonce": "9f5daa90e5e7a18192a60526",
+    "tag": "2b9678251c517bd413354612f6d44ad5",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-24",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "n12qkOXnoYGSpgUmlu3NG46BTMQrlnglHFF71BM1RhL21ErV",
+   "bytes": 36,
+   "params": {
+    "key": "8d01fd7da1dc1c16f3bd34d0ec8a6f1fc62a126c92abdd6d3d8486ea5f249ed4",
+    "nonce": "9f5daa90e5e7a18192a60526",
+    "tag": "2b9678251c517bd413354612f6d44ad5",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-25",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "aebabc0af7884b6e64d387da46f1d08465761f204f2e34e955f0e205d35b71d93187b7165219636aeede95ac854cf2dfa878ade73911e4a805ec92f5120c9faeabcd6b16f615ee58f519713da63358447117d57d9ca40882a08e5e1494a5708eebc78a89a2c08bee3825614b2ef666f4d955060a52a3c6259cfe19d2e16735eaed98fbcc34096a64f7360aa80134dcee6157544d4454403979908711ce234e8dedf86f511bf3f1579e69c69c0128569a7d805938080eb9f0901cfe3b969cadeb1acdbb1437526c902c672dae8310d3a37b31821c17d1d968117efe1c686739751832932b8c95c55890bc21c120d5ff24d3a34fd6d5af709692b01075bf3d7f4f",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-26",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "rrq8CveIS25k04faRvHQhGV2HyBPLjTpVfDiBdNbcdkxh7cWUhljau7elayFTPLfqHit5zkR5KgF7JL1EgyfrqvNaxb2Fe5Y9RlxPaYzWERxF9V9nKQIgqCOXhSUpXCO68eKiaLAi+44JWFLLvZm9NlVBgpSo8YlnP4Z0uFnNertmPvMNAlqZPc2CqgBNNzuYVdUTURUQDl5kIcRziNOje34b1Eb8/FXnmnGnAEoVpp9gFk4CA658JAc/juWnK3rGs27FDdSbJAsZy2ugxDTo3sxghwX0dloEX7+HGhnOXUYMpMrjJXFWJC8IcEg1f8k06NP1tWvcJaSsBB1vz1/Tw==",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-27",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "44b69e907ba612599bf3d54d35aab7bc5ee602cbeea30fa916a73f29ffbfcbc2a1110ce88daaf830cdaef4e1fc4b733f917b2a85d7b31fb45b733a23acd50d56a4904a0b50af15fcece537e2f36e5077c3719ffe91c0786eccc698432eff49d2c10507dfe678a205df0ee30788caf232c4c5517bde4f1faa86325625bcd281ee2347099db697880f771902878ce9a8982e0c06822c2cb2c5d4ced816f456c9e1e45964342f31ca10237db88371335c582f1b0b75fd6b21348ff799654837647e97f483b14cf809151ae007b2e23e1630c9e6431f0e2a92c4dee3375a0d4e2374ddbe0a04e8ae6c90d25f7c8290afbd5f7880bcae02a735cb8cd92c6e406c932496056db31dad1bf4220e0aa0504ad32d6f6989e276192d424b61562ff5b2f5995f8969b1833199929c0624a10b9faa942504fde45316925df53973139f41f18cc42a36af4b5bf9c91c77843dfb0621aa58ca56e11fc8539de22d5a1347b318241eed61c66163bfec003664056dc5146a68522b41c29a8f7e566bea8851469a5d6ae00ac8bc9addb226f50269939a38e8217e5bf1152ce93edecf3f61423ac2dafa6d5c94e13b90331fd311270e799953d12e12ffad29fd7f8ff9a2038e58c57928afa714e767dc6f3eef3476e62b11d883d347723a14bc0022ccf4cff749f4138eeee64ee637b3137e9e1eff823de7059f6b62fca75f92ec31707e276c96b2d4",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-28",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "RLaekHumElmb89VNNaq3vF7mAsvuow+pFqc/Kf+/y8KhEQzojar4MM2u9OH8S3M/kXsqhdezH7RbczojrNUNVqSQSgtQrxX87OU34vNuUHfDcZ/+kcB4bszGmEMu/0nSwQUH3+Z4ogXfDuMHiMryMsTFUXveTx+qhjJWJbzSge4jRwmdtpeID3cZAoeM6aiYLgwGgiwsssXUztgW9FbJ4eRZZDQvMcoQI324g3EzXFgvGwt1/WshNI/3mWVIN2R+l/SDsUz4CRUa4Aey4j4WMMnmQx8OKpLE3uM3Wg1OI3TdvgoE6K5skNJffIKQr71feIC8rgKnNcuM2SxuQGyTJJYFbbMdrRv0Ig4KoFBK0y1vaYnidhktQkthVi/1svWZX4lpsYMxmZKcBiShC5+qlCUE/eRTFpJd9TlzE59B8YzEKjavS1v5yRx3hD37BiGqWMpW4R/IU53iLVoTR7MYJB7tYcZhY7/sADZkBW3FFGpoUitBwpqPflZr6ohRRppdauAKyLya3bIm9QJpk5o46CF+W/EVLOk+3s8/YUI6wtr6bVyU4TuQMx/TEScOeZlT0S4S/60p/X+P+aIDjljFeSivpxTnZ9xvPu80duYrEdiD00dyOhS8ACLM9M/3SfQTju7mTuY3sxN+nh7/gj3nBZ9rYvynX5LsMXB+J2yWstQ=",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-29",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "hex",
+   "value": "040415de89d13a23a32ce325e14a8b1bcb83c570b5dc0d5ca190742f2a75d63e8a5a05efa5e131f57e054ab306d68018745bb37ee42777147e91823f252f9b03e59e146b68a6b791e094f72acf2478b053566c01f60826e018febce4fbca63d3a190494798",
+   "bytes": 101,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-30",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "Hello123",
+   "encoding": "base64",
+   "value": "BAQV3onROiOjLOMl4UqLG8uDxXC13A1coZB0Lyp11j6KWgXvpeEx9X4FSrMG1oAYdFuzfuQndxR+kYI/JS+bA+WeFGtopreR4JT3Ks8keLBTVmwB9ggm4Bj+vOT7ymPToZBJR5g=",
+   "bytes": 101,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-31",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "444bcb3a3fcf8389296c49467f27e1d6",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-32",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "REvLOj/Pg4kpbElGfyfh1g==",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-33",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "7a85f4764bbd6daf1c3545efbbf0f279a6dc0beb",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-34",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "eoX0dku9ba8cNUXvu/DyeabcC+s=",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-35",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-36",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "Jok2eyBcFs4y7UIAlCuLix4mLfxw2byfvHfElpmk8d8=",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-37",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "9fbbbb5a0f329f9782e2356fa41d89cf9b3694327c1a934d6af2a9df2d7f936ce83717fb513196a4ce5548471708cd7134c2ae99b3c357bcabb2eafc7b9b7570",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-38",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "n7u7Wg8yn5eC4jVvpB2Jz5s2lDJ8GpNNavKp3y1/k2zoNxf7UTGWpM5VSEcXCM1xNMKumbPDV7yrsur8e5t1cA==",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-39",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "1997fd687d9c6995978890b0a3fb6c94a85cc195b87ddd250fd7a8e87677",
+   "bytes": 30,
+   "params": {
+    "key": "e499b99e500fa268eb76a424c9881314",
+    "iv": "1997fd687d9c6995978890b0",
+    "tag": "6c94a85cc195b87ddd250fd7a8e87677",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-40",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "GZf9aH2caZWXiJCwo/tslKhcwZW4fd0lD9eo6HZ3",
+   "bytes": 30,
+   "params": {
+    "key": "e499b99e500fa268eb76a424c9881314",
+    "iv": "1997fd687d9c6995978890b0",
+    "tag": "6c94a85cc195b87ddd250fd7a8e87677",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-41",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "ffd71e7b53a4da1e4a00eca3731d396b71c00cffdee736380c8e501f63f92a19",
+   "bytes": 32,
+   "params": {
+    "key": "e499b99e500fa268eb76a424c9881314",
+    "iv": "ffd71e7b53a4da1e4a00eca3731d396b",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-42",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "/9cee1Ok2h5KAOyjcx05a3HADP/e5zY4DI5QH2P5Khk=",
+   "bytes": 32,
+   "params": {
+    "key": "e499b99e500fa268eb76a424c9881314",
+    "iv": "ffd71e7b53a4da1e4a00eca3731d396b",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-43",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "26c89df993b561c796cec3a5db77d395d6a507bce122bcf0a6b770fe5fe7",
+   "bytes": 30,
+   "params": {
+    "key": "4dee22e07ffbdf55b753ed3e7d37ad88844e11fc0fa529fb",
+    "iv": "26c89df993b561c796cec3a5",
+    "tag": "d395d6a507bce122bcf0a6b770fe5fe7",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-44",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "Jsid+ZO1YceWzsOl23fTldalB7zhIrzwprdw/l/n",
+   "bytes": 30,
+   "params": {
+    "key": "4dee22e07ffbdf55b753ed3e7d37ad88844e11fc0fa529fb",
+    "iv": "26c89df993b561c796cec3a5",
+    "tag": "d395d6a507bce122bcf0a6b770fe5fe7",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-45",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "385c7e429bd3dbc2d4ed838597a9f45c35a1d6d16c1c47a21d7f47d6c0e5aab8",
+   "bytes": 32,
+   "params": {
+    "key": "4dee22e07ffbdf55b753ed3e7d37ad88844e11fc0fa529fb",
+    "iv": "385c7e429bd3dbc2d4ed838597a9f45c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-46",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "OFx+QpvT28LU7YOFl6n0XDWh1tFsHEeiHX9H1sDlqrg=",
+   "bytes": 32,
+   "params": {
+    "key": "4dee22e07ffbdf55b753ed3e7d37ad88844e11fc0fa529fb",
+    "iv": "385c7e429bd3dbc2d4ed838597a9f45c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-47",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "d6c06493b07cce6167a6b9c71ef7b043651e5da0d2fa151af52fa0973244",
+   "bytes": 30,
+   "params": {
+    "key": "fd96a19255a856b2eef665ce23e1fef445572197f349231f35545541532a6b01",
+    "iv": "d6c06493b07cce6167a6b9c7",
+    "tag": "b043651e5da0d2fa151af52fa0973244",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-48",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "1sBkk7B8zmFnprnHHvewQ2UeXaDS+hUa9S+glzJE",
+   "bytes": 30,
+   "params": {
+    "key": "fd96a19255a856b2eef665ce23e1fef445572197f349231f35545541532a6b01",
+    "iv": "d6c06493b07cce6167a6b9c7",
+    "tag": "b043651e5da0d2fa151af52fa0973244",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-49",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "1fb77c785e6596ece608bf7ad13c6def7230654a9bf5bc2c03139b0cc76b4337",
+   "bytes": 32,
+   "params": {
+    "key": "fd96a19255a856b2eef665ce23e1fef445572197f349231f35545541532a6b01",
+    "iv": "1fb77c785e6596ece608bf7ad13c6def",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-50",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "H7d8eF5lluzmCL960Txt73IwZUqb9bwsAxObDMdrQzc=",
+   "bytes": 32,
+   "params": {
+    "key": "fd96a19255a856b2eef665ce23e1fef445572197f349231f35545541532a6b01",
+    "iv": "1fb77c785e6596ece608bf7ad13c6def",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-51",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "60e321487d12b847e7882421eb9f729ac4abf342ee23f090f80192ea8e4d347a",
+   "bytes": 32,
+   "params": {
+    "key": "2ede5a8a71a53eccfa8dac08c15b1259",
+    "iv": "60e321487d12b847e7882421eb9f729a",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-52",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "YOMhSH0SuEfniCQh659ymsSr80LuI/CQ+AGS6o5NNHo=",
+   "bytes": 32,
+   "params": {
+    "key": "2ede5a8a71a53eccfa8dac08c15b1259",
+    "iv": "60e321487d12b847e7882421eb9f729a",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-53",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "795db0974cd78b4790adc85243a532cb6ec64be9f38469f974f78a176109",
+   "bytes": 30,
+   "params": {
+    "key": "74c77af575a1a26e908081ba01ce37ebb1d80bfafd617f30d95520d3965e0c61",
+    "nonce": "795db0974cd78b4790adc852",
+    "tag": "32cb6ec64be9f38469f974f78a176109",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-54",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "eV2wl0zXi0eQrchSQ6Uyy27GS+nzhGn5dPeKF2EJ",
+   "bytes": 30,
+   "params": {
+    "key": "74c77af575a1a26e908081ba01ce37ebb1d80bfafd617f30d95520d3965e0c61",
+    "nonce": "795db0974cd78b4790adc852",
+    "tag": "32cb6ec64be9f38469f974f78a176109",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-55",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "9bde710bba9e1e11a35b761ca8ae9342d89b3cb0e1138d2d565f18fd4e5744db37cec010251077dafa4c441504c5ba9bb7f4732482e82671b3cc0fd8b2a9d00afc2f7c44b471bc29f48351a49c8490dece6ddfa52c73b243860e71e52a87b64cea023b0da9c5b0627ac09ebcf1b05f195e5f0a33b5966fdaaf5a50bb5436563c8e311da8dc192da844b6100e5ea9d16463ee259d04d00f879371b338cca3ad5c1e92cc0bda9aef9db1d12c4e03e316aa80454d409658a1dd08324e21a1bf8aeed585a443f0befa247278e9c677ab1920620e629d0ca72ad34965aa314a00f3fff49c2b22bb65bd753de20d4702aafed7da99478d654f1b7ddc470c107b628318",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-56",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "m95xC7qeHhGjW3YcqK6TQtibPLDhE40tVl8Y/U5XRNs3zsAQJRB32vpMRBUExbqbt/RzJILoJnGzzA/YsqnQCvwvfES0cbwp9INRpJyEkN7Obd+lLHOyQ4YOceUqh7ZM6gI7DanFsGJ6wJ688bBfGV5fCjO1lm/ar1pQu1Q2VjyOMR2o3BktqES2EA5eqdFkY+4lnQTQD4eTcbM4zKOtXB6SzAvamu+dsdEsTgPjFqqARU1Allih3QgyTiGhv4ru1YWkQ/C++iRyeOnGd6sZIGIOYp0MpyrTSWWqMUoA8//0nCsiu2W9dT3iDUcCqv7X2plHjWVPG33cRwwQe2KDGA==",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-57",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "192ffb3749c9f8041eea42eeb1adca2a63fcbe2d3a4419389bda0b60a7772ad37e436c1310a8f6ec463c5642f3977825df6b66c533d82f41210aeaee83e6213f97258924f185a6d852cc981fa9558c75aab14f3e73cf4022f14baa38ab39814d7dc81adc954d4bb747ee53747f62e9ed9aa6124bdb2bb64c513f98e1d5e1b6682d5af53c650ded914e1bf5fbf9bb6239bed622d2a2fca9353b80dbfbc37527f0dc1934a8fa840aefe5c46bb9f49a07e2b542157fb67c813e43a52b1a3d89c3f2738d172131f0e1e046c2a1f2d5835a6296663e3c9276274f3fb9e83bb7ae10bbdd45cb3f51c650c2a4ed36818a8a6cd229b55c63133b3289c16e3f02792b49950bf701492b963ed3407a404edb528f22825d0337669c40be0bfc98a9f5dbe642d1e928bf786aeca832eccfc98e4d78d34c419dd60bc0020562537b8a569e2bfb7e9cde5a0b9b877b551f4681f690f5a86f5bd40100c167091280c8f3fc3a5dee48960c6b13607e656a03ef3c8431e9159771973003ff68f89e673a9dbdc42bfd999166d75916543c3155ff5e446857be0cf60a356df99915213a080bcdd642ad54e92448c0c3464a7086705e5751bbfaa1d4df6fdb348d5b09fcd52e1580f9286fb0a71e9574799d2596c9477b517d85e7196bf828b962355873073ae647c23919dd1e446fe8b641c1b44249bd1c013f018b4a0feb510cd0b25128e7f1cef8a7",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-58",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "GS/7N0nJ+AQe6kLusa3KKmP8vi06RBk4m9oLYKd3KtN+Q2wTEKj27EY8VkLzl3gl32tmxTPYL0EhCurug+YhP5cliSTxhabYUsyYH6lVjHWqsU8+c89AIvFLqjirOYFNfcga3JVNS7dH7lN0f2Lp7ZqmEkvbK7ZMUT+Y4dXhtmgtWvU8ZQ3tkU4b9fv5u2I5vtYi0qL8qTU7gNv7w3Un8NwZNKj6hArv5cRrufSaB+K1QhV/tnyBPkOlKxo9icPyc40XITHw4eBGwqHy1YNaYpZmPjySdidPP7noO7euELvdRcs/UcZQwqTtNoGKimzSKbVcYxM7MonBbj8CeStJlQv3AUkrlj7TQHpATttSjyKCXQM3ZpxAvgv8mKn12+ZC0ekov3hq7Kgy7M/Jjk1400xBndYLwAIFYlN7ilaeK/t+nN5aC5uHe1UfRoH2kPWob1vUAQDBZwkSgMjz/Dpd7kiWDGsTYH5lagPvPIQx6RWXcZcwA/9o+J5nOp29xCv9mZFm11kWVDwxVf9eRGhXvgz2CjVt+ZkVIToIC83WQq1U6SRIwMNGSnCGcF5XUbv6odTfb9s0jVsJ/NUuFYD5KG+wpx6VdHmdJZbJR3tRfYXnGWv4KLliNVhzBzrmR8I5Gd0eRG/otkHBtEJJvRwBPwGLSg/rUQzQslEo5/HO+Kc=",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-59",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "ok",
+   "encoding": "hex",
+   "value": "043b300f14560e037e282042a95a4783c1242a20e2ad206661685e4ee044362c6ceb528557d39b176c53a046554da51cd5cd7f6595246e2e7e663604141ec898b41f3d1bd207fcc13195dee1a44aa7e207fef5e42668041cdbde9196fe50ed",
+   "bytes": 95,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-60",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "ok",
+   "encoding": "base64",
+   "value": "BDswDxRWDgN+KCBCqVpHg8EkKiDirSBmYWheTuBENixs61KFV9ObF2xToEZVTaUc1c1/ZZUkbi5+ZjYEFB7ImLQfPRvSB/zBMZXe4aRKp+IH/vXkJmgEHNvekZb+UO0=",
+   "bytes": 95,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-61",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "f42b376fe3297e4c7844b3fabe95a296",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-62",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "9Cs3b+Mpfkx4RLP6vpWilg==",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-63",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "dc398d51702c30bbce170b034140892d50898474",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-64",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "3DmNUXAsMLvOFwsDQUCJLVCJhHQ=",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-65",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "11d24a184efcb3a8a1b3c6830890ecea8f13d49bf0bb3eb92c3e788dd61fd51e",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-66",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "EdJKGE78s6ihs8aDCJDs6o8T1Jvwuz65LD54jdYf1R4=",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-67",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "cf3724282fc58fc12e89a4a0a138806c41905b30a3b433439068d023d1d28efafc960a0d80747581ccdb7f08bd360795842a4534c1b9e1f96e7ebc6f2759596f",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-68",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "zzckKC/Fj8EuiaSgoTiAbEGQWzCjtDNDkGjQI9HSjvr8lgoNgHR1gczbfwi9NgeVhCpFNMG54flufrxvJ1lZbw==",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-69",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "27f8f96ac9e81e9d3b8d881fd1ce605adf731e04fb5ec030a594d5744e864b2bea5e82e3a5a6af1d34c09b",
+   "bytes": 43,
+   "params": {
+    "key": "db22fd267cb26dc5f37e80dc97f2708d",
+    "iv": "27f8f96ac9e81e9d3b8d881f",
+    "tag": "744e864b2bea5e82e3a5a6af1d34c09b",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-70",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "J/j5asnoHp07jYgf0c5gWt9zHgT7XsAwpZTVdE6GSyvqXoLjpaavHTTAmw==",
+   "bytes": 43,
+   "params": {
+    "key": "db22fd267cb26dc5f37e80dc97f2708d",
+    "iv": "27f8f96ac9e81e9d3b8d881f",
+    "tag": "744e864b2bea5e82e3a5a6af1d34c09b",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-71",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "98d4953d168dadfbc76105272e6efe7c487f56f3287e497ae0a1a96ddcfdf412",
+   "bytes": 32,
+   "params": {
+    "key": "db22fd267cb26dc5f37e80dc97f2708d",
+    "iv": "98d4953d168dadfbc76105272e6efe7c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-72",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "mNSVPRaNrfvHYQUnLm7+fEh/VvMofkl64KGpbdz99BI=",
+   "bytes": 32,
+   "params": {
+    "key": "db22fd267cb26dc5f37e80dc97f2708d",
+    "iv": "98d4953d168dadfbc76105272e6efe7c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-73",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "fc0839f357133be75cef0e1d43ecbfc6a260ced6cba7d59e966212e33493f3a486f2cdcc7c4b4a2acbf4d8",
+   "bytes": 43,
+   "params": {
+    "key": "400405d78a960ffb35c7b1713838217a151d0b7b7df82778",
+    "iv": "fc0839f357133be75cef0e1d",
+    "tag": "e33493f3a486f2cdcc7c4b4a2acbf4d8",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-74",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "/Ag581cTO+dc7w4dQ+y/xqJgztbLp9WelmIS4zST86SG8s3MfEtKKsv02A==",
+   "bytes": 43,
+   "params": {
+    "key": "400405d78a960ffb35c7b1713838217a151d0b7b7df82778",
+    "iv": "fc0839f357133be75cef0e1d",
+    "tag": "e33493f3a486f2cdcc7c4b4a2acbf4d8",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-75",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "11b1106b7d26b8297344d36abbfa1e5ce0eba1890f5c10dea8b62f1e0fb84534",
+   "bytes": 32,
+   "params": {
+    "key": "400405d78a960ffb35c7b1713838217a151d0b7b7df82778",
+    "iv": "11b1106b7d26b8297344d36abbfa1e5c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-76",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "EbEQa30muClzRNNqu/oeXODroYkPXBDeqLYvHg+4RTQ=",
+   "bytes": 32,
+   "params": {
+    "key": "400405d78a960ffb35c7b1713838217a151d0b7b7df82778",
+    "iv": "11b1106b7d26b8297344d36abbfa1e5c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-77",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "b4ad111a276b6b5a1de3317b04d50d967840f7bdcd167acbd8b4a5003c973520b2a74f2184db24558649c8",
+   "bytes": 43,
+   "params": {
+    "key": "6b400eb7a58505c76217a9336abbee2ce0bef028fa72550555e1dc1eae9711a9",
+    "iv": "b4ad111a276b6b5a1de3317b",
+    "tag": "003c973520b2a74f2184db24558649c8",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-78",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "tK0RGidra1od4zF7BNUNlnhA973NFnrL2LSlADyXNSCyp08hhNskVYZJyA==",
+   "bytes": 43,
+   "params": {
+    "key": "6b400eb7a58505c76217a9336abbee2ce0bef028fa72550555e1dc1eae9711a9",
+    "iv": "b4ad111a276b6b5a1de3317b",
+    "tag": "003c973520b2a74f2184db24558649c8",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-79",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "82067b679b1a8cf520aca715995f11b3bd3be81c12200aaaabeef986039a2fbb",
+   "bytes": 32,
+   "params": {
+    "key": "6b400eb7a58505c76217a9336abbee2ce0bef028fa72550555e1dc1eae9711a9",
+    "iv": "82067b679b1a8cf520aca715995f11b3",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-80",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "ggZ7Z5sajPUgrKcVmV8Rs7076BwSIAqqq+75hgOaL7s=",
+   "bytes": 32,
+   "params": {
+    "key": "6b400eb7a58505c76217a9336abbee2ce0bef028fa72550555e1dc1eae9711a9",
+    "iv": "82067b679b1a8cf520aca715995f11b3",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-81",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "4d163a36acb2169ce5411eb5f65db73a155c8c1f9c63d2d54961d726cda3cc3b",
+   "bytes": 32,
+   "params": {
+    "key": "d3981ff7b2884c6f58fd7655e52e5e38",
+    "iv": "4d163a36acb2169ce5411eb5f65db73a",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-82",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "TRY6NqyyFpzlQR619l23OhVcjB+cY9LVSWHXJs2jzDs=",
+   "bytes": 32,
+   "params": {
+    "key": "d3981ff7b2884c6f58fd7655e52e5e38",
+    "iv": "4d163a36acb2169ce5411eb5f65db73a",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-83",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "c7b8742b0619680ee60beef76d2c03d0ce1ee44ca02344a183c60ab308de689b263dc163864309e28073a7",
+   "bytes": 43,
+   "params": {
+    "key": "2603d8f9f5b377aef85503366bf2c8226dfeabbe467fc1e34de008bc522c27c5",
+    "nonce": "c7b8742b0619680ee60beef7",
+    "tag": "b308de689b263dc163864309e28073a7",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-84",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "x7h0KwYZaA7mC+73bSwD0M4e5EygI0Shg8YKswjeaJsmPcFjhkMJ4oBzpw==",
+   "bytes": 43,
+   "params": {
+    "key": "2603d8f9f5b377aef85503366bf2c8226dfeabbe467fc1e34de008bc522c27c5",
+    "nonce": "c7b8742b0619680ee60beef7",
+    "tag": "b308de689b263dc163864309e28073a7",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-85",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "caad0871b35634219275741e72a6f04b8dbf486bb2a26a57dd333367da41a7256b18b43d962c2f3b8e8620864aa61ea5da8e9fac148e06fa13bc25bc073f663702237ed67c1070c333aed346d8529f056e0e6c73ec66c57ff709fa5806beb3d36796d23f28e09eb7484d354ce5b0a45a99a9f9ae0b4c63e19b372750c3c0f4a11839373eda6f2f15bfc0de26851fb70ad9ff9a531b53193635b648eb4daf221befe4113f6c869ea51b21e2677e747d68fe66565d2a1d886fe95e17bedd3ad321472718e9bfe565373bd3ede5e03621bdc1088e7f791ef617ff619d0e5336dcdca4b94015f8e1b261e0efaf1cd61fad2244a0665409d157fe74395860333fc391",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-86",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "yq0IcbNWNCGSdXQecqbwS42/SGuyompX3TMzZ9pBpyVrGLQ9liwvO46GIIZKph6l2o6frBSOBvoTvCW8Bz9mNwIjftZ8EHDDM67TRthSnwVuDmxz7GbFf/cJ+lgGvrPTZ5bSPyjgnrdITTVM5bCkWpmp+a4LTGPhmzcnUMPA9KEYOTc+2m8vFb/A3iaFH7cK2f+aUxtTGTY1tkjrTa8iG+/kET9shp6lGyHiZ350fWj+ZlZdKh2Ib+leF77dOtMhRycY6b/lZTc70+3l4DYhvcEIjn95HvYX/2GdDlM23NykuUAV+OGyYeDvrxzWH60iRKBmVAnRV/50OVhgMz/DkQ==",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-87",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "84f853f7c65f56eb28207bb2791c09fba04c5eaecb187ff802c8eb2a2880e969f095bf9413c6de859f37a6c38a043c72071b5de47e9385a0d87c7bf594b1bd157a5946de3ddd7342c1af4c8d33c6a8a39a45fec2da5108dca74526d01d1608414483da1f8ea05ba40cec1b8d97f68959b9b52d5d38498ca4ed4f25c78623a9a23636c3e9197fc7a35135dc28731cda9719b56306ad079f3d6535a1ccbaba2e481023ea1f067ecc52465fb49e9555f3c42e763c1b20853ff332d051419d91445ba9cbd2715a7d5ce6f2892e2b9fea418f414cc50d05a08c66a977f849610711719232720d938e6323c01b3b3f6c43594767d033ad17e5c08e34e84bb96980024ab4891822bee739c6756cd5e04c48056dc4335dfb573ac5c864b21e445f904a8485307c4f91fce2ea4135fc76d2afcd52ed2eada0f775c25b8dc0392d37bf4c49499abb64b3c0583767485411366bbab85e34d34a4a04491a0c7e61170e301a305e8fa4446859b79c0d6fff06c089f299f5023c143591eb9b3d0716cfd5a2947e06c5c978a91e8e350cdd1088ccff72937e8aabc90c0f0afb8e5ca45c77979693102368df708b60266a1625dbb7c13455efea56fbd145d12540d3d28b0f9ab37da89ceb016a94189b8540846bff2cb32797e987464dead34335f80551b48d8206fa3cbdc845b01a68a90405e697f9364a3cb341af09cdd614eb166f362fa595e8",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-88",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "hPhT98ZfVusoIHuyeRwJ+6BMXq7LGH/4AsjrKiiA6Wnwlb+UE8behZ83psOKBDxyBxtd5H6ThaDYfHv1lLG9FXpZRt493XNCwa9MjTPGqKOaRf7C2lEI3KdFJtAdFghBRIPaH46gW6QM7BuNl/aJWbm1LV04SYyk7U8lx4YjqaI2NsPpGX/Ho1E13ChzHNqXGbVjBq0Hnz1lNaHMurouSBAj6h8GfsxSRl+0npVV88QudjwbIIU/8zLQUUGdkURbqcvScVp9XObyiS4rn+pBj0FMxQ0FoIxmqXf4SWEHEXGSMnINk45jI8AbOz9sQ1lHZ9AzrRflwI406Eu5aYACSrSJGCK+5znGdWzV4ExIBW3EM137VzrFyGSyHkRfkEqEhTB8T5H84upBNfx20q/NUu0uraD3dcJbjcA5LTe/TElJmrtks8BYN2dIVBE2a7q4XjTTSkoESRoMfmEXDjAaMF6PpERoWbecDW//BsCJ8pn1AjwUNZHrmz0HFs/VopR+BsXJeKkejjUM3RCIzP9yk36Kq8kMDwr7jlykXHeXlpMQI2jfcItgJmoWJdu3wTRV7+pW+9FF0SVA09KLD5qzfaic6wFqlBibhUCEa/8ssyeX6YdGTerTQzX4BVG0jYIG+jy9yEWwGmipBAXml/k2SjyzQa8JzdYU6xZvNi+lleg=",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-89",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "hex",
+   "value": "0448b790ee46c48219f77c2a5083470fafc9c0c538bca1a85ad1a8d4a0df1efe04de93dc7306f3cb07df0a32835db8a413d824f555dfd36ec2163cc3dd20882e92c777a5272887afc8632dcf51a9d8bcc3559dd05ef043d76a6a170dd6568b7cecd86327ef8a59f7df579e6c",
+   "bytes": 108,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-90",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "Hello123Hello12",
+   "encoding": "base64",
+   "value": "BEi3kO5GxIIZ93wqUINHD6/JwMU4vKGoWtGo1KDfHv4E3pPccwbzywffCjKDXbikE9gk9VXf027CFjzD3SCILpLHd6UnKIevyGMtz1Gp2LzDVZ3QXvBD12pqFw3WVot87NhjJ++KWfffV55s",
+   "bytes": 108,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-91",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "9e107d9d372bb6826bd81d3542a419d6",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-92",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "nhB9nTcrtoJr2B01QqQZ1g==",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-93",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "2fd4e1c67a2d28fced849ee1bb76e7391b93eb12",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-94",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "L9ThxnotKPzthJ7hu3bnORuT6xI=",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-95",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-96",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "16j7swfXgJRpypq8sAguT41WUeRtPNt2LQLQvzfJ5ZI=",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-97",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "07e547d9586f6a73f73fbac0435ed76951218fb7d0c8d788a309d785436bbb642e93a252a954f23912547d1e8a3b5ed6e1bfd7097821233fa0538f3db854fee6",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-98",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "B+VH2VhvanP3P7rAQ17XaVEhj7fQyNeIownXhUNru2Quk6JSqVTyORJUfR6KO17W4b/XCXghIz+gU489uFT+5g==",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-99",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "575079707e2c9b42ca2b612429061a82e3455fca1fe668e7ec298cf1d4482172c0e8c638df3e825ff0248255ecef9196f993189e27a5612f842a588345be51ef175976542d595a",
+   "bytes": 71,
+   "params": {
+    "key": "c88feed6c1d107fc881ef6605c81999e",
+    "iv": "575079707e2c9b42ca2b6124",
+    "tag": "2f842a588345be51ef175976542d595a",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-100",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "V1B5cH4sm0LKK2EkKQYaguNFX8of5mjn7CmM8dRIIXLA6MY43z6CX/AkglXs75GW+ZMYnielYS+EKliDRb5R7xdZdlQtWVo=",
+   "bytes": 71,
+   "params": {
+    "key": "c88feed6c1d107fc881ef6605c81999e",
+    "iv": "575079707e2c9b42ca2b6124",
+    "tag": "2f842a588345be51ef175976542d595a",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-101",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "c557f71f91e55023492d9b3af0f91f0c040765c4569a442b6a1d7ac889fd7998c7dffc1f8b86ab89fbea9b9a1b62d8ac4ff495b964775194e58012525cd94ec8",
+   "bytes": 64,
+   "params": {
+    "key": "c88feed6c1d107fc881ef6605c81999e",
+    "iv": "c557f71f91e55023492d9b3af0f91f0c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-102",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "xVf3H5HlUCNJLZs68PkfDAQHZcRWmkQrah16yIn9eZjH3/wfi4arifvqm5obYtisT/SVuWR3UZTlgBJSXNlOyA==",
+   "bytes": 64,
+   "params": {
+    "key": "c88feed6c1d107fc881ef6605c81999e",
+    "iv": "c557f71f91e55023492d9b3af0f91f0c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-103",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "095a53455dbff26aa4bca4f22c25896218a6e2b749783314a5bb7eb8b14fd3f3afae658a57f57a97e249cf5e64e8cb344332f04be5d0e03f65fb4e38150de136b66f68630fef46",
+   "bytes": 71,
+   "params": {
+    "key": "76d782a58e4c7dfb76e9409374ae67664e81d7c96db16f40",
+    "iv": "095a53455dbff26aa4bca4f2",
+    "tag": "3f65fb4e38150de136b66f68630fef46",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-104",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "CVpTRV2/8mqkvKTyLCWJYhim4rdJeDMUpbt+uLFP0/OvrmWKV/V6l+JJz15k6Ms0QzLwS+XQ4D9l+044FQ3hNrZvaGMP70Y=",
+   "bytes": 71,
+   "params": {
+    "key": "76d782a58e4c7dfb76e9409374ae67664e81d7c96db16f40",
+    "iv": "095a53455dbff26aa4bca4f2",
+    "tag": "3f65fb4e38150de136b66f68630fef46",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-105",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "fbb8d95378e20a8751d93a376dd0b5f896569347d3f5257fc8a0ea5c91bc7ec76aac51dccd9159756a45e112922af9251666ec6436d17b3891f99cf382ca0cf2",
+   "bytes": 64,
+   "params": {
+    "key": "76d782a58e4c7dfb76e9409374ae67664e81d7c96db16f40",
+    "iv": "fbb8d95378e20a8751d93a376dd0b5f8",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-106",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "+7jZU3jiCodR2To3bdC1+JZWk0fT9SV/yKDqXJG8fsdqrFHczZFZdWpF4RKSKvklFmbsZDbReziR+ZzzgsoM8g==",
+   "bytes": 64,
+   "params": {
+    "key": "76d782a58e4c7dfb76e9409374ae67664e81d7c96db16f40",
+    "iv": "fbb8d95378e20a8751d93a376dd0b5f8",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-107",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "ea199bf7ff6bb790acfe4c6adda82b20382dd8393b1a88bd48266295ce435bb6a4e9127cd29aab9580da8f1b4767514fcb766360a0e097f601079d8c1354b1bbfa8f9e625f583b",
+   "bytes": 71,
+   "params": {
+    "key": "e2094ed9d20d5b931ebe3dd43c02fbfc3f4aae61ef9e0e7515df95879add39c6",
+    "iv": "ea199bf7ff6bb790acfe4c6a",
+    "tag": "f601079d8c1354b1bbfa8f9e625f583b",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-108",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "6hmb9/9rt5Cs/kxq3agrIDgt2Dk7Goi9SCZilc5DW7ak6RJ80pqrlYDajxtHZ1FPy3ZjYKDgl/YBB52ME1Sxu/qPnmJfWDs=",
+   "bytes": 71,
+   "params": {
+    "key": "e2094ed9d20d5b931ebe3dd43c02fbfc3f4aae61ef9e0e7515df95879add39c6",
+    "iv": "ea199bf7ff6bb790acfe4c6a",
+    "tag": "f601079d8c1354b1bbfa8f9e625f583b",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-109",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "89bc318f788505a603f1b3b7c7ca4d6d0c7d96d3d84ac3a4cac7d4fcbe3dc997893a1220d5bf73a476f2a799f86c09fb7f7b1f693885771e20b2817c1af64ce6",
+   "bytes": 64,
+   "params": {
+    "key": "e2094ed9d20d5b931ebe3dd43c02fbfc3f4aae61ef9e0e7515df95879add39c6",
+    "iv": "89bc318f788505a603f1b3b7c7ca4d6d",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-110",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "ibwxj3iFBaYD8bO3x8pNbQx9ltPYSsOkysfU/L49yZeJOhIg1b9zpHbyp5n4bAn7f3sfaTiFdx4gsoF8GvZM5g==",
+   "bytes": 64,
+   "params": {
+    "key": "e2094ed9d20d5b931ebe3dd43c02fbfc3f4aae61ef9e0e7515df95879add39c6",
+    "iv": "89bc318f788505a603f1b3b7c7ca4d6d",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-111",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "5b4d90a6a63a697a02c5e0cb70c5dec8bebce2f593221a143cf1e784fcfa968d5d59aaed0ad66008ddce46f1acf7b16571ced495c0c5b2f28dea34cba1ae8467",
+   "bytes": 64,
+   "params": {
+    "key": "e9a3336256c6e1d6f31b7aec0e2e45b7",
+    "iv": "5b4d90a6a63a697a02c5e0cb70c5dec8",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-112",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "W02QpqY6aXoCxeDLcMXeyL684vWTIhoUPPHnhPz6lo1dWartCtZgCN3ORvGs97Flcc7UlcDFsvKN6jTLoa6EZw==",
+   "bytes": 64,
+   "params": {
+    "key": "e9a3336256c6e1d6f31b7aec0e2e45b7",
+    "iv": "5b4d90a6a63a697a02c5e0cb70c5dec8",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-113",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "bbf5a0b2e3b225429020a683d12a004d755a3f40f91ebad98d649b4f8309c0d9e175291145b3b78a9bfbcffd2ebd74ca4ba6970fc8d1c44788f4bdb4704065a0b2e55df4d414b8",
+   "bytes": 71,
+   "params": {
+    "key": "95f837e62db680edecb8316cb125014e48e580d557769b6155f149b87141acb4",
+    "nonce": "bbf5a0b2e3b225429020a683",
+    "tag": "4788f4bdb4704065a0b2e55df4d414b8",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-114",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "u/WgsuOyJUKQIKaD0SoATXVaP0D5HrrZjWSbT4MJwNnhdSkRRbO3ipv7z/0uvXTKS6aXD8jRxEeI9L20cEBloLLlXfTUFLg=",
+   "bytes": 71,
+   "params": {
+    "key": "95f837e62db680edecb8316cb125014e48e580d557769b6155f149b87141acb4",
+    "nonce": "bbf5a0b2e3b225429020a683",
+    "tag": "4788f4bdb4704065a0b2e55df4d414b8",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-115",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "501fe55187980328b81ccc8a840c5cb5cf9520cbaaca1d3b5904f485b541d231f4a84438436575943d7bfc62b30d99f19f3e539ad782daa072e50970d07d0baff4056a368716362747908eff6ff93b9ccdada2ba27e7d88c788b3fde1ba0529f541ea8e889f9a00a77603d2ee2d233e846f8dd06eb231a476918df4dd784d4e1f4e8ac579941a8daeed7a939629b0716f29c97ce8e2ad1edb88732099a07dcd5b54cae295799104fbf6f2f364dbaf696773cdd4af9d4490de95c7ad0fbc424216c1130d562508da2401a5c2a223be8231bd8d543b61f749a1c96f17821de1121da0f5ac4a37c3c8d54b2d787f5be143461c92bdb58957259fd47f609ca95ed3b",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-116",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "UB/lUYeYAyi4HMyKhAxctc+VIMuqyh07WQT0hbVB0jH0qEQ4Q2V1lD17/GKzDZnxnz5TmteC2qBy5Qlw0H0Lr/QFajaHFjYnR5CO/2/5O5zNraK6J+fYjHiLP94boFKfVB6o6In5oAp3YD0u4tIz6Eb43QbrIxpHaRjfTdeE1OH06KxXmUGo2u7XqTlimwcW8pyXzo4q0e24hzIJmgfc1bVMrilXmRBPv28vNk269pZ3PN1K+dRJDelcetD7xCQhbBEw1WJQjaJAGlwqIjvoIxvY1UO2H3SaHJbxeCHeESHaD1rEo3w8jVSy14f1vhQ0Yckr21iVcln9R/YJypXtOw==",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-117",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "33cf184abafa01be72635111180d1ee962b5be7cd0b7ebca0d9b606b69b32e83026b92041dbfbb6982e655a2f58d7350906a9169d3a976c2812332334532177b40baa9e2a146e74e57789525dab7c7b1424010650e7e43e7c32c1eac6534189d18a2651035a659784786b94fba83bbd14413dc749ba95eddd6d72eb8105f29f8681907fde8a0397c4df070fb850215c7e2ccc3d7018c966a0b951cc2b748682038ca023a26f2965190c1e2e5603e72564e507897e9dea8e4ab4a093bfb7ca8d142e52ed9fd4a0b16c75360b7fd0ff47b30be98828dddbef6d79a3030b214122a2b160ffa9aa8b4cd5dc4c21cb87261d27a7512eb55a6d57ff4c3e27132e5334bb314667d6c229ea5e17be2d925b166d8f25d6c550d81247548d9835173ac000045d537b04d320cf6e8a1e37c3c5882b707c0930cd0c8918ab92782da2349a504941981603fc2dcf64c822b8c53f769fc5ad2675e59574b0a128fe7931663b54758fa69752cc99217dfe955abc8f51701d53046c7691092bc0090e2d993e03c980462ece908359f21e2df92a15ab905af9b8639cef179320a5d28b579c20660ad36d57383adf4a577f4cb66c43dd317e01469d0600c20b06e62b7845df7cf15421bea60c69e8a120e9ef0cd2d29d748251c49e67b3765693a320ded37cb4f307281d784a305c554aea90b254b8a2c6dd6e341691e9b566e417e41ce0087e2ee51",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-118",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "M88YSrr6Ab5yY1ERGA0e6WK1vnzQt+vKDZtga2mzLoMCa5IEHb+7aYLmVaL1jXNQkGqRadOpdsKBIzIzRTIXe0C6qeKhRudOV3iVJdq3x7FCQBBlDn5D58MsHqxlNBidGKJlEDWmWXhHhrlPuoO70UQT3HSbqV7d1tcuuBBfKfhoGQf96KA5fE3wcPuFAhXH4szD1wGMlmoLlRzCt0hoIDjKAjom8pZRkMHi5WA+clZOUHiX6d6o5KtKCTv7fKjRQuUu2f1KCxbHU2C3/Q/0ezC+mIKN3b7215owMLIUEiorFg/6mqi0zV3Ewhy4cmHSenUS61Wm1X/0w+JxMuUzS7MUZn1sIp6l4Xvi2SWxZtjyXWxVDYEkdUjZg1FzrAAARdU3sE0yDPbooeN8PFiCtwfAkwzQyJGKuSeC2iNJpQSUGYFgP8Lc9kyCK4xT92n8WtJnXllXSwoSj+eTFmO1R1j6aXUsyZIX3+lVq8j1FwHVMEbHaRCSvACQ4tmT4DyYBGLs6Qg1nyHi35KhWrkFr5uGOc7xeTIKXSi1ecIGYK021XODrfSld/TLZsQ90xfgFGnQYAwgsG5it4Rd988VQhvqYMaeihIOnvDNLSnXSCUcSeZ7N2VpOjIN7TfLTzBygdeEowXFVK6pCyVLiixt1uNBaR6bVm5BfkHOAIfi7lE=",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-119",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "hex",
+   "value": "04fc995435746b5da7c4420a94d9c35c2c7178d7fb0d18a68de022791d785b2dffcad4f348ff6c84b512d32e61f6a6ca824fbc3de7b2d88e41e033b78bac76ef0d87ba07a163ccd3af15219958bd1a8b7e2b088386205a312cc8ccc8550ae81aedf848be495f068d0c22b7059aeffd4d29e050e8f6bea995fd81322fca14e8bac4753350eff90f24",
+   "bytes": 136,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-120",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "The quick brown fox jumps over the lazy dog",
+   "encoding": "base64",
+   "value": "BPyZVDV0a12nxEIKlNnDXCxxeNf7DRimjeAieR14Wy3/ytTzSP9shLUS0y5h9qbKgk+8Peey2I5B4DO3i6x27w2HugehY8zTrxUhmVi9Got+KwiDhiBaMSzIzMhVCuga7fhIvklfBo0MIrcFmu/9TSngUOj2vqmV/YEyL8oU6LrEdTNQ7/kPJA==",
+   "bytes": 136,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-121",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "baed005300234f3d1503c50a48ce8e6f",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-122",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "uu0AUwAjTz0VA8UKSM6Obw==",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-123",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "9578f951955d37f20b601c26591e260c1e5389bf",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-124",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "lXj5UZVdN/ILYBwmWR4mDB5Tib8=",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-125",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "fb871ff8cce8fea83dfaeab41784305a1461e008dc02a371ed26d856c766c903",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-126",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "+4cf+Mzo/qg9+uq0F4QwWhRh4AjcAqNx7SbYVsdmyQM=",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-127",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "2709efa0d4b375afd1d73c33f34728b11be559f7797270a13e520dca3000a6482dc84e99b38d3cdf15319cb0a76dc124d5244f41141888bb48a8d40a9daed5fc",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-128",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "JwnvoNSzda/R1zwz80cosRvlWfd5cnChPlINyjAApkgtyE6Zs4083xUxnLCnbcEk1SRPQRQYiLtIqNQKna7V/A==",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-129",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "ea130cd00cd7fed1855d323cbb2ea0603a911c363c0c2c2f0039a82a61c2d621b6c5229c85d97d168a05e2cc7281d86b160163a52fdceac31b1fd0bd0aba0587b92acccb474e06533f3e57038989",
+   "bytes": 78,
+   "params": {
+    "key": "23971647d6e216bc05bb8f7b1561d203",
+    "iv": "ea130cd00cd7fed1855d323c",
+    "tag": "0587b92acccb474e06533f3e57038989",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-130",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "6hMM0AzX/tGFXTI8uy6gYDqRHDY8DCwvADmoKmHC1iG2xSKchdl9FooF4sxygdhrFgFjpS/c6sMbH9C9CroFh7kqzMtHTgZTPz5XA4mJ",
+   "bytes": 78,
+   "params": {
+    "key": "23971647d6e216bc05bb8f7b1561d203",
+    "iv": "ea130cd00cd7fed1855d323c",
+    "tag": "0587b92acccb474e06533f3e57038989",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-131",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "6ca88c45551bbbc22511dbf846024ceae4151b502f309d55399f080f96de5b74cab012fe4a7d24a606f0708e262c1d0159116207aaec7753c19c2416edf45d9cada65f09fc5342d79ea217bcd2099e32",
+   "bytes": 80,
+   "params": {
+    "key": "23971647d6e216bc05bb8f7b1561d203",
+    "iv": "6ca88c45551bbbc22511dbf846024cea",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-132",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "bKiMRVUbu8IlEdv4RgJM6uQVG1AvMJ1VOZ8ID5beW3TKsBL+Sn0kpgbwcI4mLB0BWRFiB6rsd1PBnCQW7fRdnK2mXwn8U0LXnqIXvNIJnjI=",
+   "bytes": 80,
+   "params": {
+    "key": "23971647d6e216bc05bb8f7b1561d203",
+    "iv": "6ca88c45551bbbc22511dbf846024cea",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-133",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "346e93a62b1488e944a7757efef9e7191a120579435a8c3c5da395db1bea9133de1eb7f30205e49727842332c13a5f891a974928f53d4aef43323e4414d26d2b098bb8d8c3caf78c894f64891f24",
+   "bytes": 78,
+   "params": {
+    "key": "0935f49c8712d75bdec1289bc1060e831fe10f061f80a174",
+    "iv": "346e93a62b1488e944a7757e",
+    "tag": "6d2b098bb8d8c3caf78c894f64891f24",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-134",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "NG6TpisUiOlEp3V+/vnnGRoSBXlDWow8XaOV2xvqkTPeHrfzAgXklyeEIzLBOl+JGpdJKPU9Su9DMj5EFNJtKwmLuNjDyveMiU9kiR8k",
+   "bytes": 78,
+   "params": {
+    "key": "0935f49c8712d75bdec1289bc1060e831fe10f061f80a174",
+    "iv": "346e93a62b1488e944a7757e",
+    "tag": "6d2b098bb8d8c3caf78c894f64891f24",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-135",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "e9a99b5b355267155b0a993c58f1cc198b9137c4c1f8df4a2cdc146214eb7a8a1087177b877dffb5e1ee20b4bec8cdd20235c967b6165c4f84e6a272dc10f7627ef0664bdef8041d8806de30e17ddb86",
+   "bytes": 80,
+   "params": {
+    "key": "0935f49c8712d75bdec1289bc1060e831fe10f061f80a174",
+    "iv": "e9a99b5b355267155b0a993c58f1cc19",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-136",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "6ambWzVSZxVbCpk8WPHMGYuRN8TB+N9KLNwUYhTreooQhxd7h33/teHuILS+yM3SAjXJZ7YWXE+E5qJy3BD3Yn7wZkve+AQdiAbeMOF924Y=",
+   "bytes": 80,
+   "params": {
+    "key": "0935f49c8712d75bdec1289bc1060e831fe10f061f80a174",
+    "iv": "e9a99b5b355267155b0a993c58f1cc19",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-137",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "87a295cfcfbffb4a2be30d9b82972784828642ed168939534b452db713bfde9798de5e5fe81f804095401ec8264ae87b25a9aedce5efc29a227fcaf206eeb5b5d50d65ca69624b40f882a5f41961",
+   "bytes": 78,
+   "params": {
+    "key": "7c2d2e9408259d9ef025e24e4ae65b1097ae80d1b7eb969d8ff3541daadc7c62",
+    "iv": "87a295cfcfbffb4a2be30d9b",
+    "tag": "b5b5d50d65ca69624b40f882a5f41961",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-138",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "h6KVz8+/+0or4w2bgpcnhIKGQu0WiTlTS0UttxO/3peY3l5f6B+AQJVAHsgmSuh7Jamu3OXvwpoif8ryBu61tdUNZcppYktA+IKl9Blh",
+   "bytes": 78,
+   "params": {
+    "key": "7c2d2e9408259d9ef025e24e4ae65b1097ae80d1b7eb969d8ff3541daadc7c62",
+    "iv": "87a295cfcfbffb4a2be30d9b",
+    "tag": "b5b5d50d65ca69624b40f882a5f41961",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-139",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "19959314d911ea62e98c8ae7f1994a274b48d255d391757da2ed76ab311d651c16ed79d4654ec5f0b161eb99e49c60a4bbe23d8de17bd66f6bb5a6e0c5692ef90bc8fc20c8a3e0c1977fe93d9cb26455",
+   "bytes": 80,
+   "params": {
+    "key": "7c2d2e9408259d9ef025e24e4ae65b1097ae80d1b7eb969d8ff3541daadc7c62",
+    "iv": "19959314d911ea62e98c8ae7f1994a27",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-140",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "GZWTFNkR6mLpjIrn8ZlKJ0tI0lXTkXV9ou12qzEdZRwW7XnUZU7F8LFh65nknGCku+I9jeF71m9rtabgxWku+QvI/CDIo+DBl3/pPZyyZFU=",
+   "bytes": 80,
+   "params": {
+    "key": "7c2d2e9408259d9ef025e24e4ae65b1097ae80d1b7eb969d8ff3541daadc7c62",
+    "iv": "19959314d911ea62e98c8ae7f1994a27",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-141",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "9af68e9e0d0285441f320b8500538114239112ac9eb323383bb174ef08bbb0e87453e0d3bc1d9cdffbde83c22e8e417a8937da7b1bb929ab6a7697ca40c4e4022c3fd0ff98882c99e4d437e34e34d95a",
+   "bytes": 80,
+   "params": {
+    "key": "384abbda9055332028817f3431b70bdd",
+    "iv": "9af68e9e0d0285441f320b8500538114",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-142",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "mvaOng0ChUQfMguFAFOBFCOREqyesyM4O7F07wi7sOh0U+DTvB2c3/veg8IujkF6iTfaexu5KatqdpfKQMTkAiw/0P+YiCyZ5NQ340402Vo=",
+   "bytes": 80,
+   "params": {
+    "key": "384abbda9055332028817f3431b70bdd",
+    "iv": "9af68e9e0d0285441f320b8500538114",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-143",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "0145e1765beac488c84bbe79773376b4ffeefcf2a89f3523eec806faee08ee7690223a64d43eb1710d7d1d1763b4a6e3e77ccd054e53b85facd9f881ed442dd6d534df514fda183518c90c6cbf8f",
+   "bytes": 78,
+   "params": {
+    "key": "b1883c53ad8433afacd28847c54e360040a3d7ee4dd672856fe3bae725e79b87",
+    "nonce": "0145e1765beac488c84bbe79",
+    "tag": "2dd6d534df514fda183518c90c6cbf8f",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-144",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "AUXhdlvqxIjIS755dzN2tP/u/PKonzUj7sgG+u4I7naQIjpk1D6xcQ19HRdjtKbj53zNBU5TuF+s2fiB7UQt1tU031FP2hg1GMkMbL+P",
+   "bytes": 78,
+   "params": {
+    "key": "b1883c53ad8433afacd28847c54e360040a3d7ee4dd672856fe3bae725e79b87",
+    "nonce": "0145e1765beac488c84bbe79",
+    "tag": "2dd6d534df514fda183518c90c6cbf8f",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-145",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "512fae160ffc0625adfda2543d5d87837409159da6712508f5e230d8ded0c928730580991a872b1ff2f2f44f2e37adcc09dc9487f1e2b22c9b58feec5d160482fafcb590d7dd235fb7357724a3cde28d669ce62d6a2ac2fca93b2a107ff7c9f4d00730846520332fad3c87a8bd17a2e5b0b8a5947c5be1c2c7ce8f3d4660047594d8f17172eabf9f1155131302301c202d9fc64819b63008e12eacce96e8e1429114a1a8ced34498a39ffef8fee85fabaa49dfd41600ccd4b59dcef7a0c360562e1223fd56eb5563d1fbab28d75286a62fb76de3b3ddc61bb058b214369df5a335f2e83be23791ab825410261d6d747aaf9cb73f2c8de3f9be18ab332265ba28",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-146",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "US+uFg/8BiWt/aJUPV2Hg3QJFZ2mcSUI9eIw2N7QyShzBYCZGocrH/Ly9E8uN63MCdyUh/HisiybWP7sXRYEgvr8tZDX3SNftzV3JKPN4o1mnOYtairC/Kk7KhB/98n00AcwhGUgMy+tPIeovRei5bC4pZR8W+HCx86PPUZgBHWU2PFxcuq/nxFVExMCMBwgLZ/GSBm2MAjhLqzOlujhQpEUoajO00SYo5/++P7oX6uqSd/UFgDM1LWdzvegw2BWLhIj/VbrVWPR+6so11KGpi+3beOz3cYbsFiyFDad9aM18ug74jeRq4JUECYdbXR6r5y3PyyN4/m+GKszImW6KA==",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-147",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "57abaa1813e6e7dba344942b98cbe47165f042d32e09de3c938c1136e3de40fb354742f1ccbcf52a6c1f0bade8ed689926b9dd839291481d4da61371383b937b5e1ee3656ca57202b5ab507cd4a60d4eb9d5c6de2076a8b130f14888481a72f59d9c0168e473ab09144498b5bec099bb50a512fa304da9518587dc68d2ee2fd47ecef32e7b259c8c66a76af3960ea31afe18e5369148fe89bb63f485d96ad46552583829c6da08e5aafdde16595efbe06fb667c0c89c07fd8d4c486a0a0144c547fe3846f46edc7bea84d1fa34ce9514e9c1514e69a84e338766e2634ded256d3cfc7f51b749350e2d877e87211067ca1e0ebff542225e8d32505814b5fdf532a5193165c116739c3c7bd5349aad59b5eef97c0390adbdab21c71f4478f4e867397b236eaf580071cc58082163a2dffd79803e30958610c1e3737468f7f6f880fc678bd534cc99b3f96f968254f49c5a269e80c93fe97ea79282713f44960a8709422671fbcc69373c3fbc5dd675aa1a0f6284a77185eaa98beb4d85a17bb23ff71393065b97c3e3d97e3a1cb8cc8fb696f6ac847161cffb2f543261d59cc3217b4a21f890ee93d092e114e1b98fbac13544b382ef1655572fc3eced0b98fff89aa86c4c2835019cc1d762b11013fd054baf3695d3f6830fc6dbaeb817f4d16debdef346bd9b2eb26063a1ce10db13488f8ea6ce7f64d97e0e5c1cc2949f6820",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-148",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "V6uqGBPm59ujRJQrmMvkcWXwQtMuCd48k4wRNuPeQPs1R0LxzLz1KmwfC63o7WiZJrndg5KRSB1NphNxODuTe14e42VspXICtatQfNSmDU651cbeIHaosTDxSIhIGnL1nZwBaORzqwkURJi1vsCZu1ClEvowTalRhYfcaNLuL9R+zvMueyWcjGanavOWDqMa/hjlNpFI/om7Y/SF2WrUZVJYOCnG2gjlqv3eFlle++BvtmfAyJwH/Y1MSGoKAUTFR/44RvRu3HvqhNH6NM6VFOnBUU5pqE4zh2biY03tJW08/H9Rt0k1Di2HfochEGfKHg6/9UIiXo0yUFgUtf31MqUZMWXBFnOcPHvVNJqtWbXu+XwDkK29qyHHH0R49OhnOXsjbq9YAHHMWAghY6Lf/XmAPjCVhhDB43N0aPf2+ID8Z4vVNMyZs/lvloJU9JxaJp6AyT/pfqeSgnE/RJYKhwlCJnH7zGk3PD+8XdZ1qhoPYoSncYXqqYvrTYWhe7I/9xOTBluXw+PZfjocuMyPtpb2rIRxYc/7L1QyYdWcwyF7SiH4kO6T0JLhFOG5j7rBNUSzgu8WVVcvw+ztC5j/+JqobEwoNQGcwddisRAT/QVLrzaV0/aDD8bbrrgX9NFt697zRr2bLrJgY6HOENsTSI+Ops5/ZNl+DlwcwpSfaCA=",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-149",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "hex",
+   "value": "040fa9a9959109d7dd8e427fac99844a93134cd16dcd2db31e1a792ed04f66c147ff3435f7511dc676c4347de54fac3ef8253ce3e67de3f1a2255568f533af715049ac8cae7c099a7a2d6620e70761644ba87859063e8fd436e6f41c53b2123872437fe31cccb5c2a13f643497892bcba10c8f062a156949dea699c1b51862667b44b8514d44708323dd441e803439",
+   "bytes": 143,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-150",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "01234567890123456789012345678901234567890123456789",
+   "encoding": "base64",
+   "value": "BA+pqZWRCdfdjkJ/rJmESpMTTNFtzS2zHhp5LtBPZsFH/zQ191EdxnbENH3lT6w++CU84+Z94/GiJVVo9TOvcVBJrIyufAmaei1mIOcHYWRLqHhZBj6P1Dbm9BxTshI4ckN/4xzMtcKhP2Q0l4kry6EMjwYqFWlJ3qaZwbUYYmZ7RLhRTURwgyPdRB6ANDk=",
+   "bytes": 143,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-151",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "ef280b317bae0aa08abb4eec20083469",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-152",
+   "algorithm": "MD5",
+   "category": "hashing",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "7ygLMXuuCqCKu07sIAg0aQ==",
+   "bytes": 16,
+   "params": {}
+  },
+  {
+   "id": "dev-153",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "c75331d935bfde9ca88a8faacf1704b220dcd03c",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-154",
+   "algorithm": "SHA-1",
+   "category": "hashing",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "x1Mx2TW/3pyoio+qzxcEsiDc0Dw=",
+   "bytes": 20,
+   "params": {}
+  },
+  {
+   "id": "dev-155",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "6410d5ff7dbc41b3ab2b8923c34cfd70d882060b04ffe57ed2f73a2965bbb858",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-156",
+   "algorithm": "SHA-256",
+   "category": "hashing",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "ZBDV/328QbOrK4kjw0z9cNiCBgsE/+V+0vc6KWW7uFg=",
+   "bytes": 32,
+   "params": {}
+  },
+  {
+   "id": "dev-157",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "a4d34c32050681462d6b00a3af99c3fe365eac1836387bb60df637ab30bddf16fb331bd72a0bcf0a6995cdc213b7f4ed7f5033f1e9ab862ee0dba66906bbb2cb",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-158",
+   "algorithm": "SHA-512",
+   "category": "hashing",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "pNNMMgUGgUYtawCjr5nD/jZerBg2OHu2DfY3qzC93xb7MxvXKgvPCmmVzcITt/Ttf1Az8emrhi7g26ZpBruyyw==",
+   "bytes": 64,
+   "params": {}
+  },
+  {
+   "id": "dev-159",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "cbd61d93953eab8962b798e7b08b5c23c82d0f1c10a124d9babb98b5c39328f0ca936cdfa77f02f55b39e3a2b3a37dcfc65c7b55e5cc30ebe8ad4bbcd9ce969c9ffde41724e931d800502abb08dbe8466832788013ec03473159e8660becf1b91349e7e3e33e2e29a175484ce241adc1cea1cfc270fff3b4da5f9514a861cb47cb9a266c11f6e2f42dd5ae2794c2243665d36e66f54c45f24d55f14b44c3f95e20ffa63278234670b9c8e6a8466b043ea9bab60a8deb74549251571f3f1aaab9be3ef8bcee9850f65c10a80d6db8c5b6",
+   "bytes": 208,
+   "params": {
+    "key": "deb6fd76c0f256c5a9c3bcdc4cac7364",
+    "iv": "cbd61d93953eab8962b798e7",
+    "tag": "be3ef8bcee9850f65c10a80d6db8c5b6",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-160",
+   "algorithm": "AES-128-GCM",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "y9Ydk5U+q4lit5jnsItcI8gtDxwQoSTZuruYtcOTKPDKk2zfp38C9Vs546Kzo33Pxlx7VeXMMOvorUu82c6WnJ/95Bck6THYAFAquwjb6EZoMniAE+wDRzFZ6GYL7PG5E0nn4+M+LimhdUhM4kGtwc6hz8Jw//O02l+VFKhhy0fLmiZsEfbi9C3VrieUwiQ2ZdNuZvVMRfJNVfFLRMP5XiD/pjJ4I0ZwucjmqEZrBD6purYKjet0VJJRVx8/Gqq5vj74vO6YUPZcEKgNbbjFtg==",
+   "bytes": 208,
+   "params": {
+    "key": "deb6fd76c0f256c5a9c3bcdc4cac7364",
+    "iv": "cbd61d93953eab8962b798e7",
+    "tag": "be3ef8bcee9850f65c10a80d6db8c5b6",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-161",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "d92ab0387f278339bab877d4b2f5ac5e6b81b5c4eff32744dadd9eb61f6cb04f0f5a63c6b24fdb674974eb404937e723444efdb9c1362b49cd14c369aedc7683962106b7dae18ee081e0ab6cd73b6236ff43a9d92a50a1d27e2e87ee9b413cb743ab763c82b397ad9dac8f6ff066728d19901f1de1741ef8427ac2c58df03640d399ae0d23e05d0c983e0ffda94906e4c52d5a08e6a1710c265bfbd72ee9e68f99083b860b617541110a4f3bf1bd09d587c0dea7075b5de9396f799365ac8886792d3b4e0055e41befaf05b645472582",
+   "bytes": 208,
+   "params": {
+    "key": "deb6fd76c0f256c5a9c3bcdc4cac7364",
+    "iv": "d92ab0387f278339bab877d4b2f5ac5e",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-162",
+   "algorithm": "AES-128-CBC",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "2SqwOH8ngzm6uHfUsvWsXmuBtcTv8ydE2t2eth9ssE8PWmPGsk/bZ0l060BJN+cjRE79ucE2K0nNFMNprtx2g5YhBrfa4Y7ggeCrbNc7Yjb/Q6nZKlCh0n4uh+6bQTy3Q6t2PIKzl62drI9v8GZyjRmQHx3hdB74QnrCxY3wNkDTma4NI+BdDJg+D/2pSQbkxS1aCOahcQwmW/vXLunmj5kIO4YLYXVBEQpPO/G9CdWHwN6nB1td6TlveZNlrIiGeS07TgBV5BvvrwW2RUclgg==",
+   "bytes": 208,
+   "params": {
+    "key": "deb6fd76c0f256c5a9c3bcdc4cac7364",
+    "iv": "d92ab0387f278339bab877d4b2f5ac5e",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-163",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "e1f91febecebd0d628506d3ca65f237f626057dd0a706c04f8b05e440eecdb8dcf7e427f592f624f23c8813ecb9e9b203dbb3b93a0b69f70934505bcb9f9b29c0a3cd921e273a6db606ecd5270bb4749cc29c4ccfd731ae4acbc95fcf734e0b2934071a51b74f14a9dc7605ac64c0dd099ee5bf41b1b6b5471f9372f077eb8bda960c2952419fd8a3ff9d8ca29516b6ec564c4e7c4a3edb030d94936e5b36e9e8eab1fcd3b9c3ba25ea50fcec9d8d2e2e5595d7c3f65a82dcaff5618a0d5d17e068eff7ee9bdd654bba38dc0576f90c9",
+   "bytes": 208,
+   "params": {
+    "key": "ab0e2b030715a5e809de24437d7aa933f881a3663121f2bd",
+    "iv": "e1f91febecebd0d628506d3c",
+    "tag": "068eff7ee9bdd654bba38dc0576f90c9",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-164",
+   "algorithm": "AES-192-GCM",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "4fkf6+zr0NYoUG08pl8jf2JgV90KcGwE+LBeRA7s243PfkJ/WS9iTyPIgT7LnpsgPbs7k6C2n3CTRQW8ufmynAo82SHic6bbYG7NUnC7R0nMKcTM/XMa5Ky8lfz3NOCyk0BxpRt08Uqdx2BaxkwN0JnuW/QbG2tUcfk3Lwd+uL2pYMKVJBn9ij/52MopUWtuxWTE58Sj7bAw2Uk25bNuno6rH807nDuiXqUPzsnY0uLlWV18P2WoLcr/Vhig1dF+Bo7/fum91lS7o43AV2+QyQ==",
+   "bytes": 208,
+   "params": {
+    "key": "ab0e2b030715a5e809de24437d7aa933f881a3663121f2bd",
+    "iv": "e1f91febecebd0d628506d3c",
+    "tag": "068eff7ee9bdd654bba38dc0576f90c9",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-165",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "8ea24019f35a29a2d4a7237cf968b4e03d5115b932af32af6a133addc82602bda2ac78db3676a365c66c1cf51ea27b703a21fb76c8e0af3a77a7385ff511e04bf8a7d4e59f7034db09edc1410ba85bd4ec9e352d2f3e0b0d3fc4c355e7724cb2e7e4308e1bc2e737aad27ac6aac54d24636e6cb93b63682876c61e6cd8a7028529e227b76e306a70d7c0d477b2142ac576160d10f95ea5a56c3990549258eaf6013e3a459da4c8d6443daef8b963fa37bb7cd4708bd0330b87371363a919cf2162e6e4f4db03165752ff47e289bfe897",
+   "bytes": 208,
+   "params": {
+    "key": "ab0e2b030715a5e809de24437d7aa933f881a3663121f2bd",
+    "iv": "8ea24019f35a29a2d4a7237cf968b4e0",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-166",
+   "algorithm": "AES-192-CBC",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "jqJAGfNaKaLUpyN8+Wi04D1RFbkyrzKvahM63cgmAr2irHjbNnajZcZsHPUeontwOiH7dsjgrzp3pzhf9RHgS/in1OWfcDTbCe3BQQuoW9TsnjUtLz4LDT/Ew1Xnckyy5+QwjhvC5zeq0nrGqsVNJGNubLk7Y2godsYebNinAoUp4ie3bjBqcNfA1HeyFCrFdhYNEPlepaVsOZBUkljq9gE+OkWdpMjWRD2u+Llj+je7fNRwi9AzC4c3E2OpGc8hYubk9NsDFldS/0fiib/olw==",
+   "bytes": 208,
+   "params": {
+    "key": "ab0e2b030715a5e809de24437d7aa933f881a3663121f2bd",
+    "iv": "8ea24019f35a29a2d4a7237cf968b4e0",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-167",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "89062a5944c8065fb436264ed64229bbc957f32d3ac6001bb58288cbee003f0bd2cc262f3f714422d2e68738821c79f829909ba0cd6d50222114191322d51530ae7b9308ff9ee9b8c5e761dfccb55aefd4adfdbc249963e57bb99f77bae3fa23e1ee2d8096dec56fc8a366622448c2353f7423e070a9b2c23d1500896283227fd08a6d59b6be7918e68a7f92781c71d477be317912e0c6954ef6396012d25dc0b340840038483a346f5b846275c2ac79c46d27d044915ddbe1182489e540c27d2594f6dea6d29f2668bc597177c146da",
+   "bytes": 208,
+   "params": {
+    "key": "1effecea350818e251b2736b8fa3b17f52c5ab0b6625941c634f3568051a9a0c",
+    "iv": "89062a5944c8065fb436264e",
+    "tag": "2594f6dea6d29f2668bc597177c146da",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-168",
+   "algorithm": "AES-256-GCM",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "iQYqWUTIBl+0NiZO1kIpu8lX8y06xgAbtYKIy+4APwvSzCYvP3FEItLmhziCHHn4KZCboM1tUCIhFBkTItUVMK57kwj/num4xedh38y1Wu/Urf28JJlj5Xu5n3e64/oj4e4tgJbexW/Io2ZiJEjCNT90I+BwqbLCPRUAiWKDIn/Qim1Ztr55GOaKf5J4HHHUd74xeRLgxpVO9jlgEtJdwLNAhAA4SDo0b1uEYnXCrHnEbSfQRJFd2+EYJInlQMJ9JZT23qbSnyZovFlxd8FG2g==",
+   "bytes": 208,
+   "params": {
+    "key": "1effecea350818e251b2736b8fa3b17f52c5ab0b6625941c634f3568051a9a0c",
+    "iv": "89062a5944c8065fb436264e",
+    "tag": "2594f6dea6d29f2668bc597177c146da",
+    "padding": "none",
+    "layout": "IV(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-169",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "7b63a9e7748e44f2a4abc118d3be975cce1c26b493b5b44d29bccfd92e3f26af3959e3c8499865188bf4f7bbd50d72e1fa9ac58e285d68caf8dfa923888975610948f04a58896c60283b0a0436e14ac29bed3c486cda8a99bf854c3006420a4e00ae9bd631f3724e6db101aadcd38d97bfefe8cb0f5af2732d9b004c87606f18aa158ffb915589c3cf92a482d6e766c36fc01f591db589823b378296e9fdbb1d97c0e4c51153cea4981de7cf99b81eb358376e5e5e8f82e81fea4e9a83a29ebb3b8730f957da2b08b63fe576381a8461",
+   "bytes": 208,
+   "params": {
+    "key": "1effecea350818e251b2736b8fa3b17f52c5ab0b6625941c634f3568051a9a0c",
+    "iv": "7b63a9e7748e44f2a4abc118d3be975c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-170",
+   "algorithm": "AES-256-CBC",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "e2Op53SORPKkq8EY076XXM4cJrSTtbRNKbzP2S4/Jq85WePISZhlGIv097vVDXLh+prFjihdaMr436kjiIl1YQlI8EpYiWxgKDsKBDbhSsKb7TxIbNqKmb+FTDAGQgpOAK6b1jHzck5tsQGq3NONl7/v6MsPWvJzLZsATIdgbxiqFY/7kVWJw8+SpILW52bDb8AfWR21iYI7N4KW6f27HZfA5MURU86kmB3nz5m4HrNYN25eXo+C6B/qTpqDop67O4cw+VfaKwi2P+V2OBqEYQ==",
+   "bytes": 208,
+   "params": {
+    "key": "1effecea350818e251b2736b8fa3b17f52c5ab0b6625941c634f3568051a9a0c",
+    "iv": "7b63a9e7748e44f2a4abc118d3be975c",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-171",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "fcf3f52e7f79de16949139112a5fad37af31bbb6d493fc2b6ee93548db15861780f90fa92c51a1bbaa7ed1b93b76f1c63298bb70b3ab15b0bf9ebb3913ebb602a5a7646a7efcf0e2f3aa2957cb1ba3f6c8fc1cb410cc2779fa479384ffeb4e4c9171baa9101f6f8fca7983312af6974ee1c5e94571657b9f6a0907d3ee89cc698c1190f351f50004663d8f925a92a2ae3891071fd2fc9b7fc5be3f8785ecd0ab066de8f0447d6adcae03be6826e5f965f2008dec4a81ee06c30232802afac145ee702d14e9d59ca1b835b27da7683e9f",
+   "bytes": 208,
+   "params": {
+    "key": "275bd63607778ab6458f204a64157058",
+    "iv": "fcf3f52e7f79de16949139112a5fad37",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-172",
+   "algorithm": "SEED-CBC",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "/PP1Ln953haUkTkRKl+tN68xu7bUk/wrbuk1SNsVhheA+Q+pLFGhu6p+0bk7dvHGMpi7cLOrFbC/nrs5E+u2AqWnZGp+/PDi86opV8sbo/bI/By0EMwnefpHk4T/605MkXG6qRAfb4/KeYMxKvaXTuHF6UVxZXufagkH0+6JzGmMEZDzUfUABGY9j5JakqKuOJEHH9L8m3/Fvj+HhezQqwZt6PBEfWrcrgO+aCbl+WXyAI3sSoHuBsMCMoAq+sFF7nAtFOnVnKG4NbJ9p2g+nw==",
+   "bytes": 208,
+   "params": {
+    "key": "275bd63607778ab6458f204a64157058",
+    "iv": "fcf3f52e7f79de16949139112a5fad37",
+    "padding": "PKCS#7",
+    "layout": "IV(16) + ciphertext"
+   }
+  },
+  {
+   "id": "dev-173",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "7d94d735649a2bbf161e6f80a6156a8cf5e6e47002dcfeb53978ee00505b8a54c02090de8af78260e07bc5da7de9a2821de436cdb756fe8282d9a605912ea1e2ca17032fe34f32ce8a76d7427a611ab56e190213480888b14fd5c47c5cedeb620a03ff33a52a587e49b6c0aef82aada2bcb3ade6e3c039df28a17c566973e95836a80ffc24575e61e847af9893ff2e7b063af138707b40092466b48a2019eae0b1575658e927e07ff955a37f1608879497af83e679d6908737d31b927a1fa1e8c13387f4fcf1e79437b8e2f9ba94345d",
+   "bytes": 208,
+   "params": {
+    "key": "f0e88c894d599ee6d707a92b659086f1a1f92cbb188fc3582b2722a2c2e9b05f",
+    "nonce": "7d94d735649a2bbf161e6f80",
+    "tag": "c13387f4fcf1e79437b8e2f9ba94345d",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-174",
+   "algorithm": "ChaCha20-Poly1305",
+   "category": "symmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "fZTXNWSaK78WHm+AphVqjPXm5HAC3P61OXjuAFBbilTAIJDeiveCYOB7xdp96aKCHeQ2zbdW/oKC2aYFkS6h4soXAy/jTzLOinbXQnphGrVuGQITSAiIsU/VxHxc7etiCgP/M6UqWH5JtsCu+CqtoryzrebjwDnfKKF8Vmlz6Vg2qA/8JFdeYehHr5iT/y57BjrxOHB7QAkkZrSKIBnq4LFXVljpJ+B/+VWjfxYIh5SXr4PmedaQhzfTG5J6H6HowTOH9Pzx55Q3uOL5upQ0XQ==",
+   "bytes": 208,
+   "params": {
+    "key": "f0e88c894d599ee6d707a92b659086f1a1f92cbb188fc3582b2722a2c2e9b05f",
+    "nonce": "7d94d735649a2bbf161e6f80",
+    "tag": "c13387f4fcf1e79437b8e2f9ba94345d",
+    "padding": "none",
+    "layout": "nonce(12) + ciphertext + tag(16)"
+   }
+  },
+  {
+   "id": "dev-175",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "5e809491e2ca306e6f0b92c55246efd5aa413e99a4c7f11a97d54a4c4ff82067fb423846b892283b52bda96ea59c3169550ca1e259923d3756497af45ac166bf0d0dcddb753d050b93c3d7799cecc744c5db328f2f59959e8c76904a89012bc0dbdf0ee8c28ef0370decb8d97f94beafbc54d1be9dba353d59c3466478d00d3d618ba69a4a66957b64740c865c9d1a96679e2d2302d22abb4bc6d673d2a135909dcfca51b6f5aed4034efd5ad7969204bd0129d4e46d5ae0c8080791b6f742ff29bced31acd7154dff9d9aa918f855194dc1c8fa84aed95d401acc95c9871afc908383ef77b500da09bebf62a80834c5d6041333a56d608ddb33d733774f3924",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-176",
+   "algorithm": "RSA-2048",
+   "category": "asymmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "XoCUkeLKMG5vC5LFUkbv1apBPpmkx/Eal9VKTE/4IGf7QjhGuJIoO1K9qW6lnDFpVQyh4lmSPTdWSXr0WsFmvw0Nzdt1PQULk8PXeZzsx0TF2zKPL1mVnox2kEqJASvA298O6MKO8DcN7LjZf5S+r7xU0b6dujU9WcNGZHjQDT1hi6aaSmaVe2R0DIZcnRqWZ54tIwLSKrtLxtZz0qE1kJ3PylG29a7UA079WteWkgS9ASnU5G1a4MgIB5G290L/KbztMazXFU3/nZqpGPhVGU3ByPqErtldQBrMlcmHGvyQg4Pvd7UA2gm+v2KoCDTF1gQTM6VtYI3bM9czd085JA==",
+   "bytes": 256,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-2048\"]"
+   }
+  },
+  {
+   "id": "dev-177",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "04ce8baca81a36590f8dc32a4272b9b669cd401416c9cb83f14e40c79559c4eedf7d931669e5dacda296b9b439fdc9613ebd61d6675989a788270f1ab1becd83555c602cfe17bf5f97ef454f3b4a023fa05da6068223f01603042fc15dcd7d761283811a70a434c07a1f8e28f0d00840778723e33e811c55bd80aff4bb1c1d38d319829b7a4656933c0728053779a0014f592addd40fb98c39a7c5f5545b8e24007e1e288247ec560a53dfcfa8fb70bc1e378f44dcd2ff7986e2ca5c4f24eaf3164eba39245e8c610b3ea0807926c52c95ebd4e45103b884ae7b649e6584482b01e72d79fcd70dd3e01c2c85fea7b829e414ab67d606292670e5003ae6261263fab48245b7453a0ac3ac064974e3e5656428ddcdfc1c0c59b89d021a62f9f1dc6c6799f3c3db739614e0323de45d746e3f506c56ee1b9a98bfcd0c1bab6e2b7f3cda87c4d86c16a207e14254f6c5f8449b44fa4354884240b5855c810298e9de94f2e5937bfd9e1b587d4c2dd795f00c1360a4a4517957e05f62a42b75ff678cbced7428931caed01039ba247281360ca0b918e1e40ee62a915c1ade74447fcbded7da5b94ed466ebca802aa84aec530405cbf53f2f1ac0eeb868e8c7b0f98349c1c3651a86f15cc93f14a210e6c3b0d93e7ffca0edbb8bc03a82e0942b5996ce273f4c485cf063cc1f2e4ba60bc26b528d92dcb43ac240c31e07941d66e4a39",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-178",
+   "algorithm": "RSA-4096",
+   "category": "asymmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "BM6LrKgaNlkPjcMqQnK5tmnNQBQWycuD8U5Ax5VZxO7ffZMWaeXazaKWubQ5/clhPr1h1mdZiaeIJw8asb7Ng1VcYCz+F79fl+9FTztKAj+gXaYGgiPwFgMEL8FdzX12EoOBGnCkNMB6H44o8NAIQHeHI+M+gRxVvYCv9LscHTjTGYKbekZWkzwHKAU3eaABT1kq3dQPuYw5p8X1VFuOJAB+HiiCR+xWClPfz6j7cLweN49E3NL/eYbiylxPJOrzFk66OSRejGELPqCAeSbFLJXr1ORRA7iErntknmWESCsB5y15/NcN0+AcLIX+p7gp5BSrZ9YGKSZw5QA65iYSY/q0gkW3RToKw6wGSXTj5WVkKN3N/BwMWbidAhpi+fHcbGeZ88Pbc5YU4DI95F10bj9QbFbuG5qYv80MG6tuK3882ofE2GwWogfhQlT2xfhEm0T6Q1SIQkC1hVyBApjp3pTy5ZN7/Z4bWH1MLdeV8AwTYKSkUXlX4F9ipCt1/2eMvO10KJMcrtAQObokcoE2DKC5GOHkDuYqkVwa3nREf8ve19pblO1GbryoAqqErsUwQFy/U/LxrA7rho6Mew+YNJwcNlGobxXMk/FKIQ5sOw2T5//KDtu4vAOoLglCtZls4nP0xIXPBjzB8uS6YLwmtSjZLctDrCQMMeB5QdZuSjk=",
+   "bytes": 512,
+   "params": {
+    "padding": "OAEP SHA-256",
+    "key": "keys[\"RSA-4096\"]"
+   }
+  },
+  {
+   "id": "dev-179",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "hex",
+   "value": "0400f0af9f8f62284a0227359f505e21987561baf69554386bee4a1f9e98e8b4735554846b684fab1b1c8ebd069609b08fb0e4a895674336997618e1c44aa3d95987bbb9242ddfc7e240de2f2eb3d7d7c74b985187534e3f09df31fc74134a51edf1bc49a1e7f300d033c2db6d289d72b44a0a91dc4cfe9d49b06357bd4e217225e84aac182635f918de08d71d8eb3e995bf5f9187f069a4679b6df8577281d16ada9671b20b8e65c902bc40786e1d845a978be331aea506517ba6537aeb2be0d6df0a59e92ec75defbd853897fac504f7b2b0a06089a1ffd6e4a41bc2799bc4e36165004f34f1c304ec0e12556c181a250348e59d5b4553bac0b0d15a1498211f50e83089d56c570450c8e9fbecfb9f51",
+   "bytes": 273,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  },
+  {
+   "id": "dev-180",
+   "algorithm": "ECIES-P256",
+   "category": "asymmetric",
+   "plaintext": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "encoding": "base64",
+   "value": "BADwr5+PYihKAic1n1BeIZh1Ybr2lVQ4a+5KH56Y6LRzVVSEa2hPqxscjr0Glgmwj7DkqJVnQzaZdhjhxEqj2VmHu7kkLd/H4kDeLy6z19fHS5hRh1NOPwnfMfx0E0pR7fG8SaHn8wDQM8LbbSidcrRKCpHcTP6dSbBjV71OIXIl6EqsGCY1+RjeCNcdjrPplb9fkYfwaaRnm234V3KB0WralnGyC45lyQK8QHhuHYRal4vjMa6lBlF7plN66yvg1t8KWekux13vvYU4l/rFBPeysKBgiaH/1uSkG8J5m8TjYWUATzTxwwTsDhJVbBgaJQNI5Z1bRVO6wLDRWhSYIR9Q6DCJ1WxXBFDI6fvs+59R",
+   "bytes": 273,
+   "params": {
+    "scheme": "ECDH P-256 + HKDF-SHA256 + AES-256-GCM",
+    "layout": "point(65) + IV(12) + ciphertext + tag(16)",
+    "key": "keys[\"ECIES-P256\"]"
+   }
+  }
+ ]
+}
