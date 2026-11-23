@@ -6,13 +6,49 @@ and implemented in Java with self-checks against official test vectors.
 
 ## What's inside
 
-The site has three parts, switched with the tabs at the top:
+The site has five parts, switched with the tabs at the top:
 
 | Part | URL | What it does |
 |---|---|---|
 | **Study** | `/`, `/md5`, `/seed`, … | Each method in 5 short steps: what it is, how it works (a step-by-step player with real data), where it's used, how it's verified, and a summary |
 | **ASCII** | `/ascii` | Type text and see each character as decimal, hex and binary, plus the full ASCII table (0–127) |
+| **Encoding** | `/encoding` | Encode and decode Hex, Base64, Base64URL, URL encoding and HTML entities, with auto-detect and a comparison table. Encoding is not encryption: anyone can undo it |
 | **Playground** | `/playground/md5`, … | Try each method live: hash, encrypt, decrypt, sign, verify. Every page runs its official test vectors in your browser |
+| **Detect** | `/detect` | Paste a hash or encrypted text and find out what it is (see below) |
+
+### Detect
+
+Paste a hash, ciphertext, key or encoded text, then press **Scan**:
+
+1. **Scan** (no AI, in your browser): five checks run with a 1–100% progress bar. They look at the encoding, format labels
+   (bcrypt, PBKDF2, PEM…), randomness, size and structure, and the algorithm. The checks come from `src/lib/classify.ts`.
+2. **Have the key?** (optional, only for symmetric ciphertext): paste the key in hex. Every method that fits its size is
+   tried (DES, 3DES, AES in 4 modes, SEED, ARIA, ChaCha20), and the one that decrypts names the exact algorithm and shows
+   the original text. Or press **Skip**. The key never leaves the browser.
+3. **Result**: the category (hashing / symmetric / asymmetric / encoding), the algorithm or a shortlist, the decoded text,
+   and why.
+4. **Ask Claude to explain** (optional): Claude explains the result in plain words. This is the only step that sends the
+   text anywhere.
+
+What it can and can't tell from the data alone:
+
+- It can tell the **category** from length and structure: hashes have fixed sizes, RSA output is exactly the key size,
+  and ECDSA signatures and ECIES have a structure you can check. It also catches values that are not random (probably made up).
+- It **can't name the cipher** without the key. AES, SEED and ARIA ciphertexts all look like random bytes, so the
+  answer is a shortlist. Some lengths are shared too: 32, 48 or 64 bytes can be a SHA-256/384/512 hash or a short CBC
+  message. Those come back as "likely" or UNKNOWN, never as a confident guess.
+- It covers the algorithms used in Korean finance and shopping: AES, SEED, ARIA, RSA-2048/4096, RSA-OAEP, ECC/ECDSA,
+  SHA-256/384/512, HMAC-SHA-256 and PBKDF2.
+
+The scan and the key check need nothing extra. **Ask Claude** runs your local Claude Code in headless mode, with no
+API key. To set it up, create `.env.local` with the path to `claude.exe`, then restart the site:
+
+```
+CLAUDE_BIN=C:\path\to\claude.exe
+```
+
+This only works on a computer where Claude Code is installed and logged in. Accuracy on real test data is in
+`eval/report-test.md` (see [Test the detection engine](#test-the-detection-engine)).
 
 ## Methods
 
@@ -85,9 +121,13 @@ cd java/gongdong && java Gongdong.java issue 홍길동 test1234! out
 
 ```
 src/
-  app/                  pages: Study (/[id]), ASCII (/ascii), Playground (/playground/[id])
+  app/                  pages: Study (/[id]), ASCII (/ascii), Encoding (/encoding), Playground (/playground/[id]), Detect (/detect)
+  app/api/detect/       runs claude.exe for "Ask Claude to explain" (no tools, input through stdin)
   content/              the study text for each method (one file per method)
-  components/           page layouts, the step player, the ASCII view
+  components/           page layouts, the step player, the ASCII, Encoding and Detect views
+  lib/encoding.ts       Hex, Base64, Base64URL, URL encoding, HTML entities + auto-detect
+  lib/trykey.ts         Detect's key check: tries every method that fits the key size
+  lib/detect.ts         Claude's instructions and answer format for Detect
   components/impl/      Playground panels (one per method family) + shared UI kit
   lib/impl/             Playground logic and test vectors, no React
   lib/seed.ts           SEED cipher, written by hand (browsers and Java don't include it)
@@ -108,4 +148,6 @@ java/                   one runnable Java file per method, with self-checks
 
 - The code includes **test keys on purpose**: an RSA key pair and 공동인증서 test sets (password `test1234!`),
   so the self-checks can prove the browser and Java produce the same formats. They are public: never use them for anything real.
+  The test data in `eval/data/` also contains throwaway keys made only for testing.
+- Don't paste real secrets into Detect if you press **Ask Claude**: that step sends the text to Claude.
 - MD5, SHA-1, DES and 3DES are included to show why they are broken or retired. Use SHA-256, bcrypt and AES-GCM for real work.
