@@ -88,6 +88,22 @@ npm start          # serve the production build
 npm run lint       # check the code
 ```
 
+## Claude skill: crypto-detect
+
+The Detect engine is also a [Claude Code skill](https://docs.claude.com/en/docs/claude-code/skills) in
+`.claude/skills/crypto-detect/`. With this repo open in Claude Code, paste a hash or ciphertext into the chat and ask
+what it is. Claude runs the same rules as the Detect tab, locally, instead of guessing, and explains the result in plain
+words. With a key, it tries every symmetric method and shows the original text.
+
+```bash
+printf '%s' '900150983cd24fb0d6963f7d28e17f72' | node .claude/skills/crypto-detect/scripts/detect.mjs          # scan
+printf '%s' '<ciphertext>' | node .claude/skills/crypto-detect/scripts/detect.mjs --key <hex>                  # + key
+node .claude/skills/crypto-detect/scripts/selftest.mjs                                                         # check it
+```
+
+To use it in every project, copy the folder to `~/.claude/skills/crypto-detect/`. It needs only Node 18+, with no
+packages. After changing `src/lib/classify.ts` or `src/lib/seed.ts`, run `npm run skill:build` to refresh the skill's copy.
+
 ## Test the detection engine
 
 ```bash
