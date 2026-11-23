@@ -42,7 +42,8 @@ What it can and can't tell from the data alone:
   SHA-256/384/512, HMAC-SHA-256 and PBKDF2.
 
 The scan and the key check need nothing extra. **Ask Claude** runs your local Claude Code in headless mode, with no
-API key. To set it up, create `.env.local` with the path to `claude.exe`, then restart the site:
+API key. It finds the newest `claude.exe` in your VS Code extensions folder by itself, so there is nothing to set up.
+To use a different one, create `.env.local` with its path, then restart the site:
 
 ```
 CLAUDE_BIN=C:\path\to\claude.exe

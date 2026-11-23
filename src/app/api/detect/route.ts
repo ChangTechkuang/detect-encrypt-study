@@ -1,12 +1,29 @@
 import { spawn } from "node:child_process";
+import fs from "node:fs";
 import os from "node:os";
+import path from "node:path";
 import { MAX_INPUT, RESULT_SCHEMA, SYSTEM_PROMPT, isDetectResult } from "@/lib/detect";
 import { classify } from "@/lib/classify";
 
 // Runs Claude Code's claude.exe in headless mode (-p) with the user's own Claude login: no API key.
 // shortcut: only works on a machine where claude.exe is installed and logged in (local use), not on a public server.
-const CLAUDE_BIN = process.env.CLAUDE_BIN || "claude";
 const TIMEOUT_MS = 90_000;
+
+/** CLAUDE_BIN if set, else the newest claude.exe in this user's VS Code extensions, else `claude` on PATH.
+ *  Looked up per request so an extension update (which deletes the old folder) needs no restart. */
+function findClaude(): string {
+  if (process.env.CLAUDE_BIN) return process.env.CLAUDE_BIN;
+  const ext = path.join(os.homedir(), ".vscode", "extensions");
+  try {
+    const dirs = fs.readdirSync(ext).filter((d) => d.startsWith("anthropic.claude-code-"))
+      .sort((a, b) => b.localeCompare(a, undefined, { numeric: true })); // 2.1.330 before 2.1.99
+    for (const d of dirs) {
+      const exe = path.join(ext, d, "resources", "native-binary", process.platform === "win32" ? "claude.exe" : "claude");
+      if (fs.existsSync(exe)) return exe;
+    }
+  } catch { /* no VS Code extensions folder */ }
+  return "claude";
+}
 
 export async function POST(req: Request) {
   let text: unknown;
@@ -44,13 +61,13 @@ function runClaude(input: string): Promise<string> {
   ];
   return new Promise((resolve, reject) => {
     // cwd = temp dir so no CLAUDE.md or project context is picked up
-    // turbopackIgnore: CLAUDE_BIN is an external program, not a project file the bundler should trace
-    const p = spawn(/*turbopackIgnore: true*/ CLAUDE_BIN, args, { cwd: os.tmpdir(), windowsHide: true });
+    // turbopackIgnore: claude.exe is an external program, not a project file the bundler should trace
+    const p = spawn(/*turbopackIgnore: true*/ findClaude(), args, { cwd: os.tmpdir(), windowsHide: true });
     let stdout = "", stderr = "";
     const timer = setTimeout(() => { p.kill(); reject(new Error("Claude took too long (90 s). Try again.")); }, TIMEOUT_MS);
     p.stdout.on("data", (d) => (stdout += d));
     p.stderr.on("data", (d) => (stderr += d));
-    p.on("error", (e) => { clearTimeout(timer); reject(new Error(`Cannot start claude.exe (${e.message}). Set CLAUDE_BIN in .env.local.`)); });
+    p.on("error", (e) => { clearTimeout(timer); reject(new Error(`Cannot start claude.exe (${e.message}). Install the Claude Code VS Code extension, or set CLAUDE_BIN in .env.local.`)); });
     p.on("close", (code) => {
       clearTimeout(timer);
       if (code === 0 || stdout.trim().startsWith("{")) resolve(stdout);
