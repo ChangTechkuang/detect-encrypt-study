@@ -1,9 +1,9 @@
 ---
-name: crypto-detect
+name: encrypt-detector
 description: Identify what a pasted value is (a hash, a ciphertext, a key, a signature or just encoded text) and, with a key, which cipher made it and what it says. Runs a tested rule engine locally instead of guessing. Use this whenever someone pastes a hex or Base64 string, a $2a$/pbkdf2_ hash, a PEM block or any random-looking token and asks what it is, which algorithm, whether it is MD5/SHA/AES/SEED/ARIA/RSA/ECDSA, whether it is encrypted or only encoded, whether a value looks real or made up, or wants to decrypt something with a key they have, even if they never say "detect". Covers the algorithms used in Korean finance and shopping (AES, SEED, ARIA, RSA-OAEP, ECDSA, SHA-256/384/512, HMAC, PBKDF2).
 ---
 
-# crypto-detect
+# encrypt-detector
 
 Tell people what a value is, from evidence, and say plainly what cannot be known.
 

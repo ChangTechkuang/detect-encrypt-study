@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// crypto-detect: what is this hash / ciphertext / key / encoded text?
+// encrypt-detector: what is this hash / ciphertext / key / encoded text?
 //
 //   node detect.mjs '<value>'                 scan only (no key needed)
 //   node detect.mjs '<value>' --key <hex>     scan + try every symmetric method that fits the key size

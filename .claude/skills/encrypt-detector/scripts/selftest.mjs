@@ -1,4 +1,4 @@
-// Self-check for the crypto-detect skill: node selftest.mjs
+// Self-check for the encrypt-detector skill: node selftest.mjs
 // Fixed values from the Data Encrypt Study project + fresh ciphertexts made with Node's OpenSSL for the key check.
 import assert from "node:assert/strict";
 import crypto from "node:crypto";
@@ -52,4 +52,4 @@ for (const [method, value, key, verdict, text = pt] of keyCases) {
 }
 assert.match(detect("abcd", "xyz").key.error, /hex/);
 assert.match(detect("abcd", "0011223344").key.error, /fits no method/);
-console.log(`crypto-detect self-test: all passed (${cases.length + 3} scans, ${keyCases.length} key methods + wrong keys, 2 key errors)`);
+console.log(`encrypt-detector self-test: all passed (${cases.length + 3} scans, ${keyCases.length} key methods + wrong keys, 2 key errors)`);
