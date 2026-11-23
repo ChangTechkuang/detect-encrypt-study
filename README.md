@@ -5,6 +5,9 @@ Every method is explained in plain words, shown step by step with real values, r
 and implemented in Java with self-checks against official test vectors.
 The Detect engine also comes as a Claude Code skill, [encrypt-detector](#claude-skill-encrypt-detector).
 
+**Live site:** https://study-beta-two.vercel.app (every push to `main` redeploys it). Ask Claude on the Detect page
+works only when you run the site locally.
+
 ## What's inside
 
 The site has five parts, switched with the tabs at the top:
