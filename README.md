@@ -3,6 +3,7 @@
 A learning project about **hashing**, **symmetric encryption** and **asymmetric encryption**.
 Every method is explained in plain words, shown step by step with real values, runnable in the browser,
 and implemented in Java with self-checks against official test vectors.
+The Detect engine also comes as a Claude Code skill, [encrypt-detector](#claude-skill-encrypt-detector).
 
 ## What's inside
 
@@ -102,7 +103,8 @@ node .claude/skills/encrypt-detector/scripts/selftest.mjs                       
 ```
 
 To use it in every project, copy the folder to `~/.claude/skills/encrypt-detector/`. It needs only Node 18+, with no
-packages. After changing `src/lib/classify.ts` or `src/lib/seed.ts`, run `npm run skill:build` to refresh the skill's copy.
+packages. After changing `src/lib/classify.ts` or `src/lib/seed.ts`, run `npm run skill:build` to refresh the skill's copy,
+then copy the folder to `~/.claude/skills/` again: the personal copy doesn't update itself.
 
 ## Test the detection engine
 
@@ -152,6 +154,9 @@ src/
   lib/chacha.ts         ChaCha20-Poly1305, written by hand (browsers don't include it)
 eval/                   detection test data, scoring scripts and reports
 java/                   one runnable Java file per method, with self-checks
+scripts/build-skill.mjs copies classify.ts and seed.ts into the skill as plain JavaScript (npm run skill:build)
+.claude/skills/
+  encrypt-detector/     the Claude skill: SKILL.md + scripts/detect.mjs, selftest.mjs, lib/ (generated)
 ```
 
 ## Adding a new method
