@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import type { Candidate, DetectResult } from "@/lib/detect";
-import { HOSTED, LOCAL_ONLY, MAX_INPUT } from "@/lib/detect";
+import { HOSTED, MAX_INPUT, PER_VISITOR } from "@/lib/detect";
 import { byId, guessEncoding } from "@/lib/encoding";
 import { classify, type Classification } from "@/lib/classify";
 import { RSA_TEST_PUB } from "@/lib/impl/rsa";
@@ -275,8 +275,8 @@ export default function DetectView() {
 
         {rule && phase === "done" && (
           <div className="flex flex-wrap items-center gap-3">
-            <Button onClick={askClaude} disabled={busy || HOSTED || found === null}>{busy ? "Asking Claude…" : res ? "Ask Claude again" : "Ask Claude to explain"}</Button>
-            <Note>{HOSTED ? LOCAL_ONLY : found === null ? "Install Claude Code first (below)." : "Optional: Claude explains the result in plain words. Takes a few seconds, and the text is sent to Claude."}</Note>
+            <Button onClick={askClaude} disabled={busy || found === null}>{busy ? "Asking Claude…" : res ? "Ask Claude again" : "Ask Claude to explain"}</Button>
+            <Note>{HOSTED ? `Optional: Claude explains the result in plain words. The text is sent to Claude. Up to ${PER_VISITOR} times a day.` : found === null ? "Install Claude Code first (below)." : "Optional: Claude explains the result in plain words. Takes a few seconds, and the text is sent to Claude."}</Note>
           </div>
         )}
         {rule && phase === "done" && found && !installed && (showPath ? (
@@ -352,7 +352,7 @@ export default function DetectView() {
 
         <p className="rounded-xl border border-warn/40 bg-warn/10 px-4 py-3 text-sm text-muted">
           Detection is an educated guess from the format. Good ciphers look random, so AES and SEED (or DES and 3DES) can&apos;t be told apart without the key.
-          The scan and the key check run in your browser. Only &quot;Ask Claude&quot; sends the text to Claude, through your local Claude Code (claude.exe).
+          The scan and the key check run in your browser. Only &quot;Ask Claude&quot; sends the text to Claude{HOSTED ? "" : ", through your local Claude Code (claude.exe)"}.
         </p>
       </div>
     </main>

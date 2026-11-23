@@ -13,6 +13,8 @@ export type DetectResult = { candidates: Candidate[]; summary: string; nextStep:
 
 export const MAX_INPUT = 4000;
 export const LOCAL_ONLY = "Ask Claude only works when you run this site on your own computer (npm run dev) with Claude Code installed.";
+/** On Vercel, Ask Claude calls per visitor per day (it's billed to the site's API key). */
+export const PER_VISITOR = 10;
 // Vercel exposes this to the browser build; unset when running locally
 export const HOSTED = !!process.env.NEXT_PUBLIC_VERCEL_ENV;
 

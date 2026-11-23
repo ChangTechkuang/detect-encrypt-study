@@ -1,33 +1,50 @@
 import { spawn } from "node:child_process";
 import os from "node:os";
-import { LOCAL_ONLY, MAX_INPUT, RESULT_SCHEMA, SYSTEM_PROMPT, isDetectResult } from "@/lib/detect";
+import Anthropic from "@anthropic-ai/sdk";
+import { LOCAL_ONLY, MAX_INPUT, PER_VISITOR, RESULT_SCHEMA, SYSTEM_PROMPT, isDetectResult } from "@/lib/detect";
 import { classify } from "@/lib/classify";
 import { findClaude, isClaudePath } from "@/lib/claude";
+import { askClaudeApi } from "@/lib/claude-api";
 
-// Runs Claude Code's claude.exe in headless mode (-p) with the user's own Claude login: no API key.
-// shortcut: only works on a machine where claude.exe is installed and logged in (local use), not on a public server.
+// Locally: runs Claude Code's claude.exe in headless mode (-p) with the user's own Claude login, no API key.
+// On Vercel: the Claude API with ANTHROPIC_API_KEY (see askClaudeApi), limited per visitor.
 const TIMEOUT_MS = 90_000;
 
 export async function POST(req: Request) {
-  if (process.env.VERCEL) return Response.json({ error: LOCAL_ONLY }, { status: 501 }); // no claude.exe on Vercel's servers
   let text: unknown, claudePath: unknown;
   try { ({ text, claudePath } = await req.json()); } catch { return Response.json({ error: "Send JSON: { \"text\": \"...\" }" }, { status: 400 }); }
   if (typeof text !== "string" || !text.trim()) return Response.json({ error: "Paste something to detect." }, { status: 400 });
   if (text.length > MAX_INPUT) return Response.json({ error: `Too long: max ${MAX_INPUT} characters.` }, { status: 400 });
+
+  // The rule check is computed by code from the exact bytes, so Claude explains it instead of recounting
+  const r = classify(text);
+  const facts = `RULE CHECK (computed by code): category=${r.category} (${Math.round(r.categoryConfidence * 100)}%), algorithm=${r.algorithm}, ` +
+    `representation=${r.representation}, bytes=${r.bytes}. Evidence: ${r.evidence.join(" ")} Could also be: ${r.candidates.join("; ") || "-"}`;
+  const input = `${facts}\n\nDATA:\n${text.trim()}`;
+
+  // Vercel has no claude.exe: use the Claude API, billed to ANTHROPIC_API_KEY, with a per-visitor limit
+  if (process.env.VERCEL) {
+    if (!process.env.ANTHROPIC_API_KEY) return Response.json({ error: LOCAL_ONLY }, { status: 501 });
+    const limited = overLimit(req.headers.get("x-forwarded-for")?.split(",")[0].trim() || "unknown");
+    if (limited) return Response.json({ error: limited }, { status: 429 });
+    try {
+      const out = await askClaudeApi(input);
+      if (!isDetectResult(out)) return Response.json({ error: "Claude returned an unexpected answer. Try again." }, { status: 502 });
+      return Response.json(out);
+    } catch (e) {
+      console.error("Claude API", e); // details stay in the Vercel logs, not in the visitor's browser
+      return Response.json({ error: e instanceof Anthropic.RateLimitError ? "Claude is busy. Try again in a minute." :
+        e instanceof Anthropic.APIError ? "Claude is not available right now. Try again later." : (e as Error).message }, { status: 502 });
+    }
+  }
+
   // The path comes from the browser and gets executed: only accept an existing file actually named claude(.exe)
   if (claudePath !== undefined && !isClaudePath(claudePath))
     return Response.json({ error: "That is not a path to claude.exe. Enter the full path, e.g. C:\\...\\claude.exe.", needPath: true }, { status: 400 });
   const bin = (claudePath as string | undefined) || findClaude();
 
   try {
-    // The rule check is computed by code from the exact bytes, so Claude explains it instead of recounting
-    const r = classify(text);
-    const facts = `RULE CHECK (computed by code): category=${r.category} (${Math.round(r.categoryConfidence * 100)}%), algorithm=${r.algorithm}, ` +
-      `representation=${r.representation}, bytes=${r.bytes}. Evidence: ${r.evidence.join(" ")} Could also be: ${r.candidates.join("; ") || "-"}`;
-    const out = await runClaude(bin, `${facts}
-
-DATA:
-${text.trim()}`);
+    const out = await runClaude(bin, input);
     const json = JSON.parse(out);
     if (json.is_error) return Response.json({ error: `Claude error: ${json.result ?? json.subtype}` }, { status: 502 });
     if (!isDetectResult(json.structured_output)) return Response.json({ error: "Claude returned an unexpected answer. Try again." }, { status: 502 });
@@ -38,6 +55,23 @@ ${text.trim()}`);
 }
 
 class NotFound extends Error {}
+
+// shortcut: counts live in this server instance's memory, so they reset on a cold start and each Vercel instance
+// counts on its own; set a monthly spend limit in the Claude Console as the hard cap, and move to Vercel KV/Upstash if abused.
+const PER_DAY = 200; // whole site
+const uses = new Map<string, number>();
+let day = "";
+
+/** Error message when this visitor (by IP) or the whole site is over today's limit, else "" (and counts the use). */
+function overLimit(ip: string): string {
+  const today = new Date().toISOString().slice(0, 10);
+  if (today !== day) { uses.clear(); day = today; }
+  const total = uses.get("*") ?? 0, mine = uses.get(ip) ?? 0;
+  if (total >= PER_DAY) return "Ask Claude has reached today's limit for this site. Try again tomorrow, or run the site locally.";
+  if (mine >= PER_VISITOR) return `You've used Ask Claude ${PER_VISITOR} times today. Try again tomorrow, or run the site locally.`;
+  uses.set("*", total + 1); uses.set(ip, mine + 1);
+  return "";
+}
 
 /** Input goes in through stdin (never the command line), and Claude gets no tools, settings, MCP servers or project files. */
 function runClaude(bin: string, input: string): Promise<string> {
