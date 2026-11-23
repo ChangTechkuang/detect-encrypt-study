@@ -42,8 +42,10 @@ What it can and can't tell from the data alone:
   SHA-256/384/512, HMAC-SHA-256 and PBKDF2.
 
 The scan and the key check need nothing extra. **Ask Claude** runs your local Claude Code in headless mode, with no
-API key. It finds the newest `claude.exe` in your VS Code extensions folder by itself, so there is nothing to set up.
-To use a different one, create `.env.local` with its path, then restart the site:
+API key. It uses the standalone Claude Code from Anthropic's installer (`C:\Users\<you>\.local\bin\claude.exe`).
+If it isn't installed, the Detect page offers an **Install Claude Code** button that runs the official installer and
+fills in the path; sign in once by running `claude.exe` in a terminal. A `claude.exe` elsewhere on C: or D: can be
+entered in the path box, or set in `.env.local` (then restart the site):
 
 ```
 CLAUDE_BIN=C:\path\to\claude.exe

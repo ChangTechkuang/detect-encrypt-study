@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import type { Candidate, DetectResult } from "@/lib/detect";
-import { MAX_INPUT } from "@/lib/detect";
+import { HOSTED, LOCAL_ONLY, MAX_INPUT } from "@/lib/detect";
 import { byId, guessEncoding } from "@/lib/encoding";
 import { classify, type Classification } from "@/lib/classify";
 import { RSA_TEST_PUB } from "@/lib/impl/rsa";
@@ -76,6 +76,9 @@ export default function DetectView() {
   const [res, setRes] = useState<DetectResult | null>(null);
   const [needPath, setNeedPath] = useState(false);
   const [claudePath, setClaudePath] = useState("");
+  const [installing, setInstalling] = useState(false);
+  const [installed, setInstalled] = useState("");
+  const [showPath, setShowPath] = useState(false);
 
   // Instant decode with the Encoding tab's code: Base64, Base64URL, hex, URL encoding, HTML entities
   const quick = useMemo(() => {
@@ -129,13 +132,32 @@ export default function DetectView() {
       const r = await fetch("/api/detect", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text, claudePath: p || undefined }) });
       const j = await r.json();
       setNeedPath(!!j.needPath);
-      if (!r.ok) { setError(j.error ?? "Something went wrong."); return; }
-      setRes(j);
+      if (!r.ok) {
+        // "not found" (502) is explained by the setup card; a rejected path (400) is shown inside it
+        if (!(j.needPath && r.status === 502)) setError(j.error ?? "Something went wrong.");
+        return;
+      }
+      setRes(j); setInstalled(""); setShowPath(false);
       try { if (p) localStorage.setItem(PATH_KEY, p); } catch {}
     } catch {
       setError("Could not reach the server.");
     } finally {
       setBusy(false);
+    }
+  }
+
+  async function installClaude() {
+    setInstalling(true); setError(""); setInstalled("");
+    try {
+      const r = await fetch("/api/detect/install", { method: "POST" });
+      const j = await r.json();
+      if (!r.ok) { setError(j.error ?? "Install failed."); return; }
+      setClaudePath(j.path); setInstalled(j.path); setError("");
+      try { localStorage.setItem(PATH_KEY, j.path); } catch {}
+    } catch {
+      setError("Could not reach the server.");
+    } finally {
+      setInstalling(false);
     }
   }
 
@@ -245,20 +267,50 @@ export default function DetectView() {
 
         {rule && phase === "done" && (
           <div className="flex flex-wrap items-center gap-3">
-            <Button onClick={askClaude} disabled={busy}>{busy ? "Asking Claude…" : res ? "Ask Claude again" : "Ask Claude to explain"}</Button>
-            <Note>Optional: Claude explains the result in plain words. Takes a few seconds, and the text is sent to Claude.</Note>
+            <Button onClick={askClaude} disabled={busy || HOSTED}>{busy ? "Asking Claude…" : res ? "Ask Claude again" : "Ask Claude to explain"}</Button>
+            <Note>{HOSTED ? LOCAL_ONLY : "Optional: Claude explains the result in plain words. Takes a few seconds, and the text is sent to Claude."}</Note>
           </div>
         )}
-        {error && <p className="font-medium text-bad">✗ {error}</p>}
+        {error && !needPath && <p className="font-medium text-bad">✗ {error}</p>}
         {needPath && (
-          <div className="grid gap-2">
-            <Label htmlFor="claude-path">Path to claude.exe</Label>
-            <Input id="claude-path" value={claudePath} onChange={(e) => setClaudePath(e.target.value)} spellCheck={false} className="font-mono"
-              placeholder="C:\Users\you\.vscode\extensions\anthropic.claude-code-…\resources\native-binary\claude.exe" />
-            <div className="flex flex-wrap items-center gap-3">
-              <Button onClick={askClaude} disabled={busy || !claudePath.trim()}>{busy ? "Asking Claude…" : "Save and ask"}</Button>
-              <Note>Saved in this browser only. Run <code>where claude</code> in a terminal to find it.</Note>
-            </div>
+          <div className="grid gap-3 rounded-xl border border-line bg-code px-4 py-4" role="status">
+            {installed ? (
+              <>
+                <p className="font-semibold">✓ Claude Code is installed. One last step: sign in.</p>
+                <p className="text-sm">Open a terminal, run this and log in with your Claude account:</p>
+                <div className="flex items-center gap-2">
+                  <code className="min-w-0 flex-1 truncate rounded-lg border border-line bg-paper px-3 py-2 font-mono text-[13px]">&quot;{installed}&quot;</code>
+                  <CopyButton text={`"${installed}"`} />
+                </div>
+                <p className="text-sm text-muted">Then click <span className="font-medium text-ink">Ask Claude to explain</span> above.</p>
+              </>
+            ) : (
+              <>
+                <div>
+                  <p className="font-semibold">Claude Code isn&apos;t installed on this PC</p>
+                  <p className="mt-1 text-sm text-muted">Ask Claude runs through Claude Code (claude.exe). Install it once with Anthropic&apos;s official installer. It takes a minute or two.</p>
+                </div>
+                <div>
+                  <Button onClick={installClaude} disabled={installing || busy}>{installing ? "Installing…" : "Install Claude Code"}</Button>
+                </div>
+                {!showPath ? (
+                  <button type="button" onClick={() => setShowPath(true)} className="justify-self-start text-sm font-medium text-[var(--accent)] hover:underline">
+                    Already installed somewhere else? Enter its path
+                  </button>
+                ) : (
+                  <div className="grid gap-2 border-t border-line pt-3">
+                    <Label htmlFor="claude-path">Path to claude.exe</Label>
+                    <div className="flex gap-2">
+                      <Input id="claude-path" value={claudePath} onChange={(e) => setClaudePath(e.target.value)} spellCheck={false}
+                        className="min-w-0 flex-1 font-mono" placeholder="D:\Tools\claude\claude.exe" autoFocus />
+                      <Button onClick={askClaude} disabled={busy || !claudePath.trim()}>{busy ? "Checking…" : "Use this path"}</Button>
+                    </div>
+                    <Note>Remembered in this browser. Run <code>where claude</code> in a terminal to find it.</Note>
+                  </div>
+                )}
+              </>
+            )}
+            {error && <p className="text-sm font-medium text-bad">✗ {error}</p>}
           </div>
         )}
 
